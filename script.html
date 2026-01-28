@@ -23,7 +23,7 @@
             <select id="langSelect">
               <option value="ru">RU</option>
               <option value="pl">PL</option>
-              <option value="ka">KA</option>
+              <option value="ka">GE</option>
               <option value="ro">RO</option>
             </select>
           </div>
@@ -37,30 +37,28 @@
           <div class="muted" style="margin-bottom: 8px;"><b>Этапы</b></div>
 
           <nav class="stagesNav" style="display:flex; flex-direction:column; gap:8px;">
-            <a class="stageLink" href="#greeting" data-stage="greeting">Приветствие</a>
-            <a class="stageLink" href="#needs" data-stage="needs">Выявление потреб</a>
-            <a class="stageLink" href="#presentation" data-stage="presentation">Презентация</a>
-            <a class="stageLink" href="#courses" data-stage="courses">Курсы</a>
+            <a class="stageLink" href="#greeting" data-stage="greeting" data-i18n="stage.greeting">Приветствие</a>
+<a class="stageLink" href="#needs" data-stage="needs" data-i18n="stage.needs">Выявление потреб</a>
+<a class="stageLink" href="#presentation" data-stage="presentation" data-i18n="stage.presentation">Презентация</a>
+<a class="stageLink" href="#courses" data-stage="courses" data-i18n="stage.courses">Курсы</a>
+<a class="stageLink" href="#cross" data-stage="cross" data-i18n="stage.cross">Кросс</a>
+<a class="stageLink" href="#survey" data-stage="survey" data-i18n="stage.survey">Анкетирование</a>
+<a class="stageLink" href="#closing" data-stage="closing" data-i18n="stage.closing">Завершение</a>
+<a class="stageLink" href="#objections" data-stage="objections" data-i18n="stage.objections">Отработка возражений</a>
+<a class="stageLink" href="#products" data-stage="products" data-i18n="stage.products">Препараты</a>
 
-            <!-- ✅ НОВЫЕ -->
-            <a class="stageLink" href="#cross" data-stage="cross">Кросс</a>
-            <a class="stageLink" href="#survey" data-stage="survey">Анкетирование</a>
-
-            <a class="stageLink" href="#closing" data-stage="closing">Завершение</a>
-            <a class="stageLink" href="#objections" data-stage="objections">Отработка возражений</a>
-            <a class="stageLink" href="#products" data-stage="products">Препараты</a>
           </nav>
         </aside>
 
         <!-- Content -->
         <main class="content" style="min-width: 0;">
           <section id="greeting" class="stageSection" data-stage="greeting">
-            <h2>Приветствие</h2>
+            <h2 data-i18n="stage.greeting">Приветствие</h2>
             <div id="textGreeting"></div>
           </section>
 
           <section id="needs" class="stageSection" data-stage="needs">
-            <h2>Выявление потреб</h2>
+<h2 data-i18n="stage.needs">Выявление потреб</h2>
             <div id="textNeeds"></div>
 
             <h3 style="margin-top: 14px;">Быстрые варианты</h3>
@@ -68,33 +66,33 @@
           </section>
 
           <section id="presentation" class="stageSection" data-stage="presentation">
-            <h2>Презентация</h2>
+<h2 data-i18n="stage.presentation">Презентация</h2>
             <div id="textPresentation"></div>
           </section>
 
           <section id="courses" class="stageSection" data-stage="courses">
-            <h2>Курсы</h2>
+<h2 data-i18n="stage.courses">Курсы</h2>
             <div id="textCourses"></div>
           </section>
 
           <!-- ✅ НОВЫЕ -->
           <section id="cross" class="stageSection" data-stage="cross">
-            <h2>Кросс</h2>
+<h2 data-i18n="stage.cross">Кросс</h2>
             <div id="textCross"></div>
           </section>
 
           <section id="survey" class="stageSection" data-stage="survey">
-            <h2>Анкетирование</h2>
+<h2 data-i18n="stage.survey">Анкетирование</h2>
             <div id="textSurvey"></div>
           </section>
 
           <section id="closing" class="stageSection" data-stage="closing">
-            <h2>Завершение</h2>
+<h2 data-i18n="stage.closing">Завершение</h2>
             <div id="textClosing"></div>
           </section>
 
           <section id="objections" class="stageSection" data-stage="objections">
-            <h2>Отработка возражений</h2>
+<h2 data-i18n="stage.objections">Отработка возражений</h2>
             <div id="textObjections"></div>
 
             <h3 style="margin-top: 14px;">Быстрые варианты</h3>
@@ -102,7 +100,7 @@
           </section>
 
           <section id="products" class="stageSection" data-stage="products">
-            <h2>Препараты</h2>
+<h2 data-i18n="stage.products">Препараты</h2>
             <div id="textProducts"></div>
           </section>
         </main>

@@ -8,7 +8,7 @@ const scriptId = localStorage.getItem("selectedScriptId");
 if (!scriptId) window.location.href = "scripts.html";
 
 // Назад
-document.getElementById("backBtn").addEventListener("click", () => {
+document.getElementById("backBtn")?.addEventListener("click", () => {
   window.location.href = "scripts.html";
 });
 
@@ -36,7 +36,7 @@ const STAGE_TO_ELEMENT = {
   products: "textProducts",
 };
 
-// Підставляємо HTML у всі етапи (навіть якщо порожньо)
+// Підставляємо HTML у всі етапи
 Object.keys(STAGE_TO_ELEMENT).forEach((stageKey) => {
   const elId = STAGE_TO_ELEMENT[stageKey];
   const html = scriptObj?.stages?.[stageKey] || "";
@@ -48,6 +48,9 @@ fillAccordions("needsAccordions", scriptObj?.accordions?.needs || []);
 fillAccordions("objectionsAccordions", scriptObj?.accordions?.objections || []);
 toggleAccordionBlock("needsAccordions");
 toggleAccordionBlock("objectionsAccordions");
+
+// ✅ ВАЖЛИВО: рендеримо “розгалуження цін” (4 кнопки)
+renderPricing(scriptObj);
 
 // Scroll spy + плавний скрол
 initScrollSpy();
@@ -84,11 +87,57 @@ function makeAccordion(question, answerHtml) {
 
   const body = document.createElement("div");
   body.className = "accBody";
-  body.innerHTML = answerHtml || ""; // ✅ щоб можна було писати <p>, <ul> в a:
+  body.innerHTML = answerHtml || "";
 
   details.appendChild(summary);
   details.appendChild(body);
   return details;
+}
+
+/* =========================
+   РОЗГАЛУЖЕННЯ ЦІН (4 кнопки)
+   ========================= */
+function renderPricing(scriptObj){
+  // Ми шукаємо контейнер у етапі "Курсы"
+  const host = document.getElementById("pricingBlock");
+  if (!host) return; // якщо в цьому скрипті не вставлено <div id="pricingBlock"></div> — просто пропускаємо
+
+  const pricing = scriptObj?.pricing;
+  if (!Array.isArray(pricing) || pricing.length === 0){
+    host.innerHTML = `<p class="muted">Нет данных по ценам для этого скрипта.</p>`;
+    return;
+  }
+
+  // UI
+  const tabs = document.createElement("div");
+  tabs.className = "priceTabs";
+
+  const panel = document.createElement("div");
+  panel.className = "pricePanel";
+
+  host.innerHTML = "";
+  host.appendChild(tabs);
+  host.appendChild(panel);
+
+  function activate(idx){
+    const item = pricing[idx];
+    [...tabs.children].forEach((b, i) => b.classList.toggle("active", i === idx));
+    panel.innerHTML = item?.html || "";
+    panel.classList.add("show");
+  }
+
+  pricing.forEach((item, idx) => {
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "priceBtn";
+    btn.textContent = item.label || `Вариант #${idx+1}`;
+    btn.addEventListener("click", () => activate(idx));
+    tabs.appendChild(btn);
+  });
+
+  // За замовчуванням нічого не показуємо (поки не натиснуть).
+  // Якщо хочеш, щоб одразу відкривався ФУЛЛ — увімкни:
+  // activate(3);
 }
 
 function initScrollSpy() {
