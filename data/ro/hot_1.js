@@ -1,45 +1,151 @@
 registerScript("ro", "hot_1", {
   title: "RO Hot #1",
+
   stages: {
-    greeting: ``,
-    needs: ``,
-    presentation: ``,
+    greeting: `
+      <p>Bună ziua, domnule/doamnă ……….­?</p>
+      <p>Numele meu este Numele operatorului, sunt de la clinica Regina Maria”. Ați lăsat o cerere pentru produsul de refacere a mobilității articulațiilor <b>Arthrolon</b>, este corect?</p>
+      <p><i>"DA"</i></p>
+      <p>Pentru a verifica posibilitatea livrării, vă rugăm să ne spuneți în ce regiune locuiți și în ce oraș?</p>
+      <p><i>"Orașul este potrivit"</i></p>
+      <p>Excelent, domnule/doamnă, livrarea în orașul dumneavoastră este posibilă.</p>
+      <p>Haideți să procedăm astfel: vă voi pune câteva întrebări pentru a înțelege mai bine cum vă simțiți. Apoi vă voi explica cum funcționează Arthrolon și în ce fel vă va fi util acest produs. Apoi voi alege doza potrivită și, dacă sunteți de acord, vă voi ajuta cu formalitățile. Bine?</p>
+    `,
+    needs: `
+      <p class="muted">Întrebări + ramificări sunt mai jos (în blocurile care se deschid).</p>
+    `,
+    presentation: `
+    <p>Domnule/doamnă , haideți să vă spun acum de ce Arthrolon este într-adevăr o alegere fiabilă, bine? (Așteptăm acordul)</p>
+    
+    <p class="presentationTitle">1. Fiabilitate și încredere:</p>
+    <p>Domnule/doamnă :</p>
+    <p>— complexul are toate documentele oficiale, confirmate de Ministerul Sănătății din România, și lucrăm doar direct cu producătorul — aceasta este o garanție a calității</p>
+ <p>— veți avea întotdeauna la dispoziție un manager personal și o linie telefonică de asistență, la care puteți suna și pune orice întrebare — este convenabil și sigur</p>
+ <p>— documentele și numărul liniei de asistență vor fi incluse în colet</p>
+ <p>— sunteți de acord că, atunci când aveți documente și asistență, vă simțiți mai liniștit? (Așteptăm acordul)</p>
+ 
+ <p class="presentationTitle">2. Compoziție naturală și siguranță:</p>
+  <p>—Arthrolon conține numai ingrediente naturale: ulei de eucalipt, extract de arnică, ulei de ardei iute și altele</p>
+ <p>— o astfel de compoziție se întâlnește rar într-un singur produs, ceea ce îl face eficient și sigur, în special pentru refacerea mobilității articulațiilor</p>
+ <p>— Este important pentru dumneavoastră ca produsul să fie natural și sigur? (Așteptăm răspunsul afirmativ)</p>
+ 
+ <p class="presentationTitle">3. Abordare complexă: ideea și unicitatea Arthrolon</p>
+ <p>Domnule/doamnă , este dovedit științific: „unguentul magic” care va scăpa odată pentru totdeauna de durerile articulare nu există — așteptarea unui miracol doar vă răpește timpul și duce la dezamăgire.</p>
+ <p>— tocmai de aceea am creat Arthrolon — nu doar un remediu, ci un complex complet pentru refacerea cartilajelor, eliminarea inflamației și întărirea articulațiilor. Noi tratăm cauza durerilor articulare, nu doar mascam simptomele.</p>
+ <p>— Sunteți de acord că este mai important să rezolvați problema din interior, decât să eliminați doar simptomele? (Așteptăm acordul)</p>
+ 
+ <p class="presentationTitle">4. Etape de acțiune:</p>
+
+  <p>Domnule/doamnă , complexul nostru Arthrolon acționează în etape pe o perioadă de 3 luni. Fiecare etapă durează exact o lună, iar fiecare dintre ele este extrem de importantă pentru obținerea unui rezultat durabil, care va ajuta la refacerea sănătății articulațiilor și la reducerea durerii.</p>
+ <p>— Vă voi explica pe scurt ce se întâmplă în fiecare etapă, deoarece tocmai această succesiune de schimbări în organismul dumneavoastră permite obținerea celui mai bun efect din partea produsului nostru, bine? (Așteptăm acordul sau confirmarea interesului)</p>
+ 
+ <p class="presentationTitle">Prima lună (etapa) — declanșarea proceselor și primele îmbunătățiri:</p>
+ <ul>
+  <li>Articulațiile dumneavoastră încep să primească mai multă hrană datorită îmbunătățirii circulației sanguine.</li>
+  <li>Inflamațiile și umflăturile se reduc, ceea ce ajută la diminuarea durerilor.</li>
+  <li>Cartilajele încep să se refacă, îmbunătățind elasticitatea și flexibilitatea articulațiilor.</li>
+  <li>În doar 2 săptămâni, puteți observa primele îmbunătățiri: mai puțină durere, mai multă energie pentru activități active.</li>
+</ul>
+<p>Domnule/doamnă , ați înțeles totul după prima lună? Îmbunătățirea circulației sanguine și reducerea inflamației sunt deja un început excelent, nu-i așa? (Așteptăm acordul, apoi trecem la a doua etapă)</p>
+
+    <p class="presentationTitle">A doua lună (etapa) — consolidarea și menținerea rezultatului:</p>
+    <ul>
+  <li>Articulațiile dumneavoastră devin mai mobile, inflamația se reduce semnificativ.</li>
+  <li>Organismul dumneavoastră începe să refacă cartilajele mai eficient, întărind țesuturile și îmbunătățind mobilitatea.</li>
+  <li>Starea generală de sănătate se îmbunătățește: somnul se normalizează, oboseala dispare, capacitatea de muncă crește.</li>
+  <li>Articulațiile devin mai protejate, ceea ce previne posibile agravări și reapariția durerilor.</li>
+</ul>
+<p> Domnule/doamnă , este totul clar după a doua lună? Cred că sunteți de acord că aceste schimbări sunt importante în atingerea obiectivului, nu-i așa?
+(Așteptăm acordul, apoi trecem la a treia etapă)</p>
+
+<p class="presentationTitle">A treia lună (etapa) — protecție pe termen lung și încredere:</p>
+<ul>
+  <li>Articulațiile dumneavoastră se refac și devin mai mobile, cartilajele se întăresc, durerea și inflamațiile nu vă vor mai deranja.</li>
+  <li>Organismul dumneavoastră învață să mențină articulațiile sănătoase, prevenind reapariția leziunilor.</li>
+  <li>Efectul se menține până la șase luni și mai mult, în funcție de starea organismului, iar dumneavoastră continuați să simțiți îmbunătățiri.</li>
+  <li>Veți avea încredere în viitor, știind că durerile și limitările de mobilitate sunt semnificativ reduse.</li>
+</ul>
+<p>Domnule/doamnă , tocmai această abordare complexă permite obținerea unui rezultat maxim în refacerea sănătății articulațiilor și controlul mobilității. Ați dori să obțineți un astfel de rezultat, nu-i așa? (Așteptăm acordul)</p>
+ `,
+
     courses: `
       <p><b>Курсы / Цены</b></p>
       <div id="pricingBlock"></div>
     `,
-    cross: ``,
-    survey: ``,
-    closing: ``,
+
+    cross: `
+    <p>, ați făcut foarte bine că ați ales cursul pentru susținerea mobilității articulațiilor — el va ajuta la reducerea inflamației și la redarea confortului în mișcare.</p>
+ <p>Pentru ca efectul să apară mai repede și rezultatul să se mențină pe termen lung, recomandăm întotdeauna și o curățare a organismului.
+Sărurile, toxinele și reziduurile se acumulează adesea în țesuturile articulațiilor și împiedică refacerea lor.</p>
+ <p>În cazul dumneavoastră, <b>Germivir</b> este soluția ideală — un complex natural de detoxifiere care ajută la eliminarea substanțelor nocive și la susținerea metabolismului.
+El reduce inflamațiile interne, îmbunătățește hrănirea articulațiilor și amplifică efectul cursului principal.</p>
+ <p>Compoziția conține trei ingrediente active:</p>
+<ul>
+  <li>Extract de semințe de dovleac – întărește țesuturile articulare și susține funcția ficatului;</li>
+  <li>Extract de frunze de nuc – curăță sângele, elimină inflamațiile și depunerile de săruri;</li>
+  <li>Zinc – contribuie la refacerea țesutului cartilaginos și întărește celulele.</li>
+</ul>
+<p>Administrarea este foarte simplă: 20 de picături dizolvate în 100 ml de apă, de 2 ori pe zi.
+Remediul este complet sigur, potrivit și pentru persoanele cu afecțiuni cronice, și se combină perfect cu cursul dumneavoastră pentru articulații.
+De obicei, cursul costă 240 lei, dar acum este în promoție — <b>doar 55 lei pentru 10 zile de utilizare</b>.</p>
+<p>, haideți să adăugăm și Nemanex la comandă, ca organismul să se curețe, articulațiile să se refacă mai repede și rezultatul să se mențină mai mult timp. (E bine așa.)</p>
+<p>— Excelent, Domnule/Doamnă , atunci vă confirm cursul principal Arthrolon și cursul (cursurile) suplimentar(e) din promoție. Valoarea totală a comenzii dvs., ținând cont de toate reducerile, <b>va fi de XX lei</b>.</p>
+ `,
+    survey: `
+    <p>Domnule/doamnă , să completăm imediat livrarea, pentru a face acest lucru:</p>
+    <p>1. Vă rog să-mi spuneți numele și prenumele complet, pentru a putea înregistra corect comanda (notăm numele complet după cum îl pronunță clientul).</p>
+    <p>Vă rog să-mi spuneți, veți fi dvs. destinatarul coletului? Sau altcineva va putea primi coletul, dacă dvs. nu veți putea? Sunt gata să notez numele și numărul de telefon. (Notăm în CRM în câmpul „Comentariu”.)</p>
+    <p>2. Acum, vă rog să-mi dictați adresa de livrare (regiune, oraș, stradă, număr de casă/clădire, număr de bloc/intrare, număr de apartament, cod poștal) (notăm datele după cum le dictează clientul).</p>
+    <p>3. În plus, vă rugăm să indicați un punct de reper pentru curier (intersecția străzilor, cel mai apropiat magazin, școală, farmacie sau cafenea, numele cartierului sau al complexului rezidențial, stația, caracteristicile casei, poarta) (notăm datele în câmpul „Comentariu” pentru curier).
+(Dacă este locul de muncă al clientului, adăugați neapărat și numele companiei și funcția clientului) (notăm datele în câmpul de comentarii pentru curier)</p>
+    `,
+    closing: `
+    <p>Domnule/doamnă , vă rugăm să verificați încă o dată toate datele dvs. pentru a evita erorile la livrare:</p>
+    <ol>
+    <li>numele și prenumele complet: [repetați numele complet, literă cu literă];</li>
+    <li>dacă există un destinatar suplimentar: [repetați numărul de telefon] - totul este corect? (așteptăm confirmarea)</li>
+    <li>adresa de livrare: [regiune, oraș, stradă, număr de casă/clădire, număr de bloc/intrare, număr de apartament, cod poștal];</li>
+    <li>numele pe interfon [spunem numele pe interfon].</li>
+    </ol>
+    <p>Vă rugăm să confirmați că datele sunt corecte, pentru a putea garanta livrarea la timp a comenzii dvs. Domnule/doamnă , am notat totul corect? (Așteptăm confirmarea)</p>
+    <p>Comanda se livreaza in decurs de o zi sau doua lucratoare de Luni-Vineri de la orele 09.00-18.00.Veți primi un SMS de la serviciul de livrare în dimineața livrării. Va exista un link pentru a vă urmări comanda. Plata catre curier numai cash la primire.</p>
+
+    <p class="presentationTitle">CONDIȚIILE OFERTEI:</p>
+    <Din>Conform regulamentului nostru, încheiem un acord verbal, în baza căruia compania se obligă să vă furnizeze un produs original, de cea mai înaltă calitate. Eu, nume / prenume, îmi asum responsabilitatea ca tratamentul dumneavoastră să fie eficient. Din partea dumneavoastră, vă asumați responsabilitatea de a primi produsul și de a începe tratamentul. Vă rog să-mi spuneți dacă aceste condiții vă sunt acceptabile în acest moment.</p>
+    <Vă>Vă rugăm să scrieți numărul liniei noastre de asistență telefonică – dacă aveți întrebări – vă vom ajuta cu plăcere:<b> 40373760656</b>. Vă voi monitoriza rezultatele, așa că vă rugăm să răspundeți la următorul apel.</p>
+    <p>În ziua livrării veți primi un SMS cu un link pentru a vă urmări comanda. Plata - numerar la curier la primire. Aveti întrebări?</p>
+    <p>Kl spune "Nu"</p>
+    <p>O zi plăcută!</p>
+
+    `,
     objections: ``,
     products: ``,
   },
 
-  // ✅ ОЦЕ НОВЕ:
   pricing: [
     {
       label: "Бесплатно 16",
       html: `
         <p><b>Вариант: Бесплатно 16</b></p>
-        <p>Курс: ...</p>
         <ul>
+          <li>Курс: ...</li>
           <li>Капсул: ...</li>
           <li>Цена: ...</li>
           <li>Доставка: ...</li>
         </ul>
-      `
+      `,
     },
     {
       label: "Лоу 99",
       html: `
         <p><b>Вариант: Лоу 99</b></p>
-        <p>Курс: ...</p>
         <ul>
+          <li>Курс: ...</li>
           <li>Капсул: ...</li>
           <li>Цена: 99</li>
           <li>Доставка: ...</li>
         </ul>
-      `
+      `,
     },
     {
       label: "Мидл 119",
@@ -50,7 +156,7 @@ registerScript("ro", "hot_1", {
           <li>Цена: 119</li>
           <li>Доставка: ...</li>
         </ul>
-      `
+      `,
     },
     {
       label: "Фулл 149/159",
@@ -62,9 +168,306 @@ registerScript("ro", "hot_1", {
           <li>Цена: 149/159</li>
           <li>Доставка: бесплатно / ...</li>
         </ul>
-      `
+      `,
     },
   ],
 
-  accordions: { needs: [], objections: [] },
+  accordions: {
+    needs: [
+      {
+        q: "1. Domnule/doamnă, spuneți-mi: ați lăsat o cerere la recomandarea medicului sau v-au sfătuit cunoștințele să apelați la noi? (Așteptăm răspunsul)",
+        a: `
+          <div class="yn">
+            <button class="ynBtn" type="button" data-show="yes">Comentariu expert</button>
+            <button class="ynBtn" type="button" data-show="no">Comentariu expert (dacă l-ați găsit singur)</button>
+          </div>
+
+          <div class="ynPanel" data-panel="yes">
+            <p>Am înțeles. Ne bucurăm că ați apelat la noi. Adesea primim recomandări, așa că puteți avea încredere în noi.</p>
+          </div>
+
+          <div class="ynPanel" data-panel="no">
+            <p>Domnule/doamnă, ne bucurăm că ne-ați găsit! Asta înseamnă că sunteți deja interesat(ă) de o soluție care vă poate ajuta cu adevărat. Lucrăm numai cu metode și produse verificate, care și-au dovedit eficiența.</p>
+          </div>
+        `,
+      },
+
+      {
+        q: "2. Domnule/doamnă, pentru a calcula corect doza individuală, vă rugăm să ne spuneți vârsta dvs., înălțimea și greutatea? (Așteptăm răspunsul)",
+        a: `
+    <p><b>Notiță operator:</b> Scrieți sexul clientului (bărbat/femeie), problemele pe care le are și kg.</p>
+  `,
+      },
+      {
+        a: `
+    <p class="groupSubtitle">Starea actuală:</p>
+  `,
+      },
+      {
+        q: "3. Acum să vorbim despre problema dumneavoastră. Spuneți-ne, care anume articulații vă deranjează? De cât timp durează acest lucru? (Așteptăm răspunsul)  (notăm răspunsul clientului)",
+        a: `
+          <div class="yn">
+            <button class="ynBtn" type="button" data-show="yes">Comentariu expert</button>
+          </div>
+
+          <div class="ynPanel" data-panel="yes">
+            <p>vă mulțumim că ne-ați împărtășit asta! Din simptomele dumneavoastră, ar putea fi vorba de modificări ale articulațiilor legate de vârstă, cu care se confruntă 65% dintre persoanele de vârsta dumneavoastră. Dacă durerea sau disconfortul persistă mult timp, acest lucru poate fi un semn că boala progresează și este important să luați măsuri chiar acum, nu-i așa? (Așteptăm acordul)</p>
+          </div>
+
+        `,
+      },
+
+      {
+        q: "4. Domnule/doamnă , vă rugăm să ne spuneți: aveți deseori dureri sau rigiditate la nivelul articulațiilor? (Așteptăm răspunsul)",
+        a: `
+          <div class="yn">
+            <button class="ynBtn" type="button" data-show="yes">Comentariu expert, dacă răspunsul este „Da”</button>
+            <button class="ynBtn" type="button" data-show="no">Comentariu expert, dacă răspunsul este „Nu”</button>
+          </div>
+
+          <div class="ynPanel" data-panel="yes">
+            <p>V-am înțeles. Dacă durerile devin regulate, acesta este un semnal de alarmă. Fără tratament, durerea poate deveni permanentă, ceea ce va duce la dureri cronice, limitarea mobilității și chiar invaliditate. Este important să luați măsuri în această etapă pentru a evita aceste consecințe, sunteți de acord cu mine, da, domnule/doamnă ? (Așteptăm acordul)
+</p>
+          </div>
+
+          <div class="ynPanel" data-panel="no">
+            <p>mulțumesc pentru răspuns! Chiar dacă durerile nu sunt încă frecvente, este important să monitorizați starea articulațiilor pentru a preveni agravarea lor. Problemele se pot dezvolta în mod imperceptibil și pot duce la dureri și limitarea mobilității în viitor. Menținerea sănătății articulațiilor într-un stadiu incipient este importantă pentru rezultate pe termen lung, sunteți de acord cu mine, da, domnule/doamnă ? (Așteptăm acordul)</p>
+          </div>
+        `,
+      },
+
+      {
+        q: "5. Domnule/doamnă , ați auzit că, dacă durerea articulară nu dispare pentru o perioadă lungă de timp, aceasta poate afecta grav mobilitatea și starea articulațiilor? (Așteptăm acordul)",
+        a: `
+          <div class="yn">
+            <button class="ynBtn" type="button" data-show="yes">Comentariu expert</button>
+            <button class="ynBtn" type="button" data-show="no">Comentariu al expertului, dacă durerile au apărut recent</button>
+          </div>
+
+          <div class="ynPanel" data-panel="yes">
+            <p>durerile constante și inflamația distrug cartilajele și țesuturile articulațiilor, ceea ce poate duce la invaliditate și pierderea completă a mobilității. Fără o recuperare la timp, situația se va agrava, iar dumneavoastră cu siguranță nu doriți astfel de consecințe, nu-i așa? (Așteptăm acordul)</p>
+          </div>
+
+          <div class="ynPanel" data-panel="no">
+            <p>chiar dacă durerile au apărut recent, problemele articulare se pot dezvolta treptat și rareori le acordăm atenție. Dar este important să păstrăm mobilitatea și să prevenim probleme mai grave în viitor. Sunteți de acord că este mai bine să prevenim problema și să începem tratamentul preventiv la timp, nu-i așa? (Așteptăm acordul)</p>
+          </div>
+        `,
+      },
+
+      {
+        q: "6. Domnule/doamnă , spuneți-mi, aveți rude cu boli ale articulațiilor? (Așteptăm răspunsul)  (notăm cine suferă/fie „Da”/„Nu”)",
+        a: `
+          <div class="yn">
+            <button class="ynBtn" type="button" data-show="yes">Comentariu expert, dacă „Da”</button>
+            <button class="ynBtn" type="button" data-show="no">Comentariu expert, dacă răspunsul este „Nu”</button>
+          </div>
+
+          <div class="ynPanel" data-panel="yes">
+            <p>Am înțeles. Ne bucurăm că ați apelat la noi. Adesea primim recomandări, așa că puteți avea încredere în noi.</p>
+          </div>
+
+          <div class="ynPanel" data-panel="no">
+            <p>Domnule/doamnă, ne bucurăm că ne-ați găsit! Asta înseamnă că sunteți deja interesat(ă) de o soluție care vă poate ajuta cu adevărat. Lucrăm numai cu metode și produse verificate, care și-au dovedit eficiența.</p>
+          </div>
+        `,
+      },
+      {
+        a: `
+    <p class="groupSubtitle">SIMPTOME ȘI CALITATEA VIEȚII:</p>
+  `,
+      },
+
+      {
+        q: "7. Domnule/doamnă , să vorbim acum despre calitatea vieții și simptome. Vă rog să ne spuneți dacă vă este greu să mergeți mult timp, să urcați scările, să vă ocupați de treburile obișnuite sau să vă ridicați după ce v-ați odihnit? (Așteptăm răspunsul)",
+        a: `
+          <div class="yn">
+            <button class="ynBtn" type="button" data-show="yes">Comentariu expert, dacă răspunsul este „Da”</button>
+            <button class="ynBtn" type="button" data-show="no">Comentariu expert, dacă răspunsul este „Nu”</button>
+          </div>
+
+
+          <div class="ynPanel" data-panel="yes">
+            <p>imitarea mișcărilor este un semn al progresiei bolii. Dacă nu vă ocupați acum de refacerea sănătății articulațiilor, puteți pierde rapid autonomia și vă puteți confrunta cu necesitatea unei asistențe permanente, iar dvs. doriți să evitați acest lucru, nu-i așa? (Așteptăm acordul)</p>
+          </div>
+
+
+          <div class="ynPanel" data-panel="no">
+            <p>este bine că nu există încă astfel de limitări. Dar este important să rețineți că problemele articulare se pot dezvolta în mod imperceptibil și, fără prevenire, riscați să vă confruntați cu dificultăți în viitor. Prevenirea în stadiu incipient este cheia sănătății pe termen lung a articulațiilor, nu-i așa? (Așteptăm acordul)</p>
+          </div>
+        `,
+      },
+      {
+        q: "8. Domnule/doamnă , aveți scrâșniri sau pocnituri la mișcare? (Așteptăm răspunsul)",
+        a: `
+          <div class="yn">
+            <button class="ynBtn" type="button" data-show="yes">Comentariu expert, dacă răspunsul este „Da”</button>
+            <button class="ynBtn" type="button" data-show="no">Comentariu expert, dacă răspunsul este „Nu”</button>
+          </div>
+
+
+          <div class="ynPanel" data-panel="yes">
+            <p>scrâșnitul este un semn precoce al uzurii cartilajului. Fără intervenție, situația se va agrava, iar articulația se poate distruge, ceea ce va duce la necesitatea unei operații sau a unei protezări.</p>
+          </div>
+
+
+          <div class="ynPanel" data-panel="no">
+            <p>este bine că nu aveți încă scrâșniri. Dar chiar și în absența acestor simptome, este important să monitorizați starea articulațiilor. În caz contrar, problemele se pot dezvolta în mod imperceptibil și pot duce la complicații.</p>
+          </div>
+        `,
+      },
+      {
+        q: "9. Domnule/doamnă , spuneți-mi, aveți umflături sau roșeață în zona articulațiilor? (Așteptăm răspunsul)",
+        a: `
+          <div class="yn">
+            <button class="ynBtn" type="button" data-show="yes">Comentariul expertului, dacă răspunsul este „Da”</button>
+            <button class="ynBtn" type="button" data-show="no">Comentariu expert, dacă răspunsul este „Nu”</button>
+          </div>
+
+
+          <div class="ynPanel" data-panel="yes">
+            <p>acestea sunt simptome îngrijorătoare de inflamație. Inflamația poate distruge cartilajele și oasele, ceea ce va duce la modificări ireversibile ale articulației și chiar la pierderea funcției articulației.</p>
+          </div>
+
+
+          <div class="ynPanel" data-panel="no">
+            <p>este bine că în acest moment nu aveți umflături sau roșeață. Cu toate acestea, chiar și fără semne evidente de inflamație, este important să mențineți sănătatea articulațiilor pentru a preveni posibile complicații.</p>
+          </div>
+        `,
+      },
+      {
+        q: "10. Domnule/doamnă , aveți dureri nocturne la nivelul articulațiilor care vă împiedică să dormiți? (Așteptăm răspunsul)",
+        a: `
+          <div class="yn">
+            <button class="ynBtn" type="button" data-show="yes">Comentariu expert, dacă răspunsul este „Da”</button>
+            <button class="ynBtn" type="button" data-show="no">Comentariul expertului, dacă răspunsul este „Nu”</button>
+          </div>
+
+
+          <div class="ynPanel" data-panel="yes">
+            <p>durerea cronică perturbă somnul, scade imunitatea și calitatea vieții. Iar oboseala și depresia pot deveni companioni permanenți. Este important să acționați acum pentru a vă recăpăta somnul normal și a vă îmbunătăți starea de sănătate.</p>
+          </div>
+
+
+          <div class="ynPanel" data-panel="no">
+            <p>este bine că durerile nocturne nu vă deranjează încă. Dar chiar și fără ele, este important să monitorizați starea articulațiilor pentru a preveni apariția durerii și deteriorarea calității somnului în viitor. Măsurile preventive luate la timp vă vor ajuta să evitați acest lucru.</p>
+          </div>
+        `,
+      },
+
+      {
+        q: "11. Domnule/doamnă , ați avut leziuni articulare sau operații la articulații? (Așteptăm răspunsul)",
+        a: `
+          <div class="yn">
+            <button class="ynBtn" type="button" data-show="yes">Comentariu expert, dacă răspunsul este „Da”</button>
+            <button class="ynBtn" type="button" data-show="no">Comentariul expertului, dacă răspunsul este „Nu”</button>
+          </div>
+
+
+          <div class="ynPanel" data-panel="yes">
+            <p>leziunile și operațiile cresc riscul de deteriorare repetată a articulațiilor. Fără sprijinul adecvat, recuperarea poate dura mai mult, iar complicațiile se pot acumula. Este bine că ați apelat la noi, vă vom ajuta să preveniți probleme viitoare și să vă întăriți articulațiile.</p>
+          </div>
+
+
+          <div class="ynPanel" data-panel="no">
+            <p>chiar dacă nu ați avut leziuni, articulațiile se pot uza în timp. Prevenirea ajută la evitarea leziunilor grave și la menținerea mobilității pentru mulți ani. O abordare corectă acum va ajuta la prevenirea eventualelor probleme în viitor</p>
+          </div>
+        `,
+      },
+      {
+        a: `
+    <p class="groupSubtitle">DESPRE EXCESUL DE GREUTATE:</p>
+
+  `,
+      },
+      {
+        q: "12. Domnule/doamnă , să vorbim puțin despre greutatea dumneavoastră. La început ați spus că înălțimea dumneavoastră este  și greutatea  — am notat corect? (Așteptăm răspunsul)",
+      },
+
+      {
+        q: "13. Comentariu expert: mulțumim pentru precizare. Conform calculelor medicale, la înălțimea dumneavoastră, greutatea optimă este de aproximativ XX-XX kilograme. Dumneavoastră considerați că aveți un ușor exces de greutate și cât de mult vă deranjează acest lucru? (Așteptăm răspunsul)  (notăm răspunsul clientului)",
+
+        a: `
+
+          <div class="yn">
+            <button class="ynBtn" type="button" data-show="yes">Comentariu expert, dacă există</button>
+            <button class="ynBtn" type="button" data-show="no">Comentariu expert, dacă nu aveți exces de greutate</button>
+          </div>
+
+          <div class="ynPanel" data-panel="yes">
+            <p>chiar și o greutate excesivă mică crește presiunea asupra articulațiilor, în special asupra genunchilor și coloanei vertebrale. Acest lucru accelerează uzura cartilajului, provoacă inflamații și durere. Dacă nu se reduce presiunea, riscul de invaliditate și operații crește. Este important să mențineți o greutate sănătoasă și să aveți grijă de starea articulațiilor în mod complex, nu-i așa, domnule/doamnă ? (Așteptăm răspunsul)</p>
+          </div>
+
+          <div class="ynPanel" data-panel="no">
+            <p>este excelent că aveți o greutate normală. Dar chiar și în absența excesului de greutate, este important să rețineți că vârsta, leziunile și stilul de viață pot afecta starea articulațiilor. Susținerea articulațiilor și prevenirea vă vor ajuta să vă păstrați mobilitatea și să evitați posibile probleme în viitor, nu-i așa? (Așteptăm acordul)</p>
+          </div>
+        `,
+      },
+      {
+        a: `
+    <p class="groupTitle">Boli asociate</p>
+    <p class="groupSubtitle">AFECȚIUNI CONCOMITENTE (DIABET, HIPERTENSIUNE):</p>
+  `,
+      },
+      {
+        q: "14. Domnule/doamnă , vă rugăm să ne spuneți dacă aveți boli concomitente, de exemplu, diabet zaharat sau probleme cu tensiunea arterială? (Așteptăm răspunsul)",
+      },
+      {
+        q: "15. (Dacă este diabet) Domnule/doamnă , am înțeles. Probabil știți că, în cazul diabetului, nivelul ridicat al zahărului din sânge are un efect negativ asupra articulațiilor, nu-i așa? (Așteptăm confirmarea)",
+        a: `
+    <p><b>Comentariu expert:</b>diabetul este dublu periculos pentru articulații. Deoarece glucoza se cristalizează în lichidul articular, cartilajul se uzează mai repede, iar lubrifiantul devine dens. Capilarele nu alimentează cartilajul în mod adecvat. Drept urmare, articulațiile se deteriorează de 3 ori mai repede. În cazul dumneavoastră, este necesară o protecție specială.</p>
+  `,
+      },
+      {
+        q: "16. (Dacă presiunea) Domnule/doamnă , v-am înțeles. Probabil ați auzit că tensiunea arterială ridicată poate afecta starea articulațiilor, nu-i așa? (Așteptăm acordul)",
+        a: `
+    <p><b>Comentariu expert:</b>hipertensiunea afectează în mod imperceptibil articulațiile. Din cauza spasmelor vasculare, celulele noastre primesc cu 40% mai puțină hrană. Cartilajul își pierde elasticitatea, iar riscul de artroză crește de două ori.</p>
+  `,
+      },
+      {
+        q: "17. (Dacă aveți diabet și hipertensiune) Domnule/doamnă , v-am înțeles. Cred că știți că, în cazul diabetului, nivelul ridicat de zahăr încetinește refacerea articulațiilor, iar tensiunea crescută agravează circulația sanguină, nu-i așa? (Așteptăm confirmarea)",
+        a: `
+    <p><b>Comentariu expert:</b>înțeleg că este dificil pentru dumneavoastră și că acesta este un factor de risc serios. Diabetul + hipertensiunea accelerează distrugerea cartilajelor de 5 ori și agravează de două ori alimentarea țesuturilor. Este un cerc vicios. Fără o abordare complexă, recuperarea este practic imposibilă.</p>
+  `,
+      },
+      {
+        q: "18. Comentariu expert, dacă nu există/nu se cunoaște:",
+        a: `
+    <p>Domnule/doamnă , aveți noroc. Dar după , pierderea anuală de 1-2% din țesutul cartilajului este inevitabilă. Este bine că metodele moderne pot încetini uzura de 2-3 ori și pot ajuta la recuperare. Ați apelat la timp pentru prevenire.</p>
+  `,
+      },
+      {
+        a: `
+    <p class="groupTitle">Eficacitate și siguranță</p>
+    <p class="groupSubtitle">EFICIENȚĂ ȘI SIGURANȚĂ:</p>
+  `,
+      },
+      {
+        q: "19. Domnule/doamnă , având în vedere ceea ce știm deja despre starea dumneavoastră, utilizați unguente, comprese sau comprimate pentru articulații? (Așteptăm răspunsul) (notăm răspunsul clientului) ",
+        a: `
+     <p><b>Comentariu expert:</b>Domnule/doamnă , dacă utilizați frecvent medicamente pentru articulații, înseamnă că problema este gravă. Dar multe medicamente, cum ar fi AINS și unguentele, solicită stomacul, ficatul și rinichii. Utilizarea pe termen lung poate să nu îmbunătățească starea, ci să provoace efecte secundare.</p>
+  `,
+      },
+      {
+        q: "20. Domnule/doamnă , alte medicamente provoacă adesea dureri abdominale, oboseală, slăbiciune, deteriorarea memoriei, amețeli sau reacții alergice. Spuneți-mi, ați observat aceste efecte secundare? (Așteptăm răspunsul)",
+        a: `
+          <div class="yn">
+            <button class="ynBtn" type="button" data-show="yes">Comentariu expert, dacă răspunsul este „Da”</button>
+            <button class="ynBtn" type="button" data-show="no">Comentariu expert, dacă răspunsul este „Nu”</button>
+          </div>
+
+
+          <div class="ynPanel" data-panel="yes">
+            <p>înțeleg, de aceea este important să alegeți un produs care să vă ajute cu adevărat. ComponenteleHondrolife sunt testate clinic, sunt sigure și elimină eficient inflamația, refăcând cartilajul fără efecte secundare. Doriți să vă recăpătați sănătatea în siguranță, nu-i așa, domnule/doamnă ? (Așteptăm acordul)</p>
+          </div>
+
+
+          <div class="ynPanel" data-panel="no">
+            <p>este bine că nu există reacții adverse. Dar fără sprijinul adecvat, articulațiile pot continua să se deterioreze.Hondrolife este testat clinic, reface cartilajul și ameliorează inflamația fără a suprasolicita organismul. Doriți să vă recăpătați sănătatea în siguranță, nu-i așa, domnule/doamnă ? (Așteptăm acordul)</p>
+          </div>
+        `,
+      },
+    ],
+
+    objections: [],
+  },
 });

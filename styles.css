@@ -1,22 +1,24 @@
 :root{
-  --bg:#0b1220;
-  --card:#111a2e;
-  --text:#e7ecff;
-  --muted:#a7b0d6;
-  --accent:#6ea8ff;
-  --danger:#ff6b6b;
-  --border: rgba(255,255,255,0.10);
+  /* ===== ОСНОВНА СВІТЛА ТЕМА ===== */
+  --bg: #FFFACD;              /* основний фон (тіло сайту) */
+  --card: #FFF6B3;            /* картки / блоки */
+  --text: #2b2b2b;            /* основний текст */
+  --muted: #6b6b6b;           /* приглушений текст */
+  --accent: #c9a227;          /* акцент (кнопки, активні етапи) */
+  --danger: #c94b4b;
+  --border: rgba(0,0,0,0.12);
 }
 
 *{ box-sizing:border-box; }
+
 body{
   margin:0;
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-  background: radial-gradient(1000px 600px at 20% 10%, rgba(110,168,255,0.25), transparent 60%),
-              radial-gradient(900px 600px at 90% 30%, rgba(255,107,107,0.12), transparent 55%),
-              var(--bg);
+  background: var(--bg);
   color: var(--text);
 }
+
+/* ===== БАЗОВІ КОНТЕЙНЕРИ ===== */
 
 .container{
   min-height: 100vh;
@@ -28,72 +30,95 @@ body{
   gap: 16px;
 }
 
+.page{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 18px;
+}
+
+/* ===== КАРТКИ ===== */
+
 .card{
-  width: min(420px, 100%);
-  background: rgba(17,26,46,0.86);
+  width: 100%;
+  max-width: 1100px;
+  background: var(--card);
   border: 1px solid var(--border);
   border-radius: 16px;
   padding: 22px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
-  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
 }
 
-h1{ margin: 0 0 8px; font-size: 26px; }
-.muted{ color: var(--muted); }
+/* ===== ТЕКСТ ===== */
 
-.form{ margin-top: 16px; display:flex; flex-direction:column; gap: 10px; }
-.label{ font-size: 14px; color: var(--muted); }
+h1{ margin: 0 0 8px; font-size: 26px; }
+.title{ margin: 0; font-size: 22px; }
+.muted{ color: var(--muted); }
+.small{ font-size: 12px; margin-top: 12px; }
+
+/* ===== ФОРМИ ===== */
+
+.form{
+  margin-top: 16px;
+  display:flex;
+  flex-direction:column;
+  gap: 10px;
+}
+
+.label{
+  font-size: 14px;
+  color: var(--muted);
+}
 
 .input{
   width: 100%;
-  padding: 12px 12px;
+  padding: 12px;
   border-radius: 12px;
   border: 1px solid var(--border);
-  background: rgba(255,255,255,0.06);
+  background: #fffdf0;
   color: var(--text);
   outline: none;
 }
+
 .input:focus{
-  border-color: rgba(110,168,255,0.65);
-  box-shadow: 0 0 0 3px rgba(110,168,255,0.20);
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(201,162,39,0.25);
 }
+
+/* ===== КНОПКИ ===== */
 
 .btn{
   margin-top: 6px;
   padding: 12px 14px;
   border-radius: 12px;
-  border: 1px solid rgba(110,168,255,0.55);
-  background: rgba(110,168,255,0.18);
+  border: 1px solid var(--accent);
+  background: rgba(201,162,39,0.25);
   color: var(--text);
   font-weight: 600;
   cursor: pointer;
 }
+
 .btn:hover{
-  background: rgba(110,168,255,0.26);
-}
-
-.error{ margin: 4px 0 0; color: var(--danger); min-height: 18px; font-size: 14px; }
-.footer{ font-size: 12px; }
-
-.topbar{
-  display:flex;
-  align-items:center;
-  gap: 12px;
-  margin-bottom: 6px;
-}
-
-.title{
-  margin: 0;
-  font-size: 22px;
+  background: rgba(201,162,39,0.35);
 }
 
 .btn-secondary{
-  border-color: rgba(255,255,255,0.20);
-  background: rgba(255,255,255,0.06);
+  border-color: var(--border);
+  background: rgba(0,0,0,0.04);
 }
+
 .btn-secondary:hover{
-  background: rgba(255,255,255,0.10);
+  background: rgba(0,0,0,0.08);
 }
+
+.error{
+  margin: 4px 0 0;
+  color: var(--danger);
+  min-height: 18px;
+  font-size: 14px;
+}
+
+/* ===== СІТКИ ===== */
 
 .grid{
   margin-top: 14px;
@@ -102,57 +127,33 @@ h1{ margin: 0 0 8px; font-size: 26px; }
   gap: 12px;
 }
 
-.tile{
-  padding: 14px 14px;
-  border-radius: 14px;
-  border: 1px solid rgba(255,255,255,0.12);
-  background: rgba(255,255,255,0.06);
-  color: var(--text);
-  font-weight: 650;
-  text-align:left;
-  cursor:pointer;
-}
-.tile:hover{
-  border-color: rgba(110,168,255,0.55);
-  box-shadow: 0 0 0 3px rgba(110,168,255,0.15);
-}
-
-.small{ font-size: 12px; margin-top: 12px; }
-
-/* --- FIX: центрування сторінок --- */
-.page{
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  padding: 18px;
-  box-sizing: border-box;
-}
-
-.card{
-  width: 100%;
-  max-width: 1100px; /* щоб було по центру і нормально по ширині */
-}
-
-/* якщо в тебе є дві колонки (гарячі/база) */
 .grid2{
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 14px;
-  align-items: start;
 }
 
 @media (max-width: 860px){
   .grid2{ grid-template-columns: 1fr; }
 }
 
-/* список кнопок */
-.stack{
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+/* ===== TILE (скрипти) ===== */
+
+.tile{
+  padding: 14px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: #fffdf0;
+  font-weight: 650;
+  cursor:pointer;
 }
 
-/* ===== Sidebar stages (етапи зліва) ===== */
+.tile:hover{
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(201,162,39,0.25);
+}
+
+/* ===== LAYOUT СКРИПТА ===== */
 
 .scriptLayout{
   display: grid;
@@ -161,118 +162,195 @@ h1{ margin: 0 0 8px; font-size: 26px; }
   align-items: start;
 }
 
+@media (max-width: 860px){
+  .scriptLayout{
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===== SIDEBAR / ЕТАПИ ===== */
+
 .sidebar{
   position: sticky;
   top: 12px;
-  align-self: start;
-  height: fit-content;
 }
 
-/* контейнер з посиланнями */
 .stagesNav{
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-/* самі “кнопки” етапів */
 .stageLink{
-  display: block;
   padding: 10px 12px;
   border-radius: 12px;
-  border: 1px solid rgba(255,255,255,0.10);
-  background: rgba(255,255,255,0.04);
-  color: var(--muted);          /* щоб було приглушено */
-  text-decoration: none;        /* прибираємо підкреслення */
-  cursor: pointer;
+  border: 1px solid var(--border);
+  background: #fffdf0;
+  color: var(--muted);
+  text-decoration: none;
   transition: 0.15s ease;
 }
 
-/* щоб visited не ставав фіолетовим/синім */
-.stageLink:visited{
-  color: var(--muted);
-}
-
-/* hover */
 .stageLink:hover{
-  border-color: rgba(110,168,255,0.35);
-  background: rgba(255,255,255,0.06);
+  background: #fff4b0;
   color: var(--text);
 }
 
-/* активний етап */
 .stageLink.active{
+  background: rgba(201,162,39,0.35);
+  border-color: var(--accent);
   color: var(--text);
-  background: rgba(110,168,255,0.12);
-  border-color: rgba(110,168,255,0.45);
-  box-shadow: 0 0 0 3px rgba(110,168,255,0.12);
   font-weight: 650;
 }
 
-/* секції етапів */
+/* ===== СЕКЦІЇ ЕТАПІВ ===== */
+
 .stageSection{
-  padding: 16px 16px;
-  border: 1px solid rgba(255,255,255,0.10);
-  background: rgba(255,255,255,0.03);
+  padding: 16px;
+  border: 1px solid var(--border);
+  background: #fffdf0;
   border-radius: 16px;
   margin-bottom: 14px;
 }
 
-/* мобільна версія */
-@media (max-width: 860px){
-  .scriptLayout{
-    grid-template-columns: 1fr;
-  }
-  .sidebar{
-    position: relative;
-    top: auto;
-  }
+/* ===== ACCORDION ===== */
+
+.acc > summary { list-style: none; }
+.acc > summary::-webkit-details-marker { display: none; }
+
+.acc{
+  margin-bottom: 22px;
+  padding-bottom: 16px;
+  border-bottom: 1px dashed rgba(0,0,0,0.15);
 }
 
-/* ===== Pricing branching (Курсы) ===== */
+.acc summary{
+  cursor: pointer;
+  font-weight: 600;
+  padding: 6px 0;
+}
+
+.accBody{
+  margin-top: 10px;
+}
+
+/* ===== КНОПКИ ВАРІАНТІВ ===== */
+
+.yn{
+  display: flex;
+  gap: 12px;
+  margin: 8px 0 10px;
+}
+
+.ynBtn{
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: #fffdf0;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.ynBtn.active{
+  background: rgba(201,162,39,0.35);
+  border-color: var(--accent);
+}
+
+/* ===== ВІДПОВІДІ ===== */
+
+.ynPanel{
+  display: none;
+  margin-top: 14px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: rgba(201,162,39,0.15);
+}
+
+/* ===== PRICING ===== */
 
 .priceTabs{
   display: flex;
-  gap: 18px;            /* відстань між кнопками */
-  flex-wrap: nowrap;
-  margin: 12px 0 12px;
-}
-
-@media (max-width: 860px){
-  .priceTabs{ flex-wrap: wrap; } /* на телефоні можна в 2 рядки */
+  gap: 18px;
+  margin: 12px 0;
 }
 
 .priceBtn{
-  flex: 1 1 0;
-  min-width: 140px;
-  padding: 12px 14px;
+  flex: 1;
+  padding: 12px;
   border-radius: 12px;
-  border: 1px solid rgba(255,255,255,0.12);
-  background: rgba(255,255,255,0.06);
-  color: var(--text);
+  border: 1px solid var(--border);
+  background: #fffdf0;
   font-weight: 650;
   cursor: pointer;
-  text-align: center;
-}
-
-.priceBtn:hover{
-  border-color: rgba(110,168,255,0.45);
-  box-shadow: 0 0 0 3px rgba(110,168,255,0.12);
 }
 
 .priceBtn.active{
-  background: rgba(110,168,255,0.14);
-  border-color: rgba(110,168,255,0.55);
+  background: rgba(201,162,39,0.35);
+  border-color: var(--accent);
 }
 
 .pricePanel{
-  border: 1px solid rgba(255,255,255,0.10);
-  background: rgba(255,255,255,0.03);
-  border-radius: 14px;
+  display: none;
+  margin-top: 12px;
   padding: 14px;
-  display: none; /* за замовчуванням приховано */
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: #fffdf0;
 }
 
 .pricePanel.show{
   display: block;
+}
+
+/* ===== Group titles inside Needs (назви групок) ===== */
+
+.groupTitle{
+  margin: 26px 0 6px;           /* більше повітря зверху */
+  text-align: center;           /* по середині */
+  font-weight: 800;
+  letter-spacing: 0.3px;
+  font-size: 18px;
+  color: var(--text);
+
+  /* легка “плашка” */
+  padding: 10px 12px;
+  border-radius: 14px;
+  background: rgba(0,0,0,0.04);
+  border: 1px solid rgba(0,0,0,0.10);
+}
+
+.groupSubtitle{
+  margin: 0 0 18px;             /* відступ після назви групи */
+  text-align: center;
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* Щоб пунктир між питаннями НЕ ліз під групи */
+.groupTitle + .groupSubtitle{
+  border-bottom: none;
+}
+
+/* (Опційно) якщо у тебе acc має пунктир, то зробимо “переривання”:
+   прибираємо пунктир у acc перед групою, щоб не злипалось */
+.accBody .groupTitle{
+  position: relative;
+}
+
+
+/* ===== Presentation titles (заголовки в етапі Презентації) ===== */
+
+.presentationTitle{
+  margin: 26px 0 14px;        /* повітря зверху і знизу */
+  text-align: center;         /* по центру */
+  font-size: 20px;            /* більший за звичайний текст */
+  font-weight: 800;
+  letter-spacing: 0.3px;
+  color: var(--text);
+
+  /* легке виділення, але без рамок */
+  padding: 6px 10px;
 }

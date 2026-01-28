@@ -1,5 +1,7 @@
-// Захист
-if (localStorage.getItem("isLoggedIn") !== "true") window.location.href = "index.html";
+// ================== ЗАХИСТ ==================
+if (localStorage.getItem("isLoggedIn") !== "true") {
+  window.location.href = "index.html";
+}
 
 const kc = localStorage.getItem("selectedKC");
 if (!kc) window.location.href = "kc.html";
@@ -7,12 +9,12 @@ if (!kc) window.location.href = "kc.html";
 const scriptId = localStorage.getItem("selectedScriptId");
 if (!scriptId) window.location.href = "scripts.html";
 
-// Назад
+// ================== НАЗАД ==================
 document.getElementById("backBtn")?.addEventListener("click", () => {
   window.location.href = "scripts.html";
 });
 
-// Дістаємо дані
+// ================== ДАНІ ==================
 const scriptObj = window.SCRIPTS_DATA?.[kc]?.[scriptId] || null;
 
 const title =
@@ -23,7 +25,7 @@ const title =
 document.getElementById("scriptTitle").textContent = title;
 document.getElementById("scriptMeta").textContent = `KC: ${kc} • ID: ${scriptId}`;
 
-// ✅ 9 етапів
+// ================== ЕТАПИ ==================
 const STAGE_TO_ELEMENT = {
   greeting: "textGreeting",
   needs: "textNeeds",
@@ -36,25 +38,28 @@ const STAGE_TO_ELEMENT = {
   products: "textProducts",
 };
 
-// Підставляємо HTML у всі етапи
 Object.keys(STAGE_TO_ELEMENT).forEach((stageKey) => {
   const elId = STAGE_TO_ELEMENT[stageKey];
   const html = scriptObj?.stages?.[stageKey] || "";
   setHTML(elId, html);
 });
 
-// Accordion-и
+// ================== АКОРДЕОНИ ==================
 fillAccordions("needsAccordions", scriptObj?.accordions?.needs || []);
 fillAccordions("objectionsAccordions", scriptObj?.accordions?.objections || []);
 toggleAccordionBlock("needsAccordions");
 toggleAccordionBlock("objectionsAccordions");
+// ✅ Спочатку ховаємо всі відповіді (до кліку)
+hideAllBranchAnswers();
 
-// ✅ ВАЖЛИВО: рендеримо “розгалуження цін” (4 кнопки)
+
+// ================== ЦІНИ ==================
 renderPricing(scriptObj);
 
-// Scroll spy + плавний скрол
+// ================== SCROLL ==================
 initScrollSpy();
 
+// ================== FUNCTIONS ==================
 function setHTML(id, html) {
   const el = document.getElementById(id);
   if (el) el.innerHTML = html;
@@ -67,20 +72,29 @@ function fillAccordions(wrapperId, items) {
   items.forEach((it) => wrap.appendChild(makeAccordion(it.q, it.a)));
 }
 
-// ховаємо заголовок + блок якщо порожній
 function toggleAccordionBlock(wrapperId) {
   const wrap = document.getElementById(wrapperId);
   if (!wrap) return;
-  const header = wrap.previousElementSibling; // h3 перед блоком
+  const header = wrap.previousElementSibling;
   const hasItems = wrap.children.length > 0;
-
   wrap.style.display = hasItems ? "" : "none";
   if (header && header.tagName === "H3") header.style.display = hasItems ? "" : "none";
+}
+
+// ================== АКОРДЕОН (ЗАВЖДИ ВІДКРИТИЙ) ==================
+function hideAllBranchAnswers() {
+  document.querySelectorAll(".ynPanel").forEach(panel => {
+    panel.style.display = "none";
+  });
+  document.querySelectorAll(".ynBtn").forEach(btn => {
+    btn.classList.remove("active");
+  });
 }
 
 function makeAccordion(question, answerHtml) {
   const details = document.createElement("details");
   details.className = "acc";
+  details.open = true; // ❗ завжди відкрито
 
   const summary = document.createElement("summary");
   summary.textContent = question || "";
@@ -94,21 +108,39 @@ function makeAccordion(question, answerHtml) {
   return details;
 }
 
-/* =========================
-   РОЗГАЛУЖЕННЯ ЦІН (4 кнопки)
-   ========================= */
+// ================== YES / NO КНОПКИ ==================
+document.addEventListener("click", (e) => {
+  const btn = e.target.closest(".ynBtn");
+  if (!btn) return;
+
+  const wrap = btn.closest(".accBody");
+  if (!wrap) return;
+
+  const mode = btn.getAttribute("data-show");
+
+  // 1) активна кнопка
+  wrap.querySelectorAll(".ynBtn").forEach(b => {
+    b.classList.toggle("active", b === btn);
+  });
+
+  // 2) показуємо тільки одну відповідь, решту ховаємо
+  wrap.querySelectorAll(".ynPanel").forEach(panel => {
+    panel.style.display = (panel.getAttribute("data-panel") === mode) ? "block" : "none";
+  });
+});
+
+
+// ================== ЦІНИ (4 КНОПКИ) ==================
 function renderPricing(scriptObj){
-  // Ми шукаємо контейнер у етапі "Курсы"
   const host = document.getElementById("pricingBlock");
-  if (!host) return; // якщо в цьому скрипті не вставлено <div id="pricingBlock"></div> — просто пропускаємо
+  if (!host) return;
 
   const pricing = scriptObj?.pricing;
   if (!Array.isArray(pricing) || pricing.length === 0){
-    host.innerHTML = `<p class="muted">Нет данных по ценам для этого скрипта.</p>`;
+    host.innerHTML = `<p class="muted">Нет данных по ценам.</p>`;
     return;
   }
 
-  // UI
   const tabs = document.createElement("div");
   tabs.className = "priceTabs";
 
@@ -121,9 +153,11 @@ function renderPricing(scriptObj){
 
   function activate(idx){
     const item = pricing[idx];
-    [...tabs.children].forEach((b, i) => b.classList.toggle("active", i === idx));
+    [...tabs.children].forEach((b, i) =>
+      b.classList.toggle("active", i === idx)
+    );
     panel.innerHTML = item?.html || "";
-    panel.classList.add("show");
+    panel.style.display = "block";
   }
 
   pricing.forEach((item, idx) => {
@@ -134,12 +168,9 @@ function renderPricing(scriptObj){
     btn.addEventListener("click", () => activate(idx));
     tabs.appendChild(btn);
   });
-
-  // За замовчуванням нічого не показуємо (поки не натиснуть).
-  // Якщо хочеш, щоб одразу відкривався ФУЛЛ — увімкни:
-  // activate(3);
 }
 
+// ================== SCROLL SPY ==================
 function initScrollSpy() {
   const stageLinks = Array.from(document.querySelectorAll(".stageLink"));
   const sections = Array.from(document.querySelectorAll(".stageSection"));
@@ -149,30 +180,7 @@ function initScrollSpy() {
       e.preventDefault();
       const id = a.getAttribute("href").replace("#", "");
       const target = document.getElementById(id);
-      if (target) target.scrollIntoView({ behavior: "smooth", block: "start" });
+      if (target) target.scrollIntoView({ behavior: "smooth" });
     });
   });
-
-  const observer = new IntersectionObserver(
-    (entries) => {
-      const visible = entries
-        .filter((e) => e.isIntersecting)
-        .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
-
-      if (!visible) return;
-
-      const stage = visible.target.getAttribute("data-stage");
-      stageLinks.forEach((a) => {
-        a.classList.toggle("active", a.getAttribute("data-stage") === stage);
-      });
-    },
-    { root: null, threshold: [0.2, 0.35, 0.5, 0.65] }
-  );
-
-  sections.forEach((sec) => observer.observe(sec));
-
-  const firstStage = sections[0]?.getAttribute("data-stage");
-  if (firstStage) {
-    stageLinks.forEach((a) => a.classList.toggle("active", a.getAttribute("data-stage") === firstStage));
-  }
 }
