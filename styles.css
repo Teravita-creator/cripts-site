@@ -151,3 +151,80 @@ h1{ margin: 0 0 8px; font-size: 26px; }
   flex-direction: column;
   gap: 10px;
 }
+
+/* ===== Sidebar stages (етапи зліва) ===== */
+
+.scriptLayout{
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 14px;
+  align-items: start;
+}
+
+.sidebar{
+  position: sticky;
+  top: 12px;
+  align-self: start;
+  height: fit-content;
+}
+
+/* контейнер з посиланнями */
+.stagesNav{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* самі “кнопки” етапів */
+.stageLink{
+  display: block;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.10);
+  background: rgba(255,255,255,0.04);
+  color: var(--muted);          /* щоб було приглушено */
+  text-decoration: none;        /* прибираємо підкреслення */
+  cursor: pointer;
+  transition: 0.15s ease;
+}
+
+/* щоб visited не ставав фіолетовим/синім */
+.stageLink:visited{
+  color: var(--muted);
+}
+
+/* hover */
+.stageLink:hover{
+  border-color: rgba(110,168,255,0.35);
+  background: rgba(255,255,255,0.06);
+  color: var(--text);
+}
+
+/* активний етап */
+.stageLink.active{
+  color: var(--text);
+  background: rgba(110,168,255,0.12);
+  border-color: rgba(110,168,255,0.45);
+  box-shadow: 0 0 0 3px rgba(110,168,255,0.12);
+  font-weight: 650;
+}
+
+/* секції етапів */
+.stageSection{
+  padding: 16px 16px;
+  border: 1px solid rgba(255,255,255,0.10);
+  background: rgba(255,255,255,0.03);
+  border-radius: 16px;
+  margin-bottom: 14px;
+}
+
+/* мобільна версія */
+@media (max-width: 860px){
+  .scriptLayout{
+    grid-template-columns: 1fr;
+  }
+  .sidebar{
+    position: relative;
+    top: auto;
+  }
+}
