@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KC</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+
+      <!-- Верх: Назад + мова -->
+      <div style="display:flex; justify-content:space-between; align-items:center; gap:12px; margin-bottom:8px;">
+        <button class="btn btn-secondary" id="backBtn" type="button" data-i18n="common.back">← Назад</button>
+
+        <div style="display:flex; gap:8px; align-items:center;">
+          <span class="muted" data-i18n="lang.label">Язык</span>
+          <select id="langSelect">
+            <option value="ru">RU</option>
+            <option value="pl">PL</option>
+            <option value="ka">KA</option>
+            <option value="ro">RO</option>
+          </select>
+        </div>
+      </div>
+
+      <h1 data-i18n="kc.title">Выбор КЦ</h1>
+      <p class="muted" data-i18n="kc.subtitle">Выберите колл-центр, чтобы перейти к списку скриптов.</p>
+
+      <div class="grid">
+        <button class="tile" data-kc="pl" data-i18n="kc.pl">Польский</button>
+        <button class="tile" data-kc="ge" data-i18n="kc.ka">Грузинский</button>
+        <button class="tile" data-kc="ge_ru" data-i18n="kc.ka_ru">Грузинский / Русский</button>
+        <button class="tile" data-kc="ro" data-i18n="kc.ro">Румынский</button>
+      </div>
+
+    </div>
+
+    <footer class="footer">
+      <span class="muted" data-i18n="app.version">Скрипты продаж • v0.1</span>
+    </footer>
+  </div>
+
+  <script src="i18n.js"></script>
+  <script src="kc.js"></script>
+</body>
+</html>

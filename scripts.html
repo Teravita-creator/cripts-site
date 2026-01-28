@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scripts</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="page">
+    <div class="card">
+
+      <div class="row" style="justify-content: space-between; gap: 12px;">
+        <button class="btn btn-secondary" id="backBtn" type="button">← Назад</button>
+
+        <div class="row" style="gap: 10px;">
+          <div class="muted">КЦ: <b id="kcName"></b></div>
+
+          <div class="row" style="gap: 8px;">
+            <span class="muted" data-i18n="lang.label">Язык</span>
+            <select id="langSelect">
+              <option value="ru">RU</option>
+              <option value="pl">PL</option>
+              <option value="ka">KA</option>
+              <option value="ro">RO</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <h1 style="margin: 14px 0 6px;" data-i18n="scripts.title">Скрипты</h1>
+      <p class="muted" style="margin-top: 0;" data-i18n="scripts.subtitle">Выберите нужный скрипт.</p>
+
+      <div class="grid2" style="margin-top: 14px; gap: 12px;">
+        <div>
+          <h3 data-i18n="scripts.hot">Горячие продажи</h3>
+          <div id="hotList" class="stack"></div>
+        </div>
+
+        <div>
+          <h3 data-i18n="scripts.base">База</h3>
+          <div id="baseList" class="stack"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ВАЖЛИВО: правильний порядок -->
+  <script src="i18n.js"></script>
+
+  <script src="scripts_registry.js"></script>
+
+  <!-- RO / HOT scripts -->
+  <script src="data/ro/hot_1.js"></script>
+  <script src="data/ro/hot_2.js"></script>
+  <script src="data/ro/hot_3.js"></script>
+  <script src="data/ro/hot_4.js"></script>
+  <script src="data/ro/hot_5.js"></script>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
+
