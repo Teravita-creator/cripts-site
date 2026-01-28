@@ -8,16 +8,18 @@
 </head>
 <body>
 
-  <!-- ✅ Робимо широку обгортку і центруємо -->
-  <div class="scriptPage">
-    <div class="scriptLayout">
+  <div class="page">
+    <div class="card">
 
-      <!-- Sidebar -->
-      <aside class="card scriptCard scriptSidebar">
-        <div style="display:flex; justify-content:space-between; align-items:center; gap:10px;">
-          <button class="btn btn-secondary" id="backBtn" type="button" data-i18n="common.back">← Назад</button>
-          <div style="display:flex; gap:8px; align-items:center;">
-            <span class="muted" data-i18n="lang.label">Язык</span>
+      <div class="row" style="justify-content: space-between; gap: 12px;">
+        <button class="btn btn-secondary" id="backBtn" type="button">← Назад</button>
+
+        <div class="row" style="gap: 10px; align-items: center;">
+          <div class="muted"><b id="scriptTitle">Скрипт</b></div>
+          <div class="muted" id="scriptMeta"></div>
+
+          <div class="row" style="gap: 8px; align-items: center;">
+            <span class="muted">Язык</span>
             <select id="langSelect">
               <option value="ru">RU</option>
               <option value="pl">PL</option>
@@ -26,156 +28,94 @@
             </select>
           </div>
         </div>
+      </div>
 
-        <h3 style="margin:14px 0 6px;" data-i18n="script.stageTitle">Этапы продаж</h3>
-        <p class="muted" style="margin-top:0;" data-i18n="script.tip">
-          Нажимай на этап — страница прокрутится к нужному блоку.
-        </p>
+      <!-- Лейаут: бокова панель + контент -->
+      <div class="scriptLayout" style="display:grid; grid-template-columns: 240px 1fr; gap: 14px; margin-top: 14px;">
+        <!-- Sidebar -->
+        <aside class="sidebar" style="position: sticky; top: 12px; align-self:start;">
+          <div class="muted" style="margin-bottom: 8px;"><b>Этапы</b></div>
 
-        <nav id="stageNav" style="display:flex; flex-direction:column; gap:8px; margin-top: 10px;">
-          <a class="stageLink" href="#greeting" data-stage="greeting" data-i18n="stage.greeting">Приветствие</a>
-          <a class="stageLink" href="#needs" data-stage="needs" data-i18n="stage.needs">Выявление потреб</a>
-          <a class="stageLink" href="#presentation" data-stage="presentation" data-i18n="stage.presentation">Презентация</a>
-          <a class="stageLink" href="#courses" data-stage="courses" data-i18n="stage.courses">Курсы</a>
-          <a class="stageLink" href="#closing" data-stage="closing" data-i18n="stage.closing">Завершение</a>
-          <a class="stageLink" href="#objections" data-stage="objections" data-i18n="stage.objections">Отработка возражений</a>
-          <a class="stageLink" href="#products" data-stage="products" data-i18n="stage.products">Препараты</a>
-        </nav>
-      </aside>
+          <nav class="stagesNav" style="display:flex; flex-direction:column; gap:8px;">
+            <a class="stageLink" href="#greeting" data-stage="greeting">Приветствие</a>
+            <a class="stageLink" href="#needs" data-stage="needs">Выявление потреб</a>
+            <a class="stageLink" href="#presentation" data-stage="presentation">Презентация</a>
+            <a class="stageLink" href="#courses" data-stage="courses">Курсы</a>
 
-      <!-- Content -->
-      <main class="card scriptCard scriptMain" style="padding-bottom: 30px;">
-        <h1 id="scriptTitle" style="margin-top:0;" data-i18n="script.pageTitle">Скрипт</h1>
-        <p class="muted" id="scriptMeta" style="margin-top:-4px;"></p>
+            <!-- ✅ НОВЫЕ -->
+            <a class="stageLink" href="#cross" data-stage="cross">Кросс</a>
+            <a class="stageLink" href="#survey" data-stage="survey">Анкетирование</a>
 
-        <section id="greeting" class="stageSection" data-stage="greeting" style="margin-top:18px;">
-          <h2 data-i18n="stage.greeting">Приветствие</h2>
-          
-          <div id="textGreeting"></div>
-        </section>
+            <a class="stageLink" href="#closing" data-stage="closing">Завершение</a>
+            <a class="stageLink" href="#objections" data-stage="objections">Отработка возражений</a>
+            <a class="stageLink" href="#products" data-stage="products">Препараты</a>
+          </nav>
+        </aside>
 
-        <section id="needs" class="stageSection" data-stage="needs" style="margin-top:22px;">
-          <h2 data-i18n="stage.needs">Выявление потреб</h2>
-          <div id="textNeeds"></div>
+        <!-- Content -->
+        <main class="content" style="min-width: 0;">
+          <section id="greeting" class="stageSection" data-stage="greeting">
+            <h2>Приветствие</h2>
+            <div id="textGreeting"></div>
+          </section>
 
-          <h3 style="margin-top:16px;" data-i18n="script.questionBlockTitle">Варианты ответов (раскрывается по клику)</h3>
-          <div id="needsAccordions" style="display:flex; flex-direction:column; gap:10px;"></div>
-        </section>
+          <section id="needs" class="stageSection" data-stage="needs">
+            <h2>Выявление потреб</h2>
+            <div id="textNeeds"></div>
 
-        <section id="presentation" class="stageSection" data-stage="presentation" style="margin-top:22px;">
-          <h2 data-i18n="stage.presentation">Презентация</h2>
-          <div id="textPresentation"></div>
-        </section>
+            <h3 style="margin-top: 14px;">Быстрые варианты</h3>
+            <div id="needsAccordions"></div>
+          </section>
 
-        <section id="courses" class="stageSection" data-stage="courses" style="margin-top:22px;">
-          <h2 data-i18n="stage.courses">Курсы</h2>
-          <div id="textCourses"></div>
-        </section>
+          <section id="presentation" class="stageSection" data-stage="presentation">
+            <h2>Презентация</h2>
+            <div id="textPresentation"></div>
+          </section>
 
-        <section id="closing" class="stageSection" data-stage="closing" style="margin-top:22px;">
-          <h2 data-i18n="stage.closing">Завершение</h2>
-          <div id="textClosing"></div>
-        </section>
+          <section id="courses" class="stageSection" data-stage="courses">
+            <h2>Курсы</h2>
+            <div id="textCourses"></div>
+          </section>
 
-        <section id="objections" class="stageSection" data-stage="objections" style="margin-top:22px;">
-          <h2 data-i18n="stage.objections">Отработка возражений</h2>
-          <div id="textObjections"></div>
+          <!-- ✅ НОВЫЕ -->
+          <section id="cross" class="stageSection" data-stage="cross">
+            <h2>Кросс</h2>
+            <div id="textCross"></div>
+          </section>
 
-          <h3 style="margin-top:16px;" data-i18n="script.questionBlockTitle">Варианты ответов (раскрывается по клику)</h3>
-          <div id="objectionsAccordions" style="display:flex; flex-direction:column; gap:10px;"></div>
-        </section>
+          <section id="survey" class="stageSection" data-stage="survey">
+            <h2>Анкетирование</h2>
+            <div id="textSurvey"></div>
+          </section>
 
-        <section id="products" class="stageSection" data-stage="products" style="margin-top:22px;">
-          <h2 data-i18n="stage.products">Препараты</h2>
-          <div id="textProducts"></div>
-        </section>
-      </main>
+          <section id="closing" class="stageSection" data-stage="closing">
+            <h2>Завершение</h2>
+            <div id="textClosing"></div>
+          </section>
+
+          <section id="objections" class="stageSection" data-stage="objections">
+            <h2>Отработка возражений</h2>
+            <div id="textObjections"></div>
+
+            <h3 style="margin-top: 14px;">Быстрые варианты</h3>
+            <div id="objectionsAccordions"></div>
+          </section>
+
+          <section id="products" class="stageSection" data-stage="products">
+            <h2>Препараты</h2>
+            <div id="textProducts"></div>
+          </section>
+        </main>
+      </div>
 
     </div>
   </div>
 
-  <!-- ✅ Стилі тільки для цієї сторінки -->
-  <style>
-    .scriptPage{
-      min-height: 100vh;
-      padding: 18px;
-    }
-
-    /* ширина як "велика сторінка" */
-    .scriptLayout{
-      max-width: 1400px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: 220px minmax(0, 1fr); /* ✅ вужчий сайдбар, ширший контент */
-      gap: 14px;
-      align-items: start;
-    }
-
-    /* ✅ перебиваємо обмеження .card (520px) тільки тут */
-    .scriptCard{
-      width: 100% !important;
-      max-width: none !important;
-    }
-
-    /* sticky sidebar */
-    .scriptSidebar{
-      position: sticky;
-      top: 18px;
-      height: fit-content;
-    }
-
-    /* посилання етапів */
-    .stageLink{
-      text-decoration:none;
-      padding: 10px 10px;
-      border-radius: 10px;
-      border: 1px solid rgba(0,0,0,0.08);
-      background: rgba(255,255,255,0.04);
-      color: inherit;
-      font-weight: 600;
-      opacity: 0.55;
-      transition: opacity 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
-    }
-    .stageLink:hover{ opacity: 0.85; }
-    .stageLink.active{
-      opacity: 1;
-      border-color: rgba(59,130,246,0.45);
-      box-shadow: 0 0 0 3px rgba(59,130,246,0.12);
-    }
-
-    /* акордеони */
-    .acc{
-      border: 1px solid rgba(0,0,0,0.10);
-      border-radius: 12px;
-      overflow: hidden;
-      background: rgba(255,255,255,0.04);
-    }
-    .acc summary{
-      cursor: pointer;
-      padding: 12px 12px;
-      font-weight: 700;
-      list-style: none;
-    }
-    .acc summary::-webkit-details-marker{ display:none; }
-    .acc .accBody{
-      padding: 0 12px 12px;
-      opacity: 0.92;
-      line-height: 1.35;
-    }
-
-    /* мобільна адаптація */
-    @media (max-width: 860px){
-      .scriptLayout{ grid-template-columns: 1fr; }
-      .scriptSidebar{ position: relative; top: 0; }
-    }
-  </style>
-
-    <!-- ВАЖЛИВО: правильний порядок -->
+  <!-- порядок -->
   <script src="i18n.js"></script>
 
   <script src="scripts_registry.js"></script>
-
-  <!-- RO / HOT scripts -->
+  <!-- подключай здесь свои скрипты -->
   <script src="data/ro/hot_1.js"></script>
   <script src="data/ro/hot_2.js"></script>
   <script src="data/ro/hot_3.js"></script>
@@ -185,4 +125,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-

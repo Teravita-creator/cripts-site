@@ -6,12 +6,14 @@ window.SCRIPTS_DATA = window.SCRIPTS_DATA || {
   ro: {},
 };
 
-// 7 етапів (гарячі продажі)
+// ✅ 9 етапів (додали cross + survey)
 window.STAGE_KEYS = [
   "greeting",
   "needs",
   "presentation",
   "courses",
+  "cross",
+  "survey",
   "closing",
   "objections",
   "products",
@@ -26,6 +28,7 @@ window.registerScript = function registerScript(kc, scriptId, obj) {
 function normalizeHotScript(obj) {
   const stages = obj?.stages || {};
   const fixedStages = {};
+
   window.STAGE_KEYS.forEach((k) => {
     fixedStages[k] = typeof stages[k] === "string" ? stages[k] : "";
   });

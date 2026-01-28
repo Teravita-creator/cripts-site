@@ -7,36 +7,45 @@ if (!kc) window.location.href = "kc.html";
 const scriptId = localStorage.getItem("selectedScriptId");
 if (!scriptId) window.location.href = "scripts.html";
 
+// Назад
 document.getElementById("backBtn").addEventListener("click", () => {
   window.location.href = "scripts.html";
 });
 
 // Дістаємо дані
-const scriptObj = SCRIPTS_DATA?.[kc]?.[scriptId] || null;
+const scriptObj = window.SCRIPTS_DATA?.[kc]?.[scriptId] || null;
 
-// Заголовок
 const title =
   scriptObj?.title ||
   localStorage.getItem("selectedScriptTitle") ||
-  t("script.pageTitle");
+  "Скрипт";
 
 document.getElementById("scriptTitle").textContent = title;
 document.getElementById("scriptMeta").textContent = `KC: ${kc} • ID: ${scriptId}`;
 
-// 7 етапів — завжди показуємо (навіть якщо порожньо)
-setHTML("textGreeting", scriptObj?.stages?.greeting || "");
-setHTML("textNeeds", scriptObj?.stages?.needs || "");
-setHTML("textPresentation", scriptObj?.stages?.presentation || "");
-setHTML("textCourses", scriptObj?.stages?.courses || "");
-setHTML("textClosing", scriptObj?.stages?.closing || "");
-setHTML("textObjections", scriptObj?.stages?.objections || "");
-setHTML("textProducts", scriptObj?.stages?.products || "");
+// ✅ 9 етапів
+const STAGE_TO_ELEMENT = {
+  greeting: "textGreeting",
+  needs: "textNeeds",
+  presentation: "textPresentation",
+  courses: "textCourses",
+  cross: "textCross",
+  survey: "textSurvey",
+  closing: "textClosing",
+  objections: "textObjections",
+  products: "textProducts",
+};
 
-// Accordion-и (опціонально)
+// Підставляємо HTML у всі етапи (навіть якщо порожньо)
+Object.keys(STAGE_TO_ELEMENT).forEach((stageKey) => {
+  const elId = STAGE_TO_ELEMENT[stageKey];
+  const html = scriptObj?.stages?.[stageKey] || "";
+  setHTML(elId, html);
+});
+
+// Accordion-и
 fillAccordions("needsAccordions", scriptObj?.accordions?.needs || []);
 fillAccordions("objectionsAccordions", scriptObj?.accordions?.objections || []);
-
-// Якщо акордеонів нема — ховаємо заголовок і блок (але сам етап лишається!)
 toggleAccordionBlock("needsAccordions");
 toggleAccordionBlock("objectionsAccordions");
 
@@ -55,6 +64,7 @@ function fillAccordions(wrapperId, items) {
   items.forEach((it) => wrap.appendChild(makeAccordion(it.q, it.a)));
 }
 
+// ховаємо заголовок + блок якщо порожній
 function toggleAccordionBlock(wrapperId) {
   const wrap = document.getElementById(wrapperId);
   if (!wrap) return;
@@ -65,7 +75,7 @@ function toggleAccordionBlock(wrapperId) {
   if (header && header.tagName === "H3") header.style.display = hasItems ? "" : "none";
 }
 
-function makeAccordion(question, answer) {
+function makeAccordion(question, answerHtml) {
   const details = document.createElement("details");
   details.className = "acc";
 
@@ -74,7 +84,7 @@ function makeAccordion(question, answer) {
 
   const body = document.createElement("div");
   body.className = "accBody";
-  body.textContent = answer || "";
+  body.innerHTML = answerHtml || ""; // ✅ щоб можна було писати <p>, <ul> в a:
 
   details.appendChild(summary);
   details.appendChild(body);
@@ -112,7 +122,6 @@ function initScrollSpy() {
 
   sections.forEach((sec) => observer.observe(sec));
 
-  // одразу активуємо перший
   const firstStage = sections[0]?.getAttribute("data-stage");
   if (firstStage) {
     stageLinks.forEach((a) => a.classList.toggle("active", a.getAttribute("data-stage") === firstStage));
