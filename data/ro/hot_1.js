@@ -1,5 +1,5 @@
 registerScript("ro", "hot_1", {
-  title: "RO Hot #1",
+  title: "Arthrolon+Arthrolux",
 
   stages: {
     greeting: `
