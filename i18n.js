@@ -214,7 +214,11 @@ function getLang() {
 function setLang(lang) {
   localStorage.setItem("lang", lang);
   applyTranslations();
+
+  // ✅ сигнал для всіх сторінок/скриптів: мова змінилась
+  document.dispatchEvent(new CustomEvent("lang:changed", { detail: { lang } }));
 }
+
 function t(key) {
   const lang = getLang();
   return (I18N[lang] && I18N[lang][key]) || (I18N.ru[key] ?? key);

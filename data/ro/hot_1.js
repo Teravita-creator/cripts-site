@@ -488,7 +488,7 @@ Cu atât mai mult cu cât acum beneficiați de o reducere de 50% și întreaga s
 products: [
   {
     name: "Artrolux Pro",
-    image: "assets/products/ro/product1.JPEG", // або https://...
+    image: "assets/products/ro/product1.jpg", // або https://...
     origin: "Producatorul-Letonia",
     format: "20 capsul",
     usage: "Як застосовувати (коротко)",

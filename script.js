@@ -61,12 +61,13 @@ renderObjectionsButtons(scriptObj);
 // ================== SCROLL ==================
 initScrollSpy();
 
-// ✅ Перемальовуємо динамічні блоки при зміні мови
-document.getElementById("langSelect")?.addEventListener("change", () => {
+// ✅ Перерендер динамічних блоків після зміни мови
+document.addEventListener("lang:changed", () => {
+  renderPricing(scriptObj);
   renderProducts(scriptObj);
-  // якщо захочеш — можна й ціни теж:
-  // renderPricing(scriptObj);
+  renderObjectionsButtons(scriptObj);
 });
+
 
 
 // ================== FUNCTIONS ==================

@@ -12,12 +12,14 @@
     <div class="card">
 
       <div class="row" style="justify-content: space-between; gap: 12px;">
-        <button class="btn btn-secondary" id="backBtn" type="button">← Назад</button>
+<button class="btn btn-secondary floatingBack" id="backBtn" type="button" data-i18n="common.back">← Назад</button>
 
         <div class="row" style="gap: 10px;">
           <div class="muted">КЦ: <b id="kcName"></b></div>
 
           <div class="row" style="gap: 8px;">
+            <button type="button" class="btn btn-secondary" data-theme-toggle aria-label="Theme">🌙</button>
+
             <span class="muted" data-i18n="lang.label">Язык</span>
             <select id="langSelect">
               <option value="ru">RU</option>
@@ -49,6 +51,7 @@
 
   <!-- ВАЖЛИВО: правильний порядок -->
   <script src="i18n.js"></script>
+  <script src="theme.js"></script>
 
   <script src="scripts_registry.js"></script>
 

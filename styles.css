@@ -530,3 +530,90 @@ h1{ margin: 0 0 8px; font-size: 26px; }
 .txt-blue{
   letter-spacing: 0.2px;
 }
+
+/* ===== THEME TOKENS ===== */
+/* ===== DARK THEME (перемикається theme.js) ===== */
+html[data-theme="dark"]{
+  --bg: #0b1220;
+  --card: #0f1a2b;
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+  --border: rgba(255,255,255,0.14);
+
+  /* (опційно) акцент трохи “тепліший” в темній темі */
+  --accent: #d6b23a;
+}
+
+/* Основний фон/текст для темної теми */
+html[data-theme="dark"] body{
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* Картки */
+html[data-theme="dark"] .card{
+  background: var(--card);
+  border-color: var(--border);
+}
+
+/* ВАЖЛИВО: прибираємо зашиті світлі фони (#fffdf0, #fff4b0, #fff) */
+html[data-theme="dark"] .stageSection,
+html[data-theme="dark"] .tile,
+html[data-theme="dark"] .stageLink,
+html[data-theme="dark"] .input,
+html[data-theme="dark"] .priceBtn,
+html[data-theme="dark"] .pricePanel,
+html[data-theme="dark"] .objBtn,
+html[data-theme="dark"] .objPanel,
+html[data-theme="dark"] .ynBtn,
+html[data-theme="dark"] .ynPanel,
+html[data-theme="dark"] .prodCard,
+html[data-theme="dark"] .priceTable,
+html[data-theme="dark"] .prodTable{
+  background: rgba(255,255,255,0.04);
+  border-color: var(--border);
+  color: var(--text);
+}
+
+/* Лінки етапів: щоб не були “сірі й бліді” */
+html[data-theme="dark"] .stageLink{
+  color: var(--muted);
+}
+html[data-theme="dark"] .stageLink:hover,
+html[data-theme="dark"] .stageLink.active{
+  color: var(--text);
+}
+
+/* Вторинні кнопки (наприклад тема/назад) */
+html[data-theme="dark"] .btn-secondary{
+  background: rgba(255,255,255,0.06);
+  border-color: var(--border);
+  color: var(--text);
+}
+html[data-theme="dark"] .btn-secondary:hover{
+  background: rgba(255,255,255,0.10);
+}
+
+/* ===== FLOATING BACK BUTTON (bottom-right) ===== */
+.floatingBack{
+  position: fixed !important;
+  right: 16px;
+  bottom: 16px;
+  left: auto !important;
+
+  z-index: 99999;
+
+  /* щоб гарно виглядала поверх контенту */
+  box-shadow: 0 10px 25px rgba(0,0,0,.18);
+}
+
+/* у темній темі тінь сильніша */
+html[data-theme="dark"] .floatingBack{
+  box-shadow: 0 10px 25px rgba(0,0,0,.45);
+}
+
+/* щоб кнопка не перекривала нижній текст */
+.page, .container{
+  padding-bottom: 80px;
+}
+#backBtn.floatingBack{ position: fixed !important; }

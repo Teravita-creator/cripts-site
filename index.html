@@ -12,6 +12,8 @@
 
       <!-- Перемикач мови -->
       <div style="display:flex; justify-content:flex-end; gap:8px; align-items:center; margin-bottom:8px;">
+        <button type="button" class="btn btn-secondary" data-theme-toggle aria-label="Theme">🌙</button>
+
         <span class="muted" data-i18n="lang.label">Язык</span>
         <select id="langSelect">
           <option value="ru">RU</option>
@@ -48,6 +50,7 @@
 
   <!-- ВАЖЛИВО: i18n.js підключаємо ПЕРЕД app.js -->
   <script src="i18n.js"></script>
+  <script src="theme.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

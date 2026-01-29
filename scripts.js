@@ -100,3 +100,28 @@ if (baseList) {
     baseList.appendChild(createScriptButton(id, title));
   });
 }
+function renderScriptLists() {
+  if (hotList) hotList.innerHTML = "";
+  if (baseList) baseList.innerHTML = "";
+
+  if (hotList) {
+    hotIds.forEach((id, index) => {
+      const fallbackTitle = `Скрипт (Горячие) #${index + 1}`;
+      const title = getTitleFromData(selectedKC, id, fallbackTitle);
+      hotList.appendChild(createScriptButton(id, title));
+    });
+  }
+
+  if (baseList) {
+    baseIds.forEach((id, index) => {
+      const fallbackTitle = `Скрипт (База) #${index + 1}`;
+      const title = getTitleFromData(selectedKC, id, fallbackTitle);
+      baseList.appendChild(createScriptButton(id, title));
+    });
+  }
+}
+
+// ✅ якщо мова змінилась — перебудувати список кнопок
+document.addEventListener("lang:changed", () => {
+  renderScriptLists();
+});
