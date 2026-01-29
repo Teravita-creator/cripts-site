@@ -354,3 +354,46 @@ h1{ margin: 0 0 8px; font-size: 26px; }
   /* легке виділення, але без рамок */
   padding: 6px 10px;
 }
+/* ===== Objections buttons (довгі кнопки) ===== */
+
+.objList{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 12px 0 12px;
+}
+
+.objBtn{
+  width: 100%;
+  text-align: left;
+  padding: 12px 14px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: #fffdf0;
+  font-weight: 750;
+  cursor: pointer;
+}
+
+.objBtn:hover{
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(201,162,39,0.25);
+}
+
+.objBtn.active{
+  background: rgba(201,162,39,0.35);
+  border-color: var(--accent);
+}
+
+/* панель з текстом заперечення */
+.objPanel{
+  display: none;
+  margin-top: 12px;
+  padding: 14px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: rgba(201,162,39,0.15);
+}
+
+.objPanel.show{
+  display: block;
+}

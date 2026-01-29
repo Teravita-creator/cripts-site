@@ -118,7 +118,9 @@ De obicei, cursul costă 240 lei, dar acum este în promoție — <b>doar 59 lei
     <p>O zi plăcută!</p>
 
     `,
-    objections: ``,
+    objections: `
+  <p class="presentationTitle"></p>
+  <div id="objectionsButtons"></div>`,
     products: ``,
   },
 
@@ -171,6 +173,118 @@ De obicei, cursul costă 240 lei, dar acum este în promoție — <b>doar 59 lei
       `,
     },
   ],
+
+objectionsButtons: [
+    {
+      label: "Vreau 1 pachet",
+      html: `
+        <p><b>operator:</b> Domnule/doamnă , vă înțeleg perfect. Și vreau să fiu sincer(ă) cu dumneavoastră — pentru că nu doriți doar să încercați, ci să simțiți cu adevărat ușurarea și să vă recăpătați mobilitatea articulațiilor, nu-i așa? (Acord condiționat)
+</p> <p>Un pachet este mai degrabă pentru a vă familiariza cu produsul. Acesta vă va arăta că Hondrolife funcționează cu adevărat, va reduce parțial inflamația și va diminua durerea. Dar rezultatele tangibile, cum ar fi refacerea articulațiilor, eliminarea umflăturilor, redarea flexibilității și obținerea unui rezultat stabil, pot fi obținute cu un tratament de 2-3 luni. Totuși, ați apelat nu doar din curiozitate, ci pentru a obține rezultate. Dacă doriți să începeți cu ceva mai puțin și să vedeți efectul, puteți opta pentru un program lunar. Dar, în cazul dvs., vă recomand totuși un tratament de 2 sau 3 luni — diferența de preț este mică, iar rezultatul va fi pe termen lung.</p>
+<p>Iată prețurile:</p>
+<ul>
+<li>1 lună (90 mililitri) — 340 lei</li>
+<li>2 luni (180 mililitri) — 400 lei</li>
+<li>3 luni (270 mililitri) — 550 lei</li>
+</ul>
+<p>Cu ce program începem — cu unul de o lună, două sau trei? (Fără pauză) După cum vedeți, diferența de preț este minimă, iar rezultatul — foarte semnificativ. (Așteptăm răspunsul)</p>
+      `,
+    },
+    {
+      label: "Curs pentru 20 de zile",
+      html: `
+        <p><b>operator:</b> Domnule/doamnă , ne pasă de sănătatea dumneavoastră și de reputația produsului, de aceea vă propun să faceți o comandă minimă – pentru 20 de zile. Pentru că numai un curs de 20 de zile vă permite să simțiți primele schimbări pozitive.
+Chiar și pentru cursul de probă există acum o reducere, costul său fiind de 240 de lei, inclusiv livrarea. Haideți să facem comanda și, în câteva zile, vă veți simți mai bine, de acord?</p>
+      `,
+    },
+    {
+      label: "Scump № 1",
+      html: `
+        <p><b>operator:</b> Domnule/doamnă , problema prețului este într-adevăr importantă, vă înțeleg.
+Dar să privim lucrurile într-o perspectivă mai largă: durerile articulare, rigiditatea, scrâșnitul — acestea nu sunt doar un disconfort, ci o limitare a libertății în viața de zi cu zi.
+Este dificil să vă mișcați, să dormiți, să vă plimbați normal sau să efectuați sarcini simple de zi cu zi. Arthrolon acționează din interior: ameliorează inflamația, hrănește țesutul cartilajului și declanșează procesele de refacere a articulațiilor.
+Și cel mai important — rezultatul nu este temporar, ci se menține, deoarece tratăm cauza, nu simptomele.</p>
+<p>Domnule/doamnă , 550 lei nu este o cheltuială, ci o investiție în sănătate și încredere în sine. În plus, astăzi beneficiați de o reducere de 50%.</p>
+<p>Vă înregistrăm pentru un curs complet? (Așteptăm răspunsul)</p>
+      `,
+    },
+{
+      label: "Scump № 2",
+      html: `
+      <p><b>operator:</b> Domnule/doamnă , vă înțeleg perfect: în acest moment este foarte important să economisiți, iar îngrijorarea dumneavoastră este absolut justificată. Dar problemele cu articulațiile nu înseamnă doar durere, ci și un risc real de mobilitate limitată, care poate afecta în mod semnificativ calitatea vieții. Sincer, nu-mi este ușor să vorbesc despre asta, dar, conform statisticilor, multe persoane cu dureri articulare ajung în cele din urmă să se confrunte cu invaliditatea, care ar putea fi prevenită dacă tratamentul articulațiilor ar începe într-un stadiu incipient.</p>
+      <p>Din păcate, durerile articulare apar adesea în mod imperceptibil, iar persoana nu simte gravitatea problemei până când starea nu se agravează semnificativ. Recuperarea articulațiilor după leziuni grave este întotdeauna mult mai costisitoare, atât din punct de vedere financiar, cât și al sănătății.
+</p>
+<p>Vestea bună este că ați făcut deja primul pas, v-ați gândit la prevenire. Să nu amânăm: să începem cu un curs de Arthrolon  de 2 luni pentru 400 de lei. Acest lucru va da deja un efect vizibil.
+Mai mult, conform programului de bonusuri, întreaga sumă va fi returnată în contul dvs. personal imediat după plată. Nu cheltuiți bani, ci pur și simplu îi investiți în îngrijirea dvs. și a sănătății dvs. Este cea mai avantajoasă opțiune.
+Ce curs vom face, unul complet cu o reducere de 50% sau unul de 2 luni cu o reducere de 40%?</p>
+
+        `,
+    },
+{
+      label: "Îndoieli privind calitatea № 1",
+      html: `
+        <p><b>operator:</b> Domnule/doamnă , vă înțeleg – când vine vorba de sănătate, este absolut normal să aveți îndoieli cu privire la calitate.</p>
+        <p>Colaborăm direct cu producătorul și suntem singurul său reprezentant oficial. Produsul vine în ambalajul original, cu instrucțiuni și, cel mai important, cu sprijinul nostru pe toată durata cursului. Dacă ceva nu este clar, ne puteți contacta oricând, suntem la dispoziția dumneavoastră.</p>
+        <p>Haideți să vă înscriem la curs, pentru ca dumneavoastră să vă convingeți personal de calitate și să începeți recuperarea chiar acum, bine? (Așteptăm răspunsul)</p>
+      `,
+    },
+{
+      label: "Nu am încredere în vânzările pe internet № 1",
+      html: `
+        <p><b>operator:</b> Domnule/doamnă , înțeleg neîncrederea dumneavoastră în cumpărăturile pe internet — în zilele noastre este destul de logic. Dar la noi totul este transparent: plătiți comanda doar la primire, când vă convingeți personal că totul este în ordine. Nu există plăți în avans, ca pe site-urile dubioase. Împreună cu produsul, veți primi instrucțiuni detaliate, iar dacă aveți întrebări, suntem întotdeauna la dispoziție pentru a vă ajuta și a vă oferi sfaturi.</p>
+        <p>Haideți să confirmăm comanda acum, și veți primi totul în siguranță și cu asistență completă, bine?</p>
+      `,
+    },
+{
+      label: "Ce garanții de eficacitate există? № 1",
+      html: `
+        <p><b>operator:</b> Domnule/doamnă , întrebarea dumneavoastră este foarte clară – toată lumea vrea să fie sigură de rezultat.</p>
+        <p>Recomandăm acest produs deoarece a trecut toate verificările necesare, iar producătorul garantează calitatea acestuia.</p>
+        <p>Peste jumătate dintre clienții noștri observă îmbunătățiri semnificative după doar o lună de utilizare, iar aproape 90% spun că după 2-3 luni mobilitatea este complet restabilită, iar durerile sunt semnificativ reduse. Acest lucru permite obținerea unui rezultat pe termen lung, fără stres pentru organism. Să vă facem o comandă pentru 3 luni, bine?</p>
+      `,
+    },
+{
+      label: "Voi cere sfatul medicului № 1",
+      html: `
+        <p><b>operator:</b> Domnule/doamnă , înțeleg dorința dumneavoastră de a consulta medicul – este o abordare foarte responsabilă.</p>
+        <p>Produsul nostru este declarat și aprobat pentru utilizare în cazul durerilor și inflamațiilor articulare, fiind adesea recomandat de medici după ce consultă toate documentele.</p>
+        <p>Peste jumătate dintre clienții noștri observă îmbunătățiri semnificative după doar o lună de utilizare, iar aproape 90% spun că după 2-3 luni mobilitatea este complet restabilită, iar durerile sunt semnificativ reduse.</p>
+        <p>Produsul este natural, nu provoacă efecte secundare și nu interacționează cu medicamentele, de aceea poate fi utilizat în paralel cu terapia de bază.</p>
+        <p>Domnule/doamnă , haideți să completăm comanda, pentru ca dumneavoastră să o puteți arăta medicului și să fiți sigur de decizia dumneavoastră, bine?</p>
+      `,
+    },
+{
+      label: "Mă voi gândi",
+      html: `
+        <p><b>operator:</b> Domnule/doamnă , trebuie să abordați cu atenție alegerea oricărui produs. În același timp, produsul este disponibil în cantitate limitată. Ar fi neplăcut dacă v-ați răzgândi și nu ați mai putea lăsa cererea, sunteți de acord cu mine? (Așteptăm acordul)
+
+Imaginați-vă: în curând veți scăpa de , de durere și de rigiditate, iar în afară de Hondrolife nu există alte soluții sigure pentru această problemă. Dacă ratați momentul, problema poate duce la invaliditate — iar acesta este un proces ireversibil, și nu doriți asta, nu-i așa? (Așteptăm acordul)</p>
+        <p>De aceea, voi pune totuși întrebarea: domnule/doamnă , spuneți sincer, ce vă împiedică să comandațiHondrolife, mai ales având în vedere o astfel de reducere?</p>
+      `,
+    },
+{
+      label: "Nu am bani № 1",
+      html: `
+       
+        <p><b>operator:</b> Domnule/doamnă , înțeleg că acum nu este ușor. Dar să privim lucrurile astfel: acum cheltuiți bani pe simptome, iar eu vă propun să investiți în rezolvarea problemei, să scăpați de durere și să vă recăpătați mobilitatea articulațiilor. Pe termen lung, acest lucru vă va economisi bani pe medicamente și vă va îmbunătăți calitatea vieții. Poate ar trebui să luați în considerare posibilitatea de a redistribui bugetul pentru a investi în sănătatea dumneavoastră acum, sunteți de acord? (Așteptăm acordul)</p>
+      `,
+    },
+{
+      label: "Am o pensie mică № 1",
+      html: `
+        <p><b>operator:</b> Domnule/doamnă , înțeleg perfect că banii nu sunt niciodată suficienți, mai ales când pensia este limitată și trebuie să economisiți literalmente din toate</p>
+      <ul>
+      <li>dar să fim sinceri: dacă sănătatea vă lasă, toate celelalte — cumpărăturile, planurile și chiar bucuriile simple — trec pe planul secund. Pentru că, dacă nu vă ocupați de prevenție, boala poate schimba brusc viața obișnuită sau chiar o poate întrerupe. Atunci niciun ban nu vă va mai ajuta</li>
+      <li>adesea amânăm grija pentru noi înșine din cauza altor cheltuieli, dar fără sănătate nici banii, nici lucrurile nu aduc bucurie</li>
+      <li>credeți că există ceva mai important decât starea dvs. de sănătate și liniștea sufletească? Poate că ar trebui să punem sănătatea pe primul loc și să începem să avem grijă de noi înșine chiar acum, nu-i așa? (Așteptăm acordul)
+Cu atât mai mult cu cât acum beneficiați de o reducere de 50% și întreaga sumă vă este returnată în contul bonus — este o investiție în viitorul dumneavoastră! Să vă înscriem la un curs de 3 luni pentru 550 de lei?</li>
+      </ul>
+        `,
+    },
+
+  ],
+
+  // ✅ Accordions залишаються ТІЛЬКИ needs + objections
+
 
   accordions: {
     needs: [
@@ -468,6 +582,13 @@ De obicei, cursul costă 240 lei, dar acum este în promoție — <b>doar 59 lei
       },
     ],
 
-    objections: [],
+    objections: [
+
+
+
+    ],
+
+
+
   },
 });

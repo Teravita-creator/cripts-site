@@ -56,6 +56,8 @@ hideAllBranchAnswers();
 // ================== ЦІНИ ==================
 renderPricing(scriptObj);
 
+renderObjectionsButtons(scriptObj);
+
 // ================== SCROLL ==================
 initScrollSpy();
 
@@ -169,6 +171,60 @@ function renderPricing(scriptObj){
     tabs.appendChild(btn);
   });
 }
+/* =========================
+   КНОПКИ ЗАПЕРЕЧЕНЬ (довгі)
+   ========================= */
+/* =========================
+   КНОПКИ ЗАПЕРЕЧЕНЬ
+   (кожна кнопка має свій текст під нею)
+   ========================= */
+function renderObjectionsButtons(scriptObj) {
+  const host = document.getElementById("objectionsButtons");
+  if (!host) return;
+
+  const items = scriptObj?.objectionsButtons;
+  if (!Array.isArray(items) || items.length === 0) {
+    host.innerHTML = `<p class="muted">Нет возражений для этого скрипта.</p>`;
+    return;
+  }
+
+  host.innerHTML = "";
+
+  items.forEach((item, index) => {
+    // кнопка
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "objBtn";
+    btn.textContent = item.label || `Возражение #${index + 1}`;
+
+    // прихований текст
+    const panel = document.createElement("div");
+    panel.className = "objPanel";
+    panel.innerHTML = item.html || "";
+    panel.style.display = "none";
+
+    btn.addEventListener("click", () => {
+      // закриваємо всі інші
+      host.querySelectorAll(".objPanel").forEach(p => {
+        if (p !== panel) p.style.display = "none";
+      });
+      host.querySelectorAll(".objBtn").forEach(b => {
+        if (b !== btn) b.classList.remove("active");
+      });
+
+      // відкриваємо / закриваємо поточний
+      const isOpen = panel.style.display === "block";
+      panel.style.display = isOpen ? "none" : "block";
+      btn.classList.toggle("active", !isOpen);
+    });
+
+    host.appendChild(btn);
+    host.appendChild(panel);
+  });
+}
+
+
+
 
 // ================== SCROLL SPY ==================
 function initScrollSpy() {
