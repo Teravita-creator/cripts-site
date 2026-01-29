@@ -77,7 +77,7 @@ registerScript("ro", "hot_1", {
     <p>, ați făcut foarte bine că ați ales cursul pentru susținerea mobilității articulațiilor — el va ajuta la reducerea inflamației și la redarea confortului în mișcare.</p>
  <p>Pentru ca efectul să apară mai repede și rezultatul să se mențină pe termen lung, recomandăm întotdeauna și o curățare a organismului.
 Sărurile, toxinele și reziduurile se acumulează adesea în țesuturile articulațiilor și împiedică refacerea lor.</p>
- <p>În cazul dumneavoastră, <b>Germivir</b> este soluția ideală — un complex natural de detoxifiere care ajută la eliminarea substanțelor nocive și la susținerea metabolismului.
+ <p>În cazul dumneavoastră, <b>Cleroix</b> este soluția ideală — un complex natural de detoxifiere care ajută la eliminarea substanțelor nocive și la susținerea metabolismului.
 El reduce inflamațiile interne, îmbunătățește hrănirea articulațiilor și amplifică efectul cursului principal.</p>
  <p>Compoziția conține trei ingrediente active:</p>
 <ul>
@@ -87,7 +87,7 @@ El reduce inflamațiile interne, îmbunătățește hrănirea articulațiilor ș
 </ul>
 <p>Administrarea este foarte simplă: 20 de picături dizolvate în 100 ml de apă, de 2 ori pe zi.
 Remediul este complet sigur, potrivit și pentru persoanele cu afecțiuni cronice, și se combină perfect cu cursul dumneavoastră pentru articulații.
-De obicei, cursul costă 240 lei, dar acum este în promoție — <b>doar 55 lei pentru 10 zile de utilizare</b>.</p>
+De obicei, cursul costă 240 lei, dar acum este în promoție — <b>doar 59 lei pentru 10 zile de utilizare</b>.</p>
 <p>, haideți să adăugăm și Nemanex la comandă, ca organismul să se curețe, articulațiile să se refacă mai repede și rezultatul să se mențină mai mult timp. (E bine așa.)</p>
 <p>— Excelent, Domnule/Doamnă , atunci vă confirm cursul principal Arthrolon și cursul (cursurile) suplimentar(e) din promoție. Valoarea totală a comenzii dvs., ținând cont de toate reducerile, <b>va fi de XX lei</b>.</p>
  `,
