@@ -14,10 +14,10 @@ const I18N = {
 
     "kc.title": "Выбор КЦ",
     "kc.subtitle": "Выберите колл-центр, чтобы перейти к списку скриптов.",
-    "kc.pl": "Польский",
-    "kc.ka": "Грузинский",
-    "kc.ka_ru": "Грузинский / Русский",
-    "kc.ro": "Румынский",
+    "kc.pl": "Польша",
+    "kc.ka": "Грузия",
+    "kc.ka_ru": "Грузия (ру)",
+    "kc.ro": "Румыния",
 
     "scripts.title": "Список скриптов",
     "scripts.subtitle": "Выберите скрипт, чтобы открыть текст.",
@@ -56,10 +56,10 @@ const I18N = {
 
     "kc.title": "Wybór CC",
     "kc.subtitle": "Wybierz call center, aby przejść do listy skryptów.",
-    "kc.pl": "Polskie",
-    "kc.ka": "Gruzińskie",
-    "kc.ka_ru": "Gruzińskie / Rosyjskie",
-    "kc.ro": "Rumuńskie",
+    "kc.pl": "Polska",
+    "kc.ka": "Gruzja",
+    "kc.ka_ru": "Gruzja (RU)",
+    "kc.ro": "Rumunia",
 
     "scripts.title": "Lista skryptów",
     "scripts.subtitle": "Wybierz skrypt, aby otworzyć tekst.",
@@ -98,10 +98,10 @@ const I18N = {
 
     "kc.title": "ქოლ-ცენტრის არჩევა",
     "kc.subtitle": "აირჩიეთ ქოლ-ცენტრი სკრიპტების სიაზე გადასასვლელად.",
-    "kc.pl": "პოლონური",
-    "kc.ka": "ქართული",
-    "kc.ka_ru": "ქართული / რუსული",
-    "kc.ro": "რუმინული",
+    "kc.pl": "პოლონეთი",
+    "kc.ka": "საქართველო",
+    "kc.ka_ru": "საქართველო (RU)",
+    "kc.ro": "რუმინეთი",
 
     "scripts.title": "სკრიპტების სია",
     "scripts.subtitle": "აირჩიეთ სკრიპტი ტექსტის გასახსნელად.",
@@ -140,10 +140,10 @@ const I18N = {
 
     "kc.title": "Alegere CC",
     "kc.subtitle": "Alegeți call center-ul pentru a vedea lista de scripturi.",
-    "kc.pl": "Polonez",
-    "kc.ka": "Georgian",
-    "kc.ka_ru": "Georgian / Rusă",
-    "kc.ro": "Român",
+    "kc.pl": "Polonia",
+    "kc.ka": "Georgia",
+    "kc.ka_ru": "Georgia (RU)",
+    "kc.ro": "România",
 
     "scripts.title": "Lista de scripturi",
     "scripts.subtitle": "Alegeți un script pentru a deschide textul.",
