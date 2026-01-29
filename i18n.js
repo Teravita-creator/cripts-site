@@ -28,7 +28,7 @@ const I18N = {
     "script.pageTitle": "Скрипт",
     "script.stageTitle": "Этапы продаж",
     "stage.greeting": "Приветствие",
-    "stage.needs": "Выявление потреб",
+    "stage.needs": "Выявление потребностей",
     "stage.presentation": "Презентация",
     "stage.courses": "Курсы",
     "stage.cross": "Кросс",
