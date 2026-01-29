@@ -7,7 +7,7 @@ registerScript("ro", "hot_1", {
       <p>Numele meu este Numele operatorului, sunt de la clinica Regina Maria”. Ați lăsat o cerere pentru produsul de refacere a mobilității articulațiilor <b>Arthrolon</b>, este corect?</p>
       <p><i>"DA"</i></p>
       <p>Pentru a verifica posibilitatea livrării, vă rugăm să ne spuneți în ce regiune locuiți și în ce oraș?</p>
-      <p><i>"Orașul este potrivit"</i></p>
+      <p class="p-accent-green"><i>"Orașul este potrivit"</i></p>
       <p>Excelent, domnule/doamnă, livrarea în orașul dumneavoastră este posibilă.</p>
       <p>Haideți să procedăm astfel: vă voi pune câteva întrebări pentru a înțelege mai bine cum vă simțiți. Apoi vă voi explica cum funcționează Arthrolon și în ce fel vă va fi util acest produs. Apoi voi alege doza potrivită și, dacă sunteți de acord, vă voi ajuta cu formalitățile. Bine?</p>
     `,
@@ -27,7 +27,7 @@ registerScript("ro", "hot_1", {
  <p class="presentationTitle">2. Compoziție naturală și siguranță:</p>
   <p>—Arthrolon conține numai ingrediente naturale: ulei de eucalipt, extract de arnică, ulei de ardei iute și altele</p>
  <p>— o astfel de compoziție se întâlnește rar într-un singur produs, ceea ce îl face eficient și sigur, în special pentru refacerea mobilității articulațiilor</p>
- <p>— Este important pentru dumneavoastră ca produsul să fie natural și sigur? (Așteptăm răspunsul afirmativ)</p>
+ <p>— Este important pentru dumneavoastră ca produsul să fie natural și sigur? <span class="txt-green">(Așteptăm răspunsul afirmativ)</span></p>
  
  <p class="presentationTitle">3. Abordare complexă: ideea și unicitatea Arthrolon</p>
  <p>Domnule/doamnă , este dovedit științific: „unguentul magic” care va scăpa odată pentru totdeauna de durerile articulare nu există — așteptarea unui miracol doar vă răpește timpul și duce la dezamăgire.</p>
@@ -39,7 +39,7 @@ registerScript("ro", "hot_1", {
   <p>Domnule/doamnă , complexul nostru Arthrolon acționează în etape pe o perioadă de 3 luni. Fiecare etapă durează exact o lună, iar fiecare dintre ele este extrem de importantă pentru obținerea unui rezultat durabil, care va ajuta la refacerea sănătății articulațiilor și la reducerea durerii.</p>
  <p>— Vă voi explica pe scurt ce se întâmplă în fiecare etapă, deoarece tocmai această succesiune de schimbări în organismul dumneavoastră permite obținerea celui mai bun efect din partea produsului nostru, bine? (Așteptăm acordul sau confirmarea interesului)</p>
  
- <p class="presentationTitle">Prima lună (etapa) — declanșarea proceselor și primele îmbunătățiri:</p>
+ <p class="presentationTitle"><span class="txt-red">Prima lună (etapa) — declanșarea proceselor și primele îmbunătățiri:</span></p>
  <ul>
   <li>Articulațiile dumneavoastră încep să primească mai multă hrană datorită îmbunătățirii circulației sanguine.</li>
   <li>Inflamațiile și umflăturile se reduc, ceea ce ajută la diminuarea durerilor.</li>
@@ -48,7 +48,7 @@ registerScript("ro", "hot_1", {
 </ul>
 <p>Domnule/doamnă , ați înțeles totul după prima lună? Îmbunătățirea circulației sanguine și reducerea inflamației sunt deja un început excelent, nu-i așa? (Așteptăm acordul, apoi trecem la a doua etapă)</p>
 
-    <p class="presentationTitle">A doua lună (etapa) — consolidarea și menținerea rezultatului:</p>
+    <p class="presentationTitle"><span class="txt-red">A doua lună (etapa) — consolidarea și menținerea rezultatului:</span></p>
     <ul>
   <li>Articulațiile dumneavoastră devin mai mobile, inflamația se reduce semnificativ.</li>
   <li>Organismul dumneavoastră începe să refacă cartilajele mai eficient, întărind țesuturile și îmbunătățind mobilitatea.</li>
@@ -58,7 +58,7 @@ registerScript("ro", "hot_1", {
 <p> Domnule/doamnă , este totul clar după a doua lună? Cred că sunteți de acord că aceste schimbări sunt importante în atingerea obiectivului, nu-i așa?
 (Așteptăm acordul, apoi trecem la a treia etapă)</p>
 
-<p class="presentationTitle">A treia lună (etapa) — protecție pe termen lung și încredere:</p>
+<p class="presentationTitle"><span class="txt-red">A treia lună (etapa) — protecție pe termen lung și încredere:</span></p>
 <ul>
   <li>Articulațiile dumneavoastră se refac și devin mai mobile, cartilajele se întăresc, durerea și inflamațiile nu vă vor mai deranja.</li>
   <li>Organismul dumneavoastră învață să mențină articulațiile sănătoase, prevenind reapariția leziunilor.</li>
@@ -69,9 +69,31 @@ registerScript("ro", "hot_1", {
  `,
 
     courses: `
-      <p><b>Курсы / Цены</b></p>
+<p>Atunci vă voi povesti mai detaliat despre schema de administrare, cursuri și costuri, bine? (Așteptăm acordul)</p>
+<p><b>Comentariu expert:</b> utilizarea Arthroloneste foarte simplă: pulverizați o cantitate mică pe zonele cu probleme și masați cu mișcări de masaj de 2 ori pe zi până la absorbția completă. Nu vă anulăm medicamentele pe care le luați deja — produsul este suplimentar, pentru a întări efectul și a reface organismul.</p>
+<p>Așadar, domnule/doamnă , pentru a vă ajuta, ținând cont de vârsta  și starea dumneavoastră, am selectat pentru dumneavoastră 3 cure din care puteți alege:</p>
+<p>1. Primul curs — cel mai eficient.</p>
+ <p>Acest curs declanșează procese profunde de refacere a țesutului cartilaginos și a lichidului articular. Inflamația și durerile se reduc semnificativ, iar mobilitatea articulațiilor revine treptat. Rezultatul se menține pe termen lung — articulațiile rămân sănătoase și mobile timp de până la 5 ani.
+ (Obiectivul principal este motivarea clientului să aleagă acest curs; în cazul obiecțiilor, este posibilă ajustarea prețului.)</p>
+<p>2. Al doilea curs — de bază.</p>
+<p> Potrivit pentru cei care doresc să înceapă procesul de recuperare într-un mod blând, fără suprasolicitare. Pe parcursul utilizării se reduc rigiditatea și umflăturile, articulațiile devin mai flexibile, iar circulația sanguină și nutriția cartilajelor se îmbunătățesc.</p>
+<p>3. Al treilea curs — inițial.</p>
+<p>O opțiune bună pentru a face cunoștință cu produsul și pentru a obține primele rezultate vizibile. Durerea se diminuează, apare ușurința în mișcare, iar scrâșnetul din articulații se reduce. Efectul este vizibil, însă necesită continuare pentru consolidare.</p>
+
+
+      <p><b>oferi</b></p>
       <div id="pricingBlock"></div>
-    `,
+
+      <p>Diferența de preț este mică, iar rezultatul este enorm. Vă recomand cursul eficient: este mai avantajos și oferă un rezultat complet.</p>
+    <p>De asemenea:</p>
+    <ol>
+    <li>veți primi întregul curs pentru <b>.... lei</b> în loc de 1100 lei. Prețul este de două ori mai mic decât cel obișnuit.</li>
+<li>Și încă un bonus plăcut — avem un program de loialitate: imediat după plata cursului, vă returnăm 100% din sumă în contul bonus, pe care o puteți utiliza pentru a plăti comenzi pentru orice produse sau servicii ale companiei noastre</li>
+    <li>Datorită programului de loialitate, cursul devine practic gratuit pentru dvs.!</li>
+    </ol>
+    <p>Domnule/doamnă , spuneți-ne ce opțiune alegeți: pentru 3, 2 sau 1 lună?</p>
+    
+      `,
 
     cross: `
     <p>, ați făcut foarte bine că ați ales cursul pentru susținerea mobilității articulațiilor — el va ajuta la reducerea inflamației și la redarea confortului în mișcare.</p>
@@ -108,11 +130,11 @@ De obicei, cursul costă 240 lei, dar acum este în promoție — <b>doar 59 lei
     <li>numele pe interfon [spunem numele pe interfon].</li>
     </ol>
     <p>Vă rugăm să confirmați că datele sunt corecte, pentru a putea garanta livrarea la timp a comenzii dvs. Domnule/doamnă , am notat totul corect? (Așteptăm confirmarea)</p>
-    <p>Comanda se livreaza in decurs de o zi sau doua lucratoare de Luni-Vineri de la orele 09.00-18.00.Veți primi un SMS de la serviciul de livrare în dimineața livrării. Va exista un link pentru a vă urmări comanda. Plata catre curier numai cash la primire.</p>
+    <p>Comanda se livreaza in decurs de o zi sau doua lucratoare de Luni-Vineri de la orele 08.00-18.00.Veți primi un SMS de la serviciul de livrare în dimineața livrării. Va exista un link pentru a vă urmări comanda. Plata catre curier numai cash la primire.</p>
 
-    <p class="presentationTitle">CONDIȚIILE OFERTEI:</p>
+    <p class="presentationTitle"><span class="txt-red">CONDIȚIILE OFERTEI:</span></p>
     <Din>Conform regulamentului nostru, încheiem un acord verbal, în baza căruia compania se obligă să vă furnizeze un produs original, de cea mai înaltă calitate. Eu, nume / prenume, îmi asum responsabilitatea ca tratamentul dumneavoastră să fie eficient. Din partea dumneavoastră, vă asumați responsabilitatea de a primi produsul și de a începe tratamentul. Vă rog să-mi spuneți dacă aceste condiții vă sunt acceptabile în acest moment.</p>
-    <Vă>Vă rugăm să scrieți numărul liniei noastre de asistență telefonică – dacă aveți întrebări – vă vom ajuta cu plăcere:<b> 40373760656</b>. Vă voi monitoriza rezultatele, așa că vă rugăm să răspundeți la următorul apel.</p>
+    <Vă>Vă rugăm să scrieți numărul liniei noastre de asistență telefonică – dacă aveți întrebări – vă vom ajuta cu plăcere:<b> ТУТ ВСТАВИТЬ НОМЕР</b>. Vă voi monitoriza rezultatele, așa că vă rugăm să răspundeți la următorul apel.</p>
     <p>În ziua livrării veți primi un SMS cu un link pentru a vă urmări comanda. Plata - numerar la curier la primire. Aveti întrebări?</p>
     <p>Kl spune "Nu"</p>
     <p>O zi plăcută!</p>
@@ -121,56 +143,235 @@ De obicei, cursul costă 240 lei, dar acum este în promoție — <b>doar 59 lei
     objections: `
   <p class="presentationTitle"></p>
   <div id="objectionsButtons"></div>`,
-    products: ``,
+    products:  `
+  <div id="productsList"></div>
+`,
   },
 
   pricing: [
+    {label: "free 16",
+  html: `
+    <p><b>Вариант: free 16</b></p>
+
+    <table class="priceTable">
+      <tr>
+        <th>Parametru</th>
+        <th>Valoare</th>
+        <th>Valoare</th>
+        <th>Valoare</th>
+        <th>Valoare</th>
+      </tr>
+      <tr>
+        <td>Curs</td>
+        <td>eficient</td>
+        <td>bază</td>
+        <td>inițial</td>
+        <td>probă</td>
+      </tr>
+       <tr>
+        <td>numărul de pachete</td>
+        <td>6</td>
+        <td>5</td>
+        <td>4</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>Доставка (Livrare)</td>
+        <td>free</td>
+        <td>free</td>
+        <td>free</td>
+        <td>30</td>
+      </tr>
+      <tr>
+        <td>Цена (Preț)</td>
+        <td>544</td>
+        <td>495</td>
+        <td>396</td>
+        <td>327</td>
+      </tr>
+     
+    </table>
+  `,
+},
     {
-      label: "Бесплатно 16",
+      label: "low 99",
       html: `
-        <p><b>Вариант: Бесплатно 16</b></p>
-        <ul>
-          <li>Курс: ...</li>
-          <li>Капсул: ...</li>
-          <li>Цена: ...</li>
-          <li>Доставка: ...</li>
-        </ul>
-      `,
+    <p><b>Вариант: low 99</b></p>
+
+    <table class="priceTable">
+      <tr>
+        <th>Parametru</th>
+        <th>Valoare</th>
+        <th>Valoare</th>
+        <th>Valoare</th>
+        <th>Valoare</th>
+      </tr>
+      <tr>
+        <td>Curs</td>
+        <td>eficient</td>
+        <td>bază</td>
+        <td>inițial</td>
+        <td>probă</td>
+      </tr>
+       <tr>
+        <td>numărul de pachete</td>
+        <td>6</td>
+        <td>5</td>
+        <td>4</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>Доставка (Livrare)</td>
+        <td>free</td>
+        <td>free</td>
+        <td>30</td>
+        <td>30</td>
+      </tr>
+      <tr>
+        <td>Цена (Preț)</td>
+        <td>594</td>
+        <td>495</td>
+        <td>426</td>
+        <td>327</td>
+      </tr>
+     
+    </table>
+  `,
     },
     {
-      label: "Лоу 99",
+      label: "midl 119",
       html: `
-        <p><b>Вариант: Лоу 99</b></p>
-        <ul>
-          <li>Курс: ...</li>
-          <li>Капсул: ...</li>
-          <li>Цена: 99</li>
-          <li>Доставка: ...</li>
-        </ul>
-      `,
+    <p><b>Вариант: midl 119</b></p>
+
+    <table class="priceTable">
+      <tr>
+        <th>Parametru</th>
+        <th>Valoare</th>
+        <th>Valoare</th>
+        <th>Valoare</th>
+        <th>Valoare</th>
+      </tr>
+      <tr>
+        <td>Curs</td>
+        <td>eficient</td>
+        <td>bază</td>
+        <td>inițial</td>
+        <td>probă</td>
+      </tr>
+       <tr>
+        <td>numărul de pachete</td>
+        <td>6</td>
+        <td>5</td>
+        <td>4</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>Доставка (Livrare)</td>
+        <td>free</td>
+        <td>free</td>
+        <td>free</td>
+        <td>23</td>
+      </tr>
+      <tr>
+        <td>Цена (Preț)</td>
+        <td>595</td>
+        <td>525</td>
+        <td>476</td>
+        <td>380</td>
+      </tr>
+     
+    </table>
+  `,
     },
     {
-      label: "Мидл 119",
+      label: "full 149",
       html: `
-        <p><b>Вариант: Мидл 119</b></p>
-        <ul>
-          <li>Капсул: ...</li>
-          <li>Цена: 119</li>
-          <li>Доставка: ...</li>
-        </ul>
-      `,
+    <p><b>Вариант: full 149</b></p>
+
+    <table class="priceTable">
+      <tr>
+        <th>Parametru</th>
+        <th>Valoare</th>
+        <th>Valoare</th>
+        <th>Valoare</th>
+        <th>Valoare</th>
+      </tr>
+      <tr>
+        <td>Curs</td>
+        <td>eficient</td>
+        <td>bază</td>
+        <td>inițial</td>
+        <td>probă</td>
+      </tr>
+       <tr>
+        <td>numărul de pachete</td>
+        <td>7</td>
+        <td>6</td>
+        <td>4</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>Доставка (Livrare)</td>
+        <td>free</td>
+        <td>free</td>
+        <td>free</td>
+        <td>free</td>
+      </tr>
+      <tr>
+        <td>Цена (Preț)</td>
+        <td>745</td>
+        <td>596</td>
+        <td>447</td>
+        <td>328</td>
+      </tr>
+     
+    </table>
+  `,
     },
     {
-      label: "Фулл 149/159",
+      label: "full 159",
       html: `
-        <p><b>Вариант: Фулл 149/159</b></p>
-        <ul>
-          <li>Курс: ...</li>
-          <li>Капсул: ...</li>
-          <li>Цена: 149/159</li>
-          <li>Доставка: бесплатно / ...</li>
-        </ul>
-      `,
+    <p><b>Вариант: full 159</b></p>
+
+    <table class="priceTable">
+      <tr>
+        <th>Parametru</th>
+        <th>Valoare</th>
+        <th>Valoare</th>
+        <th>Valoare</th>
+        
+      </tr>
+      <tr>
+        <td>Curs</td>
+        <td>eficient</td>
+        <td>bază</td>
+        <td>inițial</td>
+        
+      </tr>
+       <tr>
+        <td>numărul de pachete</td>
+        <td>6</td>
+        <td>4</td>
+        <td>2</td>
+       
+      </tr>
+      <tr>
+        <td>Доставка (Livrare)</td>
+        <td>free</td>
+        <td>free</td>
+        <td>30</td>
+        
+      </tr>
+      <tr>
+        <td>Цена (Preț)</td>
+        <td>695</td>
+        <td>477</td>
+        <td>348</td>
+        
+      </tr>
+     
+    </table>
+  `,
     },
   ],
 
@@ -186,7 +387,7 @@ objectionsButtons: [
 <li>2 luni (180 mililitri) — 400 lei</li>
 <li>3 luni (270 mililitri) — 550 lei</li>
 </ul>
-<p>Cu ce program începem — cu unul de o lună, două sau trei? (Fără pauză) După cum vedeți, diferența de preț este minimă, iar rezultatul — foarte semnificativ. (Așteptăm răspunsul)</p>
+<p>Cu ce program începem — cu unul de o lună, două sau trei? (Fără pauză) După cum vedeți, diferența de preț este minimă, iar rezultatul — foarte semnificativ. <span class="txt-green">(Așteptăm răspunsul)</span></p>
       `,
     },
     {
@@ -204,7 +405,7 @@ Dar să privim lucrurile într-o perspectivă mai largă: durerile articulare, r
 Este dificil să vă mișcați, să dormiți, să vă plimbați normal sau să efectuați sarcini simple de zi cu zi. Arthrolon acționează din interior: ameliorează inflamația, hrănește țesutul cartilajului și declanșează procesele de refacere a articulațiilor.
 Și cel mai important — rezultatul nu este temporar, ci se menține, deoarece tratăm cauza, nu simptomele.</p>
 <p>Domnule/doamnă , 550 lei nu este o cheltuială, ci o investiție în sănătate și încredere în sine. În plus, astăzi beneficiați de o reducere de 50%.</p>
-<p>Vă înregistrăm pentru un curs complet? (Așteptăm răspunsul)</p>
+<p>Vă înregistrăm pentru un curs complet? <span class="txt-green">(Așteptăm răspunsul)</span></p>
       `,
     },
 {
@@ -224,7 +425,7 @@ Ce curs vom face, unul complet cu o reducere de 50% sau unul de 2 luni cu o redu
       html: `
         <p><b>operator:</b> Domnule/doamnă , vă înțeleg – când vine vorba de sănătate, este absolut normal să aveți îndoieli cu privire la calitate.</p>
         <p>Colaborăm direct cu producătorul și suntem singurul său reprezentant oficial. Produsul vine în ambalajul original, cu instrucțiuni și, cel mai important, cu sprijinul nostru pe toată durata cursului. Dacă ceva nu este clar, ne puteți contacta oricând, suntem la dispoziția dumneavoastră.</p>
-        <p>Haideți să vă înscriem la curs, pentru ca dumneavoastră să vă convingeți personal de calitate și să începeți recuperarea chiar acum, bine? (Așteptăm răspunsul)</p>
+        <p>Haideți să vă înscriem la curs, pentru ca dumneavoastră să vă convingeți personal de calitate și să începeți recuperarea chiar acum, bine? <span class="txt-green">(Așteptăm răspunsul)</span></p>
       `,
     },
 {
@@ -283,13 +484,57 @@ Cu atât mai mult cu cât acum beneficiați de o reducere de 50% și întreaga s
 
   ],
 
+
+products: [
+  {
+    name: "Artrolux Pro",
+    image: "assets/products/ro/product1.JPEG", // або https://...
+    origin: "Producatorul-Letonia",
+    format: "20 capsul",
+    usage: "Як застосовувати (коротко)",
+    description: "ARTROLUX PRO CAPS N30 este un supliment alimentar conceput pentru a susține sănătatea articulațiilor și a cartilajului. Combinația de glucozamină, condroitină, boswellia, ghimbir, MSM și curcumin ajută la întărirea structurii articulare, reducerea inflamațiilor și îmbunătățirea flexibilității. Vitamina C și manganul susțin sinteza colagenului și elasticitatea țesuturilor. Recomandat persoanelor active fizic sau cu rigiditate articulară legată de vârstă.",
+    ingredients: [
+      { name: "Glucozamină sulfat (Glucosamine sulphate 2KCl)", effect: "ajută la refacerea și protejarea cartilajului, îmbunătățește mobilitatea articulațiilor și reduce rigiditatea." },
+      { name: "Condroitină sulfat (Chondroitin sulfate)", effect: "menține elasticitatea cartilajului, reduce inflamațiile și sprijină lubrifierea articulațiilor." },
+      { name: "Extract de Boswellia serrata", effect: "component natural antiinflamator, ajută la reducerea umflăturilor și disconfortului articular.   " },
+      { name: "Extract de ghimbir (Ginger extract)", effect: "îmbunătățește circulația în țesuturile articulare, oferă un efect de încălzire și relaxare." },
+      { name: "MSM (Metil sulfonil metan)", effect: "sursă de sulf organic implicată în sinteza colagenului, susținând elasticitatea țesutului conjunctiv." },
+      { name: "Curcumin C3 Complex", effect: "antioxidant care protejează articulațiile de stresul oxidativ și sprijină refacerea lor." },
+      { name: "Vitamina C (Ascorbic acid)", effect: "contribuie la formarea normală a colagenului, necesar pentru oase și cartilaje sănătoase." },
+      { name: "Sulfat de mangan (Manganese sulfate)", effect: "sprijină formarea normală a țesutului conjunctiv și întărește articulațiile." },
+    ],
+  },
+
+  {
+    name: "Cleorix",
+    image: "assets/products/ro/product2.jpg",
+    origin: "Producatorul-Letonia",
+    format: "20 capsul",
+    usage: "…",
+    description: "Capsulele antiparazitare sunt o soluție inovatoare pentru combaterea paraziților și susținerea procesului natural de detoxifiere a organismului. Cu ajutorul lor, se obține nu numai eliminarea eficientă a paraziților, ci și o îmbunătățire semnificativă a stării generale de sănătate datorită unui complex unic de ingrediente active. Aceste capsule ajută la întărirea sistemului imunitar, stimulează îmbunătățirea digestiei și activează eliminarea toxinelor din organism. Utilizarea regulată duce la o stare generală de bine și la creșterea vitalității, ceea ce le face un instrument indispensabil pentru menținerea sănătății și a bunăstării.",
+    ingredients: [
+      { name: "Vitamina C (acid ascorbic) - 200 mg (222% din valoarea zilnică)", effect: "Un antioxidant puternic care susține sistemul imunitar.Ajută la eliminarea toxinelor și la îmbunătățirea stării generale a organismului." },
+      { name: "Badian (Illicium verum Hook f.) - 80 mg", effect: "Posedă proprietăți antiinflamatorii și antimicrobiene.Susține sistemul digestiv și ajută la eliminarea paraziților." },
+      { name: "Curcumină (Curcuma Longa) - 60 mg", effect: "Principalul ingredient activ din turmeric, are proprietăți antiinflamatorii și antioxidante puternice.Susține detoxifierea ficatului și procesul general de curățare a organismului." },
+      { name: "Extract de usturoi deshidratat (Amaryllidaceae Allium sativum L.) - 60 mg", effect: "Are puternice proprietăți antiparazitare și antibacteriene.Ajută la întărirea sistemului imunitar și la îmbunătățirea digestiei." },
+      { name: "Extract din rădăcină de păpădie (Taraxacum officinale) - 60 mg", effect: "Susține sănătatea ficatului și a rinichilor, ajutând la eliminarea toxinelor.Are proprietăți diuretice și antiinflamatoare." },
+      { name: "Extract uscat de mentă (Lamiaceae Mentha x piperita L.) - 50 mg", effect: "Posedă proprietăți calmante și antiinflamatoare.Ajută la îmbunătățirea digestiei și la reducerea disconfortului stomacal." },
+      { name: "Extract din rădăcină de lemn dulce - 40 mg", effect: "Are proprietăți antiinflamatorii și antibacteriene.Susține sănătatea gastrointestinală și sistemul imunitar." },
+      { name: "Extract din semințe de in (Linum usitatissimum L.) - 40 mg", effect: "Bogat în fibre și acizi grași omega-3, susține sănătatea digestivă.Ajută la eliminarea toxinelor și paraziților din organism." },
+      { name: "Extract uscat de pelin (Compositae Artemisia absinthium L.) - 20 mg", effect: "Cunoscut pentru proprietățile sale antiparazitare și antifungice.Ajută la eliminarea paraziților și la îmbunătățirea digestiei." },
+    ],
+  },
+],
+
+
+  
   // ✅ Accordions залишаються ТІЛЬКИ needs + objections
 
 
   accordions: {
     needs: [
       {
-        q: "1. Domnule/doamnă, spuneți-mi: ați lăsat o cerere la recomandarea medicului sau v-au sfătuit cunoștințele să apelați la noi? (Așteptăm răspunsul)",
+        q: `1. Domnule/doamnă, spuneți-mi: ați lăsat o cerere la recomandarea medicului sau v-au sfătuit cunoștințele să apelați la noi?<span class="txt-green">(Așteptăm răspunsul)</span>`,
         a: `
           <div class="yn">
             <button class="ynBtn" type="button" data-show="yes">Comentariu expert</button>
@@ -307,7 +552,7 @@ Cu atât mai mult cu cât acum beneficiați de o reducere de 50% și întreaga s
       },
 
       {
-        q: "2. Domnule/doamnă, pentru a calcula corect doza individuală, vă rugăm să ne spuneți vârsta dvs., înălțimea și greutatea? (Așteptăm răspunsul)",
+        q: `2. Domnule/doamnă, pentru a calcula corect doza individuală, vă rugăm să ne spuneți vârsta dvs., înălțimea și greutatea? <span class="txt-green">(Așteptăm răspunsul)</span>`,
         a: `
     <p><b>Notiță operator:</b> Scrieți sexul clientului (bărbat/femeie), problemele pe care le are și kg.</p>
   `,
@@ -318,7 +563,7 @@ Cu atât mai mult cu cât acum beneficiați de o reducere de 50% și întreaga s
   `,
       },
       {
-        q: "3. Acum să vorbim despre problema dumneavoastră. Spuneți-ne, care anume articulații vă deranjează? De cât timp durează acest lucru? (Așteptăm răspunsul)  (notăm răspunsul clientului)",
+        q: `3. Acum să vorbim despre problema dumneavoastră. Spuneți-ne, care anume articulații vă deranjează? De cât timp durează acest lucru? <span class="txt-green">(Așteptăm răspunsul)  (notăm răspunsul clientului)</span>`,
         a: `
           <div class="yn">
             <button class="ynBtn" type="button" data-show="yes">Comentariu expert</button>
@@ -332,7 +577,7 @@ Cu atât mai mult cu cât acum beneficiați de o reducere de 50% și întreaga s
       },
 
       {
-        q: "4. Domnule/doamnă , vă rugăm să ne spuneți: aveți deseori dureri sau rigiditate la nivelul articulațiilor? (Așteptăm răspunsul)",
+        q: `4. Domnule/doamnă , vă rugăm să ne spuneți: aveți deseori dureri sau rigiditate la nivelul articulațiilor? <span class="txt-green">(Așteptăm răspunsul)</span>`,
         a: `
           <div class="yn">
             <button class="ynBtn" type="button" data-show="yes">Comentariu expert, dacă răspunsul este „Da”</button>
@@ -351,7 +596,7 @@ Cu atât mai mult cu cât acum beneficiați de o reducere de 50% și întreaga s
       },
 
       {
-        q: "5. Domnule/doamnă , ați auzit că, dacă durerea articulară nu dispare pentru o perioadă lungă de timp, aceasta poate afecta grav mobilitatea și starea articulațiilor? (Așteptăm acordul)",
+        q: `5. Domnule/doamnă , ați auzit că, dacă durerea articulară nu dispare pentru o perioadă lungă de timp, aceasta poate afecta grav mobilitatea și starea articulațiilor? <span class="txt-green">(Așteptăm acordul)</span>`,
         a: `
           <div class="yn">
             <button class="ynBtn" type="button" data-show="yes">Comentariu expert</button>
@@ -369,7 +614,7 @@ Cu atât mai mult cu cât acum beneficiați de o reducere de 50% și întreaga s
       },
 
       {
-        q: "6. Domnule/doamnă , spuneți-mi, aveți rude cu boli ale articulațiilor? (Așteptăm răspunsul)  (notăm cine suferă/fie „Da”/„Nu”)",
+        q: `6. Domnule/doamnă , spuneți-mi, aveți rude cu boli ale articulațiilor? <span class="txt-green">(Așteptăm răspunsul)  (notăm cine suferă/fie „Da”/„Nu”)</span>`,
         a: `
           <div class="yn">
             <button class="ynBtn" type="button" data-show="yes">Comentariu expert, dacă „Da”</button>
@@ -392,7 +637,7 @@ Cu atât mai mult cu cât acum beneficiați de o reducere de 50% și întreaga s
       },
 
       {
-        q: "7. Domnule/doamnă , să vorbim acum despre calitatea vieții și simptome. Vă rog să ne spuneți dacă vă este greu să mergeți mult timp, să urcați scările, să vă ocupați de treburile obișnuite sau să vă ridicați după ce v-ați odihnit? (Așteptăm răspunsul)",
+        q: `7. Domnule/doamnă , să vorbim acum despre calitatea vieții și simptome. Vă rog să ne spuneți dacă vă este greu să mergeți mult timp, să urcați scările, să vă ocupați de treburile obișnuite sau să vă ridicați după ce v-ați odihnit? <span class="txt-green">(Așteptăm răspunsul)</span>`,
         a: `
           <div class="yn">
             <button class="ynBtn" type="button" data-show="yes">Comentariu expert, dacă răspunsul este „Da”</button>
@@ -411,7 +656,7 @@ Cu atât mai mult cu cât acum beneficiați de o reducere de 50% și întreaga s
         `,
       },
       {
-        q: "8. Domnule/doamnă , aveți scrâșniri sau pocnituri la mișcare? (Așteptăm răspunsul)",
+        q: `8. Domnule/doamnă , aveți scrâșniri sau pocnituri la mișcare? <span class="txt-green">(Așteptăm răspunsul)</span>`,
         a: `
           <div class="yn">
             <button class="ynBtn" type="button" data-show="yes">Comentariu expert, dacă răspunsul este „Da”</button>
@@ -430,7 +675,7 @@ Cu atât mai mult cu cât acum beneficiați de o reducere de 50% și întreaga s
         `,
       },
       {
-        q: "9. Domnule/doamnă , spuneți-mi, aveți umflături sau roșeață în zona articulațiilor? (Așteptăm răspunsul)",
+        q: `9. Domnule/doamnă , spuneți-mi, aveți umflături sau roșeață în zona articulațiilor? <span class="txt-green">(Așteptăm răspunsul)</span>`,
         a: `
           <div class="yn">
             <button class="ynBtn" type="button" data-show="yes">Comentariul expertului, dacă răspunsul este „Da”</button>
@@ -449,7 +694,7 @@ Cu atât mai mult cu cât acum beneficiați de o reducere de 50% și întreaga s
         `,
       },
       {
-        q: "10. Domnule/doamnă , aveți dureri nocturne la nivelul articulațiilor care vă împiedică să dormiți? (Așteptăm răspunsul)",
+        q: `10. Domnule/doamnă , aveți dureri nocturne la nivelul articulațiilor care vă împiedică să dormiți? <span class="txt-green">(Așteptăm răspunsul)</span>`,
         a: `
           <div class="yn">
             <button class="ynBtn" type="button" data-show="yes">Comentariu expert, dacă răspunsul este „Da”</button>
@@ -469,7 +714,7 @@ Cu atât mai mult cu cât acum beneficiați de o reducere de 50% și întreaga s
       },
 
       {
-        q: "11. Domnule/doamnă , ați avut leziuni articulare sau operații la articulații? (Așteptăm răspunsul)",
+        q: `11. Domnule/doamnă , ați avut leziuni articulare sau operații la articulații? <span class="txt-green">(Așteptăm răspunsul)</span>`,
         a: `
           <div class="yn">
             <button class="ynBtn" type="button" data-show="yes">Comentariu expert, dacă răspunsul este „Da”</button>
@@ -494,11 +739,11 @@ Cu atât mai mult cu cât acum beneficiați de o reducere de 50% și întreaga s
   `,
       },
       {
-        q: "12. Domnule/doamnă , să vorbim puțin despre greutatea dumneavoastră. La început ați spus că înălțimea dumneavoastră este  și greutatea  — am notat corect? (Așteptăm răspunsul)",
+        q: `12. Domnule/doamnă , să vorbim puțin despre greutatea dumneavoastră. La început ați spus că înălțimea dumneavoastră este  și greutatea  — am notat corect? <span class="txt-green">(Așteptăm răspunsul)</span>`,
       },
 
       {
-        q: "13. Comentariu expert: mulțumim pentru precizare. Conform calculelor medicale, la înălțimea dumneavoastră, greutatea optimă este de aproximativ XX-XX kilograme. Dumneavoastră considerați că aveți un ușor exces de greutate și cât de mult vă deranjează acest lucru? (Așteptăm răspunsul)  (notăm răspunsul clientului)",
+        q: `13. Comentariu expert: mulțumim pentru precizare. Conform calculelor medicale, la înălțimea dumneavoastră, greutatea optimă este de aproximativ XX-XX kilograme. Dumneavoastră considerați că aveți un ușor exces de greutate și cât de mult vă deranjează acest lucru? <span class="txt-green">(Așteptăm răspunsul)  (notăm răspunsul clientului)</span>`,
 
         a: `
 
@@ -523,28 +768,28 @@ Cu atât mai mult cu cât acum beneficiați de o reducere de 50% și întreaga s
   `,
       },
       {
-        q: "14. Domnule/doamnă , vă rugăm să ne spuneți dacă aveți boli concomitente, de exemplu, diabet zaharat sau probleme cu tensiunea arterială? (Așteptăm răspunsul)",
+        q: `14. Domnule/doamnă , vă rugăm să ne spuneți dacă aveți boli concomitente, de exemplu, diabet zaharat sau probleme cu tensiunea arterială? <span class="txt-green">(Așteptăm răspunsul)</span>`,
       },
       {
-        q: "15. (Dacă este diabet) Domnule/doamnă , am înțeles. Probabil știți că, în cazul diabetului, nivelul ridicat al zahărului din sânge are un efect negativ asupra articulațiilor, nu-i așa? (Așteptăm confirmarea)",
+        q: `15. (Dacă este diabet) Domnule/doamnă , am înțeles. Probabil știți că, în cazul diabetului, nivelul ridicat al zahărului din sânge are un efect negativ asupra articulațiilor, nu-i așa? <span class="txt-green">(Așteptăm confirmarea)</span>`,
         a: `
     <p><b>Comentariu expert:</b>diabetul este dublu periculos pentru articulații. Deoarece glucoza se cristalizează în lichidul articular, cartilajul se uzează mai repede, iar lubrifiantul devine dens. Capilarele nu alimentează cartilajul în mod adecvat. Drept urmare, articulațiile se deteriorează de 3 ori mai repede. În cazul dumneavoastră, este necesară o protecție specială.</p>
   `,
       },
       {
-        q: "16. (Dacă presiunea) Domnule/doamnă , v-am înțeles. Probabil ați auzit că tensiunea arterială ridicată poate afecta starea articulațiilor, nu-i așa? (Așteptăm acordul)",
+        q: `16. (Dacă presiunea) Domnule/doamnă , v-am înțeles. Probabil ați auzit că tensiunea arterială ridicată poate afecta starea articulațiilor, nu-i așa? <span class="txt-green">(Așteptăm acordul)</span>`,
         a: `
     <p><b>Comentariu expert:</b>hipertensiunea afectează în mod imperceptibil articulațiile. Din cauza spasmelor vasculare, celulele noastre primesc cu 40% mai puțină hrană. Cartilajul își pierde elasticitatea, iar riscul de artroză crește de două ori.</p>
   `,
       },
       {
-        q: "17. (Dacă aveți diabet și hipertensiune) Domnule/doamnă , v-am înțeles. Cred că știți că, în cazul diabetului, nivelul ridicat de zahăr încetinește refacerea articulațiilor, iar tensiunea crescută agravează circulația sanguină, nu-i așa? (Așteptăm confirmarea)",
+        q: `17. (Dacă aveți diabet și hipertensiune) Domnule/doamnă , v-am înțeles. Cred că știți că, în cazul diabetului, nivelul ridicat de zahăr încetinește refacerea articulațiilor, iar tensiunea crescută agravează circulația sanguină, nu-i așa? <span class="txt-green">(Așteptăm confirmarea)</span>`,
         a: `
     <p><b>Comentariu expert:</b>înțeleg că este dificil pentru dumneavoastră și că acesta este un factor de risc serios. Diabetul + hipertensiunea accelerează distrugerea cartilajelor de 5 ori și agravează de două ori alimentarea țesuturilor. Este un cerc vicios. Fără o abordare complexă, recuperarea este practic imposibilă.</p>
   `,
       },
       {
-        q: "18. Comentariu expert, dacă nu există/nu se cunoaște:",
+        q: `18. Comentariu expert, dacă nu există/nu se cunoaște:`,
         a: `
     <p>Domnule/doamnă , aveți noroc. Dar după , pierderea anuală de 1-2% din țesutul cartilajului este inevitabilă. Este bine că metodele moderne pot încetini uzura de 2-3 ori și pot ajuta la recuperare. Ați apelat la timp pentru prevenire.</p>
   `,
@@ -556,13 +801,13 @@ Cu atât mai mult cu cât acum beneficiați de o reducere de 50% și întreaga s
   `,
       },
       {
-        q: "19. Domnule/doamnă , având în vedere ceea ce știm deja despre starea dumneavoastră, utilizați unguente, comprese sau comprimate pentru articulații? (Așteptăm răspunsul) (notăm răspunsul clientului) ",
+        q: `19. Domnule/doamnă , având în vedere ceea ce știm deja despre starea dumneavoastră, utilizați unguente, comprese sau comprimate pentru articulații? <span class="txt-green">(Așteptăm răspunsul) (notăm răspunsul clientului)</span> `,
         a: `
      <p><b>Comentariu expert:</b>Domnule/doamnă , dacă utilizați frecvent medicamente pentru articulații, înseamnă că problema este gravă. Dar multe medicamente, cum ar fi AINS și unguentele, solicită stomacul, ficatul și rinichii. Utilizarea pe termen lung poate să nu îmbunătățească starea, ci să provoace efecte secundare.</p>
   `,
       },
       {
-        q: "20. Domnule/doamnă , alte medicamente provoacă adesea dureri abdominale, oboseală, slăbiciune, deteriorarea memoriei, amețeli sau reacții alergice. Spuneți-mi, ați observat aceste efecte secundare? (Așteptăm răspunsul)",
+        q: `20. Domnule/doamnă , alte medicamente provoacă adesea dureri abdominale, oboseală, slăbiciune, deteriorarea memoriei, amețeli sau reacții alergice. Spuneți-mi, ați observat aceste efecte secundare? <span class="txt-green">(Așteptăm răspunsul)</span>`,
         a: `
           <div class="yn">
             <button class="ynBtn" type="button" data-show="yes">Comentariu expert, dacă răspunsul este „Da”</button>

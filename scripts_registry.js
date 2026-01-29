@@ -36,20 +36,32 @@ function normalizeHotScript(obj) {
     fixedStages[k] = typeof stages[k] === "string" ? stages[k] : "";
   });
 
-  // ✅ ВАЖЛИВО: ці поля раніше губилися під час normalize()
+  // ✅ Раніше ці поля губилися під час normalize()
   // Тепер вони зберігаються і будуть доступні в script.js
+
+  // Ціни (вкладки)
   const pricing = Array.isArray(obj?.pricing) ? obj.pricing : [];
+
+  // Довгі кнопки в етапі "Заперечення"
   const objectionsButtons = Array.isArray(obj?.objectionsButtons)
     ? obj.objectionsButtons
     : [];
 
+    const products = Array.isArray(obj?.products) ? obj.products : [];
+
+
+
+
   return {
     title: typeof obj?.title === "string" ? obj.title : "",
     stages: fixedStages,
+    
 
-    // ✅ ДОДАЛИ: щоб рендерились ціни та кнопки заперечень
+    // ✅ ДОДАЛИ: щоб рендерились ціни та кнопки
     pricing,
     objectionsButtons,
+    products,
+
 
     accordions: {
       needs: Array.isArray(obj?.accordions?.needs) ? obj.accordions.needs : [],

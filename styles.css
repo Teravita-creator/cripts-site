@@ -397,3 +397,136 @@ h1{ margin: 0 0 8px; font-size: 26px; }
 .objPanel.show{
   display: block;
 }
+/* ===== PRICING TABLE ===== */
+.priceTable{
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  overflow: hidden;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: #fff;
+}
+
+.priceTable th,
+.priceTable td{
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+
+.priceTable th{
+  text-align: left;
+  font-weight: 800;
+  background: rgba(201,162,39,0.15);
+}
+
+.priceTable tr:last-child td{
+  border-bottom: none;
+}
+
+
+.prodCard{
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 14px;
+  background: #fff;
+  margin-bottom: 12px;
+}
+
+.prodHeader{
+  display: grid;
+  grid-template-columns: 200px 1fr; /* ⬅ більше місця */
+  gap: 14px;
+  align-items: start;
+}
+
+
+.prodImg{
+  width: 180px;          /* ⬅ фото більше */
+  height: auto;          /* ⬅ не ріжемо */
+  max-height: 220px;     /* ⬅ щоб не ламало картку */
+  object-fit: contain;   /* ⬅ НЕ обрізає */
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: #fff;
+}
+
+
+.prodTitle{
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 6px;
+}
+
+.prodMeta > div{
+  margin-bottom: 4px;
+}
+
+.prodDesc{
+  margin-top: 10px;
+}
+
+.prodBlockTitle{
+  margin-top: 12px;
+  margin-bottom: 8px;
+}
+
+.prodTable{
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.prodTable th,
+.prodTable td{
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+
+.prodTable th{
+  text-align: left;
+  font-weight: 800;
+  background: rgba(201,162,39,0.15);
+}
+
+.prodTable tr:last-child td{
+  border-bottom: none;
+}
+
+/* ===== TEXT ACCENTS ===== */
+.txt-red{
+  color: #b84a4a;          /* м’який червоний */
+  font-weight: 700;
+}
+
+.txt-green{
+  color: #2f7d5a;          /* спокійний зелений */
+  font-weight: 700;
+}
+
+.txt-blue{
+  color: #2f5f8f;          /* глибокий синій */
+  font-weight: 700;
+}
+
+/* Трохи м’якше для довгих абзаців */
+.p-accent-red{
+  color: #8f4a4a;
+}
+
+.p-accent-green{
+  color: #3b6f59;
+}
+
+.p-accent-blue{
+  color: #3a5f7a;
+}
+.txt-red,
+.txt-green,
+.txt-blue{
+  letter-spacing: 0.2px;
+}

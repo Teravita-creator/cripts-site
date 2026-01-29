@@ -55,11 +55,19 @@ hideAllBranchAnswers();
 
 // ================== ЦІНИ ==================
 renderPricing(scriptObj);
-
+renderProducts(scriptObj);
 renderObjectionsButtons(scriptObj);
 
 // ================== SCROLL ==================
 initScrollSpy();
+
+// ✅ Перемальовуємо динамічні блоки при зміні мови
+document.getElementById("langSelect")?.addEventListener("change", () => {
+  renderProducts(scriptObj);
+  // якщо захочеш — можна й ціни теж:
+  // renderPricing(scriptObj);
+});
+
 
 // ================== FUNCTIONS ==================
 function setHTML(id, html) {
@@ -96,10 +104,17 @@ function hideAllBranchAnswers() {
 function makeAccordion(question, answerHtml) {
   const details = document.createElement("details");
   details.className = "acc";
-  details.open = true; // ❗ завжди відкрито
+  details.open = true; // завжди відкрито
 
   const summary = document.createElement("summary");
-  summary.textContent = question || "";
+  summary.innerHTML = question || "";
+
+
+  // ✅ ВАЖЛИВО: блокуємо стандартне згортання/розгортання по кліку
+  summary.addEventListener("click", (e) => {
+    e.preventDefault();
+    details.open = true;
+  });
 
   const body = document.createElement("div");
   body.className = "accBody";
@@ -109,6 +124,7 @@ function makeAccordion(question, answerHtml) {
   details.appendChild(body);
   return details;
 }
+
 
 // ================== YES / NO КНОПКИ ==================
 document.addEventListener("click", (e) => {
@@ -171,6 +187,8 @@ function renderPricing(scriptObj){
     tabs.appendChild(btn);
   });
 }
+
+
 /* =========================
    КНОПКИ ЗАПЕРЕЧЕНЬ (довгі)
    ========================= */
@@ -223,6 +241,94 @@ function renderObjectionsButtons(scriptObj) {
   });
 }
 
+function renderProducts(scriptObj) {
+  const host = document.getElementById("productsList");
+  if (!host) return;
+
+  const items = scriptObj?.products;
+  if (!Array.isArray(items) || items.length === 0) {
+    host.innerHTML = `<p class="muted">Нет данных по препаратам.</p>`;
+    return;
+  }
+
+  host.innerHTML = "";
+
+  items.forEach((p) => {
+    const card = document.createElement("div");
+    card.className = "prodCard";
+
+    const imgHtml = p.image
+      ? `<img class="prodImg" src="${escapeAttr(p.image)}" alt="${escapeAttr(p.name || "Product")}" loading="lazy">`
+      : "";
+
+    const ingredientsRows = Array.isArray(p.ingredients)
+      ? p.ingredients
+          .map(
+            (ing) => `
+              <tr>
+                <td>${escapeHtml(ing?.name || "")}</td>
+                <td>${escapeHtml(ing?.effect || "")}</td>
+              </tr>
+            `
+          )
+          .join("")
+      : "";
+
+    const tableHtml = ingredientsRows
+  ? `
+    <table class="prodTable">
+      <thead>
+        <tr>
+          <th>${t("product.ing")}</th>
+          <th>${t("product.effect")}</th>
+        </tr>
+      </thead>
+      <tbody>
+        ${ingredientsRows}
+      </tbody>
+    </table>
+  `
+  : `<p class="muted">${t("product.noIngr")}</p>`;
+
+
+    card.innerHTML = `
+  <div class="prodHeader">
+    ${imgHtml}
+    <div class="prodInfo">
+      <div class="prodTitle">${escapeHtml(p.name || "Препарат")}</div>
+
+      <div class="prodMeta">
+        ${p.origin ? `<div><b>${t("product.from")}:</b> ${escapeHtml(p.origin)}</div>` : ""}
+        ${p.format ? `<div><b>${t("product.format")}:</b> ${escapeHtml(p.format)}</div>` : ""}
+        ${p.usage ? `<div><b>${t("product.usage")}:</b> ${escapeHtml(p.usage)}</div>` : ""}
+      </div>
+    </div>
+  </div>
+
+  ${p.description ? `<div class="prodDesc"><b>${t("product.description")}:</b> ${escapeHtml(p.description)}</div>` : ""}
+
+  <div class="prodBlockTitle"><b>${t("product.compTitle")}</b></div>
+  ${tableHtml}
+`;
+
+
+    host.appendChild(card);
+  });
+}
+
+// --- helpers (щоб не ламати HTML) ---
+function escapeHtml(str) {
+  return String(str)
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#039;");
+}
+function escapeAttr(str) {
+  // для атрибутів src/alt
+  return escapeHtml(str).replaceAll("`", "&#096;");
+}
 
 
 

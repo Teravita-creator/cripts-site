@@ -39,7 +39,17 @@ const I18N = {
     "script.tip": "Нажимай на этап — страница прокрутится к нужному блоку.",
     "script.questionBlockTitle": "Варианты ответов (раскрывается по клику)",
     "script.placeholderText": "Здесь будет текст скрипта. Вставь свой текст в script.js (в комментариях будет подсказка).",
-  },
+"product.from": "Откуда",
+"product.format": "Формат",
+"product.usage": "Применение",
+"product.description": "Описание",
+"product.compTitle": "Состав и действие",
+"product.ing": "Состав",
+"product.effect": "Действие",
+"product.noData": "Нет данных по препаратам.",
+"product.noIngr": "Нет данных по составу.",
+ 
+},
 
   pl: {
     "lang.label": "Język",
@@ -81,6 +91,16 @@ const I18N = {
     "script.tip": "Kliknij etap — strona przewinie do odpowiedniej sekcji.",
     "script.questionBlockTitle": "Warianty odpowiedzi (rozwija się po kliknięciu)",
     "script.placeholderText": "Tutaj będzie tekst skryptu. Wklej swój tekst w script.js (są komentarze).",
+    "product.from": "Pochodzenie",
+"product.format": "Forma",
+"product.usage": "Stosowanie",
+"product.description": "Opis",
+"product.compTitle": "Skład i działanie",
+"product.ing": "Składnik",
+"product.effect": "Działanie",
+"product.noData": "Brak danych o preparatach.",
+"product.noIngr": "Brak danych o składzie.",
+
   },
 
   ka: {
@@ -123,6 +143,16 @@ const I18N = {
     "script.tip": "დააჭირე ეტაპს — გვერდი გადავა შესაბამის ბლოკზე.",
     "script.questionBlockTitle": "პასუხების ვარიანტები (იხსნება კლიკით)",
     "script.placeholderText": "აქ იქნება სკრიპტის ტექსტი. ჩასვი ტექსტი script.js-ში (კომენტარები დაგეხმარება).",
+    "product.from": "წარმოშობა",
+"product.format": "ფორმატი",
+"product.usage": "გამოყენება",
+"product.description": "აღწერა",
+"product.compTitle": "შემადგენლობა და მოქმედება",
+"product.ing": "შემადგენელი",
+"product.effect": "მოქმედება",
+"product.noData": "პრეპარატების მონაცემები არ არის.",
+"product.noIngr": "შემადგენლობის მონაცემები არ არის.",
+
   },
 
   ro: {
@@ -165,6 +195,16 @@ const I18N = {
     "script.tip": "Apasă pe etapă — pagina se va derula la secțiunea potrivită.",
     "script.questionBlockTitle": "Variante de răspuns (se deschide la click)",
     "script.placeholderText": "Aici va fi textul scriptului. Pune textul în script.js (sunt comentarii).",
+    "product.from": "Origine",
+"product.format": "Format",
+"product.usage": "Administrare",
+"product.description": "Descriere",
+"product.compTitle": "Compoziție și efect",
+"product.ing": "Component",
+"product.effect": "Efect",
+"product.noData": "Nu există date despre produse.",
+"product.noIngr": "Nu există date despre compoziție.",
+
   },
 };
 
