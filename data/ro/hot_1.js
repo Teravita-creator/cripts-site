@@ -380,7 +380,7 @@ El reduce inflamațiile interne, îmbunătățește hrănirea articulațiilor ș
 Remediul este complet sigur, potrivit și pentru persoanele cu afecțiuni cronice, și se combină perfect cu cursul dumneavoastră pentru articulații.
 De obicei, cursul costă 240 lei, dar acum este în promoție — <b>doar 59 lei pentru 10 zile de utilizare</b>.</p>
 <p>Domnule/ Doamna, haideți să adăugăm și Nemanex la comandă, ca organismul să se curețe, articulațiile să se refacă mai repede și rezultatul să se mențină mai mult timp. (E bine așa.)</p>
-<p>— Excelent, Domnule/Doamnă , atunci vă confirm cursul principal Arthrolon și cursul (cursurile) suplimentar(e) din promoție. Valoarea totală a comenzii dvs., ținând cont de toate reducerile, <b>va fi de XX lei</b>.</p>
+<p>— Excelent, Domnule/Doamnă , atunci vă confirm cursul principal Arthrolux și cursul (cursurile) suplimentar(e) din promoție. Valoarea totală a comenzii dvs., ținând cont de toate reducerile, <b>va fi de XX lei</b>.</p>
 
     `,
   },
@@ -432,7 +432,7 @@ De obicei, cursul costă 240 lei, dar acum este în promoție — <b>doar 59 lei
     `,
   },
   {
-    label: "Hyperon",
+    label: "OzemLite  ",
     html: `
     <p>Domnule/ Doamna, ați făcut foarte bine că ați ales cursul pentru susținerea mobilității articulațiilor — el va ajuta la reducerea inflamației și la redarea confortului în mișcare.</p>
 
@@ -493,7 +493,7 @@ Chiar și pentru cursul de probă există acum o reducere, costul său fiind de 
       html: `
         <p><b>operator:</b> Domnule/doamnă , problema prețului este într-adevăr importantă, vă înțeleg.
 Dar să privim lucrurile într-o perspectivă mai largă: durerile articulare, rigiditatea, scrâșnitul — acestea nu sunt doar un disconfort, ci o limitare a libertății în viața de zi cu zi.
-Este dificil să vă mișcați, să dormiți, să vă plimbați normal sau să efectuați sarcini simple de zi cu zi. Arthrolon acționează din interior: ameliorează inflamația, hrănește țesutul cartilajului și declanșează procesele de refacere a articulațiilor.
+Este dificil să vă mișcați, să dormiți, să vă plimbați normal sau să efectuați sarcini simple de zi cu zi. Arthrolux acționează din interior: ameliorează inflamația, hrănește țesutul cartilajului și declanșează procesele de refacere a articulațiilor.
 Și cel mai important — rezultatul nu este temporar, ci se menține, deoarece tratăm cauza, nu simptomele.</p>
 <p>Domnule/doamnă , 550 lei nu este o cheltuială, ci o investiție în sănătate și încredere în sine. În plus, astăzi beneficiați de o reducere de 50%.</p>
 <p>Vă înregistrăm pentru un curs complet? <span class="txt-green">(Așteptăm răspunsul)</span></p>
@@ -505,7 +505,7 @@ Este dificil să vă mișcați, să dormiți, să vă plimbați normal sau să e
       <p><b>operator:</b> Domnule/doamnă , vă înțeleg perfect: în acest moment este foarte important să economisiți, iar îngrijorarea dumneavoastră este absolut justificată. Dar problemele cu articulațiile nu înseamnă doar durere, ci și un risc real de mobilitate limitată, care poate afecta în mod semnificativ calitatea vieții. Sincer, nu-mi este ușor să vorbesc despre asta, dar, conform statisticilor, multe persoane cu dureri articulare ajung în cele din urmă să se confrunte cu invaliditatea, care ar putea fi prevenită dacă tratamentul articulațiilor ar începe într-un stadiu incipient.</p>
       <p>Din păcate, durerile articulare apar adesea în mod imperceptibil, iar persoana nu simte gravitatea problemei până când starea nu se agravează semnificativ. Recuperarea articulațiilor după leziuni grave este întotdeauna mult mai costisitoare, atât din punct de vedere financiar, cât și al sănătății.
 </p>
-<p>Vestea bună este că ați făcut deja primul pas, v-ați gândit la prevenire. Să nu amânăm: să începem cu un curs de Arthrolon  de 2 luni pentru 400 de lei. Acest lucru va da deja un efect vizibil.
+<p>Vestea bună este că ați făcut deja primul pas, v-ați gândit la prevenire. Să nu amânăm: să începem cu un curs de Arthrolux  de 2 luni pentru 400 de lei. Acest lucru va da deja un efect vizibil.
 Mai mult, conform programului de bonusuri, întreaga sumă va fi returnată în contul dvs. personal imediat după plată. Nu cheltuiți bani, ci pur și simplu îi investiți în îngrijirea dvs. și a sănătății dvs. Este cea mai avantajoasă opțiune.
 Ce curs vom face, unul complet cu o reducere de 50% sau unul de 2 luni cu o reducere de 40%?</p>
 
