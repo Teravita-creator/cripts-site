@@ -127,11 +127,12 @@
   }
 
   function renderDynamic(scriptObj) {
-    renderPricing(scriptObj);
-    renderCrossSellProducts(scriptObj);
-    renderProducts(scriptObj);
-    renderObjectionsButtons(scriptObj);
-  }
+  renderPricing(scriptObj);
+  renderCrossSellProducts(scriptObj);
+  renderProducts(scriptObj);
+  renderObjectionsButtons(scriptObj);
+}
+
 
   // ================== HELPERS ==================
   function setHTML(id, html) {
@@ -226,6 +227,9 @@
     });
   }
 
+
+
+
   // ================== CROSS-SELL ==================
   function renderCrossSellProducts(scriptObj) {
     const host = document.getElementById("crossSellBlock");
@@ -310,75 +314,50 @@
 
   // ================== PRODUCTS ==================
   function renderProducts(scriptObj) {
-    const host = document.getElementById("productsList");
-    if (!host) return;
+  const host = document.getElementById("productsList");
+  if (!host) return;
 
-    const items = scriptObj?.products;
-    if (!Array.isArray(items) || items.length === 0) {
-      host.innerHTML = `<p class="muted">Нет данных по препаратам.</p>`;
-      return;
-    }
-
-    host.innerHTML = "";
-
-    items.forEach((p) => {
-      const card = document.createElement("div");
-      card.className = "prodCard";
-
-      const imgHtml = p.image
-        ? `<img class="prodImg" src="${escapeAttr(p.image)}" alt="${escapeAttr(p.name || "Product")}" loading="lazy">`
-        : "";
-
-      const ingredientsRows = Array.isArray(p.ingredients)
-        ? p.ingredients
-            .map(
-              (ing) => `
-                <tr>
-                  <td>${escapeHtml(ing?.name || "")}</td>
-                  <td>${escapeHtml(ing?.effect || "")}</td>
-                </tr>
-              `
-            )
-            .join("")
-        : "";
-
-      const tableHtml = ingredientsRows
-        ? `
-          <table class="prodTable">
-            <thead>
-              <tr>
-                <th>${safeT("product.ing","Состав")}</th>
-                <th>${safeT("product.effect","Эффект")}</th>
-              </tr>
-            </thead>
-            <tbody>${ingredientsRows}</tbody>
-          </table>
-        `
-        : `<p class="muted">${safeT("product.noIngr","Нет состава")}</p>`;
-
-      card.innerHTML = `
-        <div class="prodHeader">
-          ${imgHtml}
-          <div class="prodInfo">
-            <div class="prodTitle">${escapeHtml(p.name || "Препарат")}</div>
-
-            <div class="prodMeta">
-              ${p.origin ? `<div><b>${safeT("product.from","Страна")}:</b> ${escapeHtml(p.origin)}</div>` : ""}
-              ${p.format ? `<div><b>${safeT("product.format","Формат")}:</b> ${escapeHtml(p.format)}</div>` : ""}
-              ${p.usage ? `<div><b>${safeT("product.usage","Применение")}:</b> ${escapeHtml(p.usage)}</div>` : ""}
-            </div>
-          </div>
-        </div>
-
-        ${p.description ? `<div class="prodDesc"><b>${safeT("product.description","Описание")}:</b> ${escapeHtml(p.description)}</div>` : ""}
-
-        <div class="prodBlockTitle"><b>${safeT("product.compTitle","Состав")}</b></div>
-        ${tableHtml}
-      `;
-
-      host.appendChild(card);
-    });
+  const items = scriptObj?.products;
+  if (!Array.isArray(items) || items.length === 0) {
+    host.innerHTML = `<p class="muted">Нет данных по препаратам.</p>`;
+    return;
   }
+
+  host.innerHTML = "";
+
+  // 🔘 кнопки
+  const tabs = document.createElement("div");
+  tabs.className = "crossTabs";
+
+  // 📦 панель з препаратом
+  const panel = document.createElement("div");
+  panel.className = "crossPanel";
+  panel.style.display = "none";
+
+  host.appendChild(tabs);
+  host.appendChild(panel);
+
+  function activate(idx) {
+    const p = items[idx];
+
+    [...tabs.children].forEach((b, i) =>
+      b.classList.toggle("active", i === idx)
+    );
+
+    panel.innerHTML = buildProductCard(p);
+    panel.style.display = "block";
+  }
+
+  items.forEach((p, idx) => {
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "crossBtn";
+    btn.textContent = p.name || `Препарат #${idx + 1}`;
+    btn.addEventListener("click", () => activate(idx));
+    tabs.appendChild(btn);
+  });
+}
+
 
   function safeT(key, fallback) {
     try {
@@ -399,6 +378,61 @@
   function escapeAttr(str) {
     return escapeHtml(str).replaceAll("`", "&#096;");
   }
+function buildProductCard(p) {
+  if (!p) return "";
+
+  const imgHtml = p.image
+    ? `<img class="prodImg" src="${p.image}" alt="${p.name || "Product"}">`
+    : "";
+
+  const ingredientsRows = Array.isArray(p.ingredients)
+    ? p.ingredients
+        .map(
+          (ing) => `
+          <tr>
+            <td>${ing.name || ""}</td>
+            <td>${ing.effect || ""}</td>
+          </tr>`
+        )
+        .join("")
+    : "";
+
+  const tableHtml = ingredientsRows
+    ? `
+      <table class="prodTable">
+        <thead>
+          <tr>
+            <th>Состав</th>
+            <th>Эффект</th>
+          </tr>
+        </thead>
+        <tbody>${ingredientsRows}</tbody>
+      </table>
+    `
+    : `<p class="muted">Нет состава</p>`;
+
+  return `
+    <div class="prodCard">
+      <div class="prodHeader">
+        ${imgHtml}
+        <div>
+          <div class="prodTitle">${p.name || "Препарат"}</div>
+          <div class="prodMeta">
+            ${p.origin ? `<div><b>Страна:</b> ${p.origin}</div>` : ""}
+            ${p.format ? `<div><b>Формат:</b> ${p.format}</div>` : ""}
+            ${p.usage ? `<div><b>Применение:</b> ${p.usage}</div>` : ""}
+          </div>
+        </div>
+      </div>
+
+      ${p.description ? `<div class="prodDesc">${p.description}</div>` : ""}
+
+      <div class="prodBlockTitle"><b>Состав</b></div>
+      ${tableHtml}
+    </div>
+  `;
+}
+
 
   // ================== SCROLL ==================
   function initScrollSpy() {

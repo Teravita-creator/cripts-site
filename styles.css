@@ -650,3 +650,42 @@ html[data-theme="dark"] .floatingBack{
 html[data-theme="dark"] .crossPanel{
   background: rgba(255,255,255,0.04);
 }
+/* =========================
+   PRESENTATION / CROSS TABS
+========================= */
+
+.crossTabs {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 10px 0;
+}
+
+.crossBtn {
+  padding: 6px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.15s ease;
+}
+
+.crossBtn:hover {
+  background: #f3f4f6;
+}
+
+.crossBtn.active {
+  background: #22c55e;
+  border-color: #22c55e;
+  color: #000;
+  font-weight: 600;
+}
+
+.crossPanel {
+  margin-top: 10px;
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: #fff;
+}
