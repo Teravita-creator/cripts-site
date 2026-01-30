@@ -66,7 +66,9 @@ registerScript("ro", "hot_1", {
   <li>Veți avea încredere în viitor, știind că durerile și limitările de mobilitate sunt semnificativ reduse.</li>
 </ul>
 <p>Domnule/doamnă , tocmai această abordare complexă permite obținerea unui rezultat maxim în refacerea sănătății articulațiilor și controlul mobilității. Ați dori să obțineți un astfel de rezultat, nu-i așa? (Așteptăm acordul)</p>
- `,
+<p>Totuși, pentru grupa dvs. de vârstă (specificăm vârsta clientului) și situația dvs., vă pot oferi două tratamente pentru a obține rezultatul dorit, si anume tratament intern si extern.ca sa aveti rezultat mai rabid va recomanda sa folositi capsulele de uz intern in combinatie cu cerma de uz extern, si rezultataul va fi mult mai rapid si mai eficient.În plus, astăzi avem niște promoții excelente. Oferim produse gratuite la achiziție.</p>
+<p>Totuși, pentru grupa dvs. de vârstă (specificăm vârsta clientului) și situația dvs., vă pot oferi două tratamente pentru a obține rezultatul dorit, si anume tratament intern si extern.ca sa aveti rezultat mai rabid va recomanda sa folositi capsulele de uz intern in combinatie cu cerma de uz extern Arthrolon+Artrolux, si rezultataul va fi mult mai rapid si mai eficient.În plus, astăzi avem niște promoții excelente. Oferim produse gratuite la achiziție.</p>
+`,
 
     courses: `
 <p>Atunci vă voi povesti mai detaliat despre schema de administrare, cursuri și costuri, bine? (Așteptăm acordul)</p>
@@ -96,10 +98,10 @@ registerScript("ro", "hot_1", {
       `,
 
     cross: `
-    <p>, ați făcut foarte bine că ați ales cursul pentru susținerea mobilității articulațiilor — el va ajuta la reducerea inflamației și la redarea confortului în mișcare.</p>
+    <p>Domnule/ Doamna, ați făcut foarte bine că ați ales cursul pentru susținerea mobilității articulațiilor — el va ajuta la reducerea inflamației și la redarea confortului în mișcare.</p>
  <p>Pentru ca efectul să apară mai repede și rezultatul să se mențină pe termen lung, recomandăm întotdeauna și o curățare a organismului.
 Sărurile, toxinele și reziduurile se acumulează adesea în țesuturile articulațiilor și împiedică refacerea lor.</p>
- <p>În cazul dumneavoastră, <b>Cleroix</b> este soluția ideală — un complex natural de detoxifiere care ajută la eliminarea substanțelor nocive și la susținerea metabolismului.
+ <p>În cazul dumneavoastră, <b>Cleorix</b> este soluția ideală — un complex natural de detoxifiere care ajută la eliminarea substanțelor nocive și la susținerea metabolismului.
 El reduce inflamațiile interne, îmbunătățește hrănirea articulațiilor și amplifică efectul cursului principal.</p>
  <p>Compoziția conține trei ingrediente active:</p>
 <ul>
@@ -110,7 +112,7 @@ El reduce inflamațiile interne, îmbunătățește hrănirea articulațiilor ș
 <p>Administrarea este foarte simplă: 20 de picături dizolvate în 100 ml de apă, de 2 ori pe zi.
 Remediul este complet sigur, potrivit și pentru persoanele cu afecțiuni cronice, și se combină perfect cu cursul dumneavoastră pentru articulații.
 De obicei, cursul costă 240 lei, dar acum este în promoție — <b>doar 59 lei pentru 10 zile de utilizare</b>.</p>
-<p>, haideți să adăugăm și Nemanex la comandă, ca organismul să se curețe, articulațiile să se refacă mai repede și rezultatul să se mențină mai mult timp. (E bine așa.)</p>
+<p>Domnule/ Doamna, haideți să adăugăm și Nemanex la comandă, ca organismul să se curețe, articulațiile să se refacă mai repede și rezultatul să se mențină mai mult timp. (E bine așa.)</p>
 <p>— Excelent, Domnule/Doamnă , atunci vă confirm cursul principal Arthrolon și cursul (cursurile) suplimentar(e) din promoție. Valoarea totală a comenzii dvs., ținând cont de toate reducerile, <b>va fi de XX lei</b>.</p>
  `,
     survey: `
@@ -134,9 +136,8 @@ De obicei, cursul costă 240 lei, dar acum este în promoție — <b>doar 59 lei
 
     <p class="presentationTitle"><span class="txt-red">CONDIȚIILE OFERTEI:</span></p>
     <Din>Conform regulamentului nostru, încheiem un acord verbal, în baza căruia compania se obligă să vă furnizeze un produs original, de cea mai înaltă calitate. Eu, nume / prenume, îmi asum responsabilitatea ca tratamentul dumneavoastră să fie eficient. Din partea dumneavoastră, vă asumați responsabilitatea de a primi produsul și de a începe tratamentul. Vă rog să-mi spuneți dacă aceste condiții vă sunt acceptabile în acest moment.</p>
-    <Vă>Vă rugăm să scrieți numărul liniei noastre de asistență telefonică – dacă aveți întrebări – vă vom ajuta cu plăcere:<b> ТУТ ВСТАВИТЬ НОМЕР</b>. Vă voi monitoriza rezultatele, așa că vă rugăm să răspundeți la următorul apel.</p>
-    <p>În ziua livrării veți primi un SMS cu un link pentru a vă urmări comanda. Plata - numerar la curier la primire. Aveti întrebări?</p>
-    <p>Kl spune "Nu"</p>
+    <p>Vă voi monitoriza rezultatele, așa că vă rugăm să răspundeți la următorul apel.</p>
+    <p>Aveti întrebări?</p>
     <p>O zi plăcută!</p>
 
     `,
