@@ -491,8 +491,8 @@ products: [
     name: "Artrolux Pro",
     image: "assets/products/ro/product1.jpg", // або https://...
     origin: "Producatorul-Letonia",
-    format: "20 capsul",
-    usage: "Як застосовувати (коротко)",
+    format: "30 capsul",
+    usage: "3 ori / zi",
     description: "ARTROLUX PRO CAPS N30 este un supliment alimentar conceput pentru a susține sănătatea articulațiilor și a cartilajului. Combinația de glucozamină, condroitină, boswellia, ghimbir, MSM și curcumin ajută la întărirea structurii articulare, reducerea inflamațiilor și îmbunătățirea flexibilității. Vitamina C și manganul susțin sinteza colagenului și elasticitatea țesuturilor. Recomandat persoanelor active fizic sau cu rigiditate articulară legată de vârstă.",
     ingredients: [
       { name: "Glucozamină sulfat (Glucosamine sulphate 2KCl)", effect: "ajută la refacerea și protejarea cartilajului, îmbunătățește mobilitatea articulațiilor și reduce rigiditatea." },
@@ -511,7 +511,7 @@ products: [
     image: "assets/products/ro/product2.jpg",
     origin: "Producatorul-Letonia",
     format: "20 capsul",
-    usage: "…",
+    usage: "2 ori / zi",
     description: "Capsulele antiparazitare sunt o soluție inovatoare pentru combaterea paraziților și susținerea procesului natural de detoxifiere a organismului. Cu ajutorul lor, se obține nu numai eliminarea eficientă a paraziților, ci și o îmbunătățire semnificativă a stării generale de sănătate datorită unui complex unic de ingrediente active. Aceste capsule ajută la întărirea sistemului imunitar, stimulează îmbunătățirea digestiei și activează eliminarea toxinelor din organism. Utilizarea regulată duce la o stare generală de bine și la creșterea vitalității, ceea ce le face un instrument indispensabil pentru menținerea sănătății și a bunăstării.",
     ingredients: [
       { name: "Vitamina C (acid ascorbic) - 200 mg (222% din valoarea zilnică)", effect: "Un antioxidant puternic care susține sistemul imunitar.Ajută la eliminarea toxinelor și la îmbunătățirea stării generale a organismului." },
@@ -525,6 +525,62 @@ products: [
       { name: "Extract uscat de pelin (Compositae Artemisia absinthium L.) - 20 mg", effect: "Cunoscut pentru proprietățile sale antiparazitare și antifungice.Ajută la eliminarea paraziților și la îmbunătățirea digestiei." },
     ],
   },
+  {
+    name: "Hyperon",
+    image: "assets/products/ro/product3.jpg",
+    origin: "Producatorul-Letonia",
+    format: "20 capsul",
+    usage: "2 ori / zi",
+    description: "HYPERON active este un supliment alimentar conceput pentru a susține funcția cardiovasculară normală, sănătatea inimii și tensiunea arterială. Conține 20 de capsule care conțin ingrediente active precum L-taurină, acid ascorbic, oxid de magneziu, bicarbonat de potasiu, pulbere de spirulină, extracte de păducel, sunătoare și frunze de măslin, rutin, coenzima Q10 și extract de piper negru. Aceste ingrediente acționează în sinergie pentru a ajuta la îmbunătățirea circulației, normalizarea tensiunii arteriale și susținerea sănătății mușchilor inimii. Se recomandă utilizarea HYPERON active ca parte a unui stil de viață sănătos pentru rezultate optime.",
+    ingredients: [
+      { name: "L-taurină (L-taurine)", effect: "taurina este un aminoacid care susține sănătatea cardiovasculară. Aceasta ajută la reglarea nivelului de electroliți, îmbunătățește funcția cardiacă și circulația și are efecte antioxidante." },
+      { name: "Acid ascorbic", effect: "vitamina C este un antioxidant puternic care protejează celulele de stresul oxidativ. De asemenea, susține sănătatea vasculară și promovează sinteza colagenului, importantă pentru artere și capilare sănătoase." },
+      { name: "Oxid de magneziu", effect: "Magneziul este important pentru menținerea ritmului cardiac normal și a tensiunii arteriale. De asemenea, este implicat în metabolismul și producerea de energie în celule." },
+      { name: "Bicarbonat de potasiu (Potassium bicarbonate)", effect: "Potasiul ajută la reglarea tensiunii arteriale prin menținerea echilibrului lichidelor și electroliților din organism. De asemenea, este esențial pentru funcționarea normală a mușchiului cardiac." },
+      { name: "Spirulină pulbere", effect: "Spirulina este o sursă bogată de proteine, vitamine și minerale. Aceasta susține sănătatea inimii datorită proprietăților sale antioxidante și antiinflamatorii." },
+      { name: "Extract de păducel [3% flavonoide]", effect: "Extractul de păducel susține sănătatea cardiovasculară, îmbunătățește circulația și ajută la normalizarea tensiunii arteriale datorită conținutului său de flavonoide." },
+      { name: "Extract de sunătoare", effect: "sunătoarea este utilizată pentru a calma sistemul nervos și a reduce stresul, ceea ce poate avea un efect pozitiv asupra tensiunii arteriale și a ritmului cardiac." },
+      { name: "Extract din frunze de măslin (Olea leaf extract)", effect: "extractul din frunze de măslin are proprietăți antioxidante și ajută la scăderea tensiunii arteriale. De asemenea, îmbunătățește sănătatea cardiovasculară generală." },
+      { name: "Rutin (Rutin pulbere)", effect: "Rutinul este un bioflavonoid care întărește capilarele și îmbunătățește circulația sângelui. De asemenea, are proprietăți antioxidante și susține sănătatea vasculară." },
+      { name: "Coenzima Q10", effect: "Coenzima Q10 este implicată în producerea de energie în celule și are proprietăți antioxidante. Susține sănătatea inimii și poate ajuta la îmbunătățirea funcției vaselor de sânge." },
+      { name: "Extract de piper negru [95% piperină]", effect: "piperina îmbunătățește biodisponibilitatea altor ingrediente și are proprietăți antioxidante și antiinflamatorii, care pot susține sănătatea cardiovasculară generală." },
+    ],
+  },
+
+  {
+    name: "OzemLite",
+    image: "assets/products/ro/product5.jpg",
+    origin: "Producatorul-Letonia",
+    format: "20 capsul",
+    usage: "2 ori / zi",
+    description: "OzemLite este un supliment alimentar pentru controlul greutății și susținerea metabolismului. Conține extract de ceai verde, Garcinia Cambogia, guarana, carnitină și fibre solubile, care acționează împreună pentru a reduce pofta de mâncare, a accelera arderea grăsimilor și a oferi senzație de sațietate. OzemLite ajută la transformarea grăsimilor în energie și susține menținerea rezultatelor pe termen lung, ca parte a unui stil de viață echilibrat.",
+    ingredients: [
+      { name: "Extract de ceai verde", effect: "Ajută la accelerarea metabolismului și la arderea grăsimilor. Este bogat în antioxidanți care susțin detoxifierea organismului, reduc retenția de lichide și contribuie la transformarea grăsimilor în energie. De asemenea, sprijină controlul apetitului." },
+      { name: "Extract de Garcinia Cambogia", effect: "Conține acid hidroxicitric (HCA), care reduce pofta de mâncare și blochează transformarea excesului de carbohidrați în grăsimi. Ajută la controlul apetitului emoțional și susține scăderea în greutate într-un mod natural." },
+      { name: "Guarana", effect: "Este o sursă naturală de energie, care stimulează arderea caloriilor și crește nivelul de activitate fizică. Reduce oboseala, îmbunătățește concentrarea și ajută organismul să consume mai eficient rezervele de grăsime." },
+      { name: "Carnitină", effect: "Joacă un rol esențial în transportul grăsimilor către celule, unde acestea sunt transformate în energie. Susține scăderea țesutului adipos, crește rezistența fizică și ajută la menținerea masei musculare în timpul procesului de slăbire." },
+      { name: "Fibre alimentare solubile", effect: "Creează senzația de sațietate, reduc pofta de mâncare și ajută la controlul porțiilor alimentare. Îmbunătățesc digestia, stabilizează nivelul zahărului din sânge și contribuie la eliminarea toxinelor din organism." },
+      
+    ],
+  },
+
+  {
+    name: "Arthrolon",
+    image: "assets/products/ro/product6.jpg",
+    origin: "Producatorul-Letonia",
+    format: "30 mg",
+    usage: "Se aplică de 2 ori pe zi.",
+    ingredients: [
+      { name: "Gaultheria fragrantissima (3 mg)", effect: "Are un efect antiinflamator și analgezic puternic, contribuind la reducerea durerii articulare și musculare. Ajută la ameliorarea rigidității și la îmbunătățirea mobilității." },
+      { name: "Mentha spicata (2,1 mg)", effect: "Oferă un efect răcoritor și calmant, reduce disconfortul local și tensiunea musculară, contribuind la relaxarea articulațiilor." },
+      { name: "Pinus roxburghii (1,5 mg)", effect: "Susține circulația sanguină locală, ajută la reducerea inflamației și accelerează procesele naturale de regenerare a țesuturilor." },
+      { name: "Cinnamomum camphora (0,9 mg)", effect: "Are efect de încălzire și stimulare a circulației, reduce durerea și îmbunătățește flexibilitatea articulațiilor." },
+      { name: "Capsicum annuum (0,15 mg)", effect: "Stimulează circulația și oferă un efect de încălzire intens, ajutând la diminuarea durerii și a rigidității articulare." },
+      { name: "Zingiber officinale (0,05 mg)", effect: "Contribuie la reducerea inflamației, susține mobilitatea articulațiilor și ajută la calmarea durerii cronice." },
+    
+    ],
+  },
+
 ],
 
 
