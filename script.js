@@ -55,6 +55,7 @@ hideAllBranchAnswers();
 
 // ================== ЦІНИ ==================
 renderPricing(scriptObj);
+renderCrossSellProducts(scriptObj);
 renderProducts(scriptObj);
 renderObjectionsButtons(scriptObj);
 
@@ -64,9 +65,11 @@ initScrollSpy();
 // ✅ Перерендер динамічних блоків після зміни мови
 document.addEventListener("lang:changed", () => {
   renderPricing(scriptObj);
+  renderCrossSellProducts(scriptObj); // ✅ ДОДАТИ
   renderProducts(scriptObj);
   renderObjectionsButtons(scriptObj);
 });
+
 
 
 
@@ -188,6 +191,49 @@ function renderPricing(scriptObj){
     tabs.appendChild(btn);
   });
 }
+/* =========================
+   CROSS-SELL (етап "cross")
+   Горизонтальні кнопки + 1 панель з контентом
+   ========================= */
+function renderCrossSellProducts(scriptObj) {
+  const host = document.getElementById("crossSellBlock");
+  if (!host) return;
+
+  const items = scriptObj?.crossSellProducts;
+  if (!Array.isArray(items) || items.length === 0) {
+    host.innerHTML = `<p class="muted">Нет продуктов для кросса.</p>`;
+    return;
+  }
+
+  host.innerHTML = "";
+
+  const tabs = document.createElement("div");
+  tabs.className = "crossTabs";
+
+  const panel = document.createElement("div");
+  panel.className = "crossPanel";
+  panel.style.display = "none";
+
+  host.appendChild(tabs);
+  host.appendChild(panel);
+
+  function activate(idx) {
+    const item = items[idx];
+    [...tabs.children].forEach((b, i) => b.classList.toggle("active", i === idx));
+    panel.innerHTML = item?.html || "";
+    panel.style.display = "block";
+  }
+
+  items.forEach((item, idx) => {
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "crossBtn";
+    btn.textContent = item?.label || `Продукт #${idx + 1}`;
+    btn.addEventListener("click", () => activate(idx));
+    tabs.appendChild(btn);
+  });
+}
+
 
 
 /* =========================

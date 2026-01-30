@@ -617,3 +617,36 @@ html[data-theme="dark"] .floatingBack{
   padding-bottom: 80px;
 }
 #backBtn.floatingBack{ position: fixed !important; }
+
+/* ===== CROSS SELL TABS ===== */
+.crossTabs{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.crossBtn{
+  border: 1px solid var(--border);
+  background: rgba(201,162,39,0.12);
+  color: var(--text);
+  padding: 10px 12px;
+  border-radius: 12px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.crossBtn.active{
+  background: rgba(201,162,39,0.22);
+  border-color: rgba(201,162,39,0.45);
+}
+
+.crossPanel{
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 12px;
+  background: rgba(255,255,255,0.6);
+}
+html[data-theme="dark"] .crossPanel{
+  background: rgba(255,255,255,0.04);
+}

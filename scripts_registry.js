@@ -49,6 +49,11 @@ function normalizeHotScript(obj) {
 
     const products = Array.isArray(obj?.products) ? obj.products : [];
 
+    const crossSellProducts = Array.isArray(obj?.crossSellProducts)
+  ? obj.crossSellProducts
+  : [];
+
+
 
 
 
@@ -61,6 +66,8 @@ function normalizeHotScript(obj) {
     pricing,
     objectionsButtons,
     products,
+    crossSellProducts,
+
 
 
     accordions: {

@@ -4,18 +4,18 @@ registerScript("ro", "hot_1", {
   stages: {
     greeting: `
       <p>Bună ziua, domnule/doamnă ……….­?</p>
-      <p>Numele meu este Numele operatorului, sunt de la clinica Regina Maria”. Ați lăsat o cerere pentru produsul de refacere a mobilității articulațiilor <b>Arthrolon</b>, este corect?</p>
+      <p>Numele meu este Numele operatorului, sunt de la clinica Regina Maria”. Ați lăsat o cerere pentru produsul de refacere a mobilității articulațiilor <b>Arthrolux</b>, este corect?</p>
       <p><i>"DA"</i></p>
       <p>Pentru a verifica posibilitatea livrării, vă rugăm să ne spuneți în ce regiune locuiți și în ce oraș?</p>
       <p class="p-accent-green"><i>"Orașul este potrivit"</i></p>
       <p>Excelent, domnule/doamnă, livrarea în orașul dumneavoastră este posibilă.</p>
-      <p>Haideți să procedăm astfel: vă voi pune câteva întrebări pentru a înțelege mai bine cum vă simțiți. Apoi vă voi explica cum funcționează Arthrolon și în ce fel vă va fi util acest produs. Apoi voi alege doza potrivită și, dacă sunteți de acord, vă voi ajuta cu formalitățile. Bine?</p>
+      <p>Haideți să procedăm astfel: vă voi pune câteva întrebări pentru a înțelege mai bine cum vă simțiți. Apoi vă voi explica cum funcționează Arthrolux și în ce fel vă va fi util acest produs. Apoi voi alege doza potrivită și, dacă sunteți de acord, vă voi ajuta cu formalitățile. Bine?</p>
     `,
     needs: `
       <p class="muted">Întrebări + ramificări sunt mai jos (în blocurile care se deschid).</p>
     `,
     presentation: `
-    <p>Domnule/doamnă , haideți să vă spun acum de ce Arthrolon este într-adevăr o alegere fiabilă, bine? (Așteptăm acordul)</p>
+    <p>Domnule/doamnă , haideți să vă spun acum de ce Arthrolux este într-adevăr o alegere fiabilă, bine? (Așteptăm acordul)</p>
     
     <p class="presentationTitle">1. Fiabilitate și încredere:</p>
     <p>Domnule/doamnă :</p>
@@ -25,18 +25,18 @@ registerScript("ro", "hot_1", {
  <p>— sunteți de acord că, atunci când aveți documente și asistență, vă simțiți mai liniștit? (Așteptăm acordul)</p>
  
  <p class="presentationTitle">2. Compoziție naturală și siguranță:</p>
-  <p>—Arthrolon conține numai ingrediente naturale: ulei de eucalipt, extract de arnică, ulei de ardei iute și altele</p>
+  <p>Arthrolux conține numai ingrediente naturale: ulei de eucalipt, extract de arnică, ulei de ardei iute și altele</p>
  <p>— o astfel de compoziție se întâlnește rar într-un singur produs, ceea ce îl face eficient și sigur, în special pentru refacerea mobilității articulațiilor</p>
  <p>— Este important pentru dumneavoastră ca produsul să fie natural și sigur? <span class="txt-green">(Așteptăm răspunsul afirmativ)</span></p>
  
- <p class="presentationTitle">3. Abordare complexă: ideea și unicitatea Arthrolon</p>
+ <p class="presentationTitle">3. Abordare complexă: ideea și unicitatea Arthrolux</p>
  <p>Domnule/doamnă , este dovedit științific: „unguentul magic” care va scăpa odată pentru totdeauna de durerile articulare nu există — așteptarea unui miracol doar vă răpește timpul și duce la dezamăgire.</p>
- <p>— tocmai de aceea am creat Arthrolon — nu doar un remediu, ci un complex complet pentru refacerea cartilajelor, eliminarea inflamației și întărirea articulațiilor. Noi tratăm cauza durerilor articulare, nu doar mascam simptomele.</p>
+ <p>— tocmai de aceea am creat Arthrolux — nu doar un remediu, ci un complex complet pentru refacerea cartilajelor, eliminarea inflamației și întărirea articulațiilor. Noi tratăm cauza durerilor articulare, nu doar mascam simptomele.</p>
  <p>— Sunteți de acord că este mai important să rezolvați problema din interior, decât să eliminați doar simptomele? (Așteptăm acordul)</p>
  
  <p class="presentationTitle">4. Etape de acțiune:</p>
 
-  <p>Domnule/doamnă , complexul nostru Arthrolon acționează în etape pe o perioadă de 3 luni. Fiecare etapă durează exact o lună, iar fiecare dintre ele este extrem de importantă pentru obținerea unui rezultat durabil, care va ajuta la refacerea sănătății articulațiilor și la reducerea durerii.</p>
+  <p>Domnule/doamnă , complexul nostru Arthrolux acționează în etape pe o perioadă de 3 luni. Fiecare etapă durează exact o lună, iar fiecare dintre ele este extrem de importantă pentru obținerea unui rezultat durabil, care va ajuta la refacerea sănătății articulațiilor și la reducerea durerii.</p>
  <p>— Vă voi explica pe scurt ce se întâmplă în fiecare etapă, deoarece tocmai această succesiune de schimbări în organismul dumneavoastră permite obținerea celui mai bun efect din partea produsului nostru, bine? (Așteptăm acordul sau confirmarea interesului)</p>
  
  <p class="presentationTitle"><span class="txt-red">Prima lună (etapa) — declanșarea proceselor și primele îmbunătățiri:</span></p>
@@ -72,7 +72,7 @@ registerScript("ro", "hot_1", {
 
     courses: `
 <p>Atunci vă voi povesti mai detaliat despre schema de administrare, cursuri și costuri, bine? (Așteptăm acordul)</p>
-<p><b>Comentariu expert:</b> utilizarea Arthroloneste foarte simplă: pulverizați o cantitate mică pe zonele cu probleme și masați cu mișcări de masaj de 2 ori pe zi până la absorbția completă. Nu vă anulăm medicamentele pe care le luați deja — produsul este suplimentar, pentru a întări efectul și a reface organismul.</p>
+<p><b>Comentariu expert:</b> utilizarea Arthrolux este foarte simplă: pulverizați o cantitate mică pe zonele cu probleme și masați cu mișcări de masaj de 2 ori pe zi până la absorbția completă. Nu vă anulăm medicamentele pe care le luați deja — produsul este suplimentar, pentru a întări efectul și a reface organismul.</p>
 <p>Așadar, domnule/doamnă , pentru a vă ajuta, ținând cont de vârsta  și starea dumneavoastră, am selectat pentru dumneavoastră 3 cure din care puteți alege:</p>
 <p>1. Primul curs — cel mai eficient.</p>
  <p>Acest curs declanșează procese profunde de refacere a țesutului cartilaginos și a lichidului articular. Inflamația și durerile se reduc semnificativ, iar mobilitatea articulațiilor revine treptat. Rezultatul se menține pe termen lung — articulațiile rămân sănătoase și mobile timp de până la 5 ani.
@@ -98,28 +98,14 @@ registerScript("ro", "hot_1", {
       `,
 
     cross: `
-    <p>Domnule/ Doamna, ați făcut foarte bine că ați ales cursul pentru susținerea mobilității articulațiilor — el va ajuta la reducerea inflamației și la redarea confortului în mișcare.</p>
- <p>Pentru ca efectul să apară mai repede și rezultatul să se mențină pe termen lung, recomandăm întotdeauna și o curățare a organismului.
-Sărurile, toxinele și reziduurile se acumulează adesea în țesuturile articulațiilor și împiedică refacerea lor.</p>
- <p>În cazul dumneavoastră, <b>Cleorix</b> este soluția ideală — un complex natural de detoxifiere care ajută la eliminarea substanțelor nocive și la susținerea metabolismului.
-El reduce inflamațiile interne, îmbunătățește hrănirea articulațiilor și amplifică efectul cursului principal.</p>
- <p>Compoziția conține trei ingrediente active:</p>
-<ul>
-  <li>Extract de semințe de dovleac – întărește țesuturile articulare și susține funcția ficatului;</li>
-  <li>Extract de frunze de nuc – curăță sângele, elimină inflamațiile și depunerile de săruri;</li>
-  <li>Zinc – contribuie la refacerea țesutului cartilaginos și întărește celulele.</li>
-</ul>
-<p>Administrarea este foarte simplă: 20 de picături dizolvate în 100 ml de apă, de 2 ori pe zi.
-Remediul este complet sigur, potrivit și pentru persoanele cu afecțiuni cronice, și se combină perfect cu cursul dumneavoastră pentru articulații.
-De obicei, cursul costă 240 lei, dar acum este în promoție — <b>doar 59 lei pentru 10 zile de utilizare</b>.</p>
-<p>Domnule/ Doamna, haideți să adăugăm și Nemanex la comandă, ca organismul să se curețe, articulațiile să se refacă mai repede și rezultatul să se mențină mai mult timp. (E bine așa.)</p>
-<p>— Excelent, Domnule/Doamnă , atunci vă confirm cursul principal Arthrolon și cursul (cursurile) suplimentar(e) din promoție. Valoarea totală a comenzii dvs., ținând cont de toate reducerile, <b>va fi de XX lei</b>.</p>
- `,
+  <div id="crossSellBlock"></div>
+`,
+
     survey: `
     <p>Domnule/doamnă , să completăm imediat livrarea, pentru a face acest lucru:</p>
     <p>1. Vă rog să-mi spuneți numele și prenumele complet, pentru a putea înregistra corect comanda (notăm numele complet după cum îl pronunță clientul).</p>
     <p>Vă rog să-mi spuneți, veți fi dvs. destinatarul coletului? Sau altcineva va putea primi coletul, dacă dvs. nu veți putea? Sunt gata să notez numele și numărul de telefon. (Notăm în CRM în câmpul „Comentariu”.)</p>
-    <p>2. Acum, vă rog să-mi dictați adresa de livrare (regiune, oraș, stradă, număr de casă/clădire, număr de bloc/intrare, număr de apartament, cod poștal) (notăm datele după cum le dictează clientul).</p>
+    <p>2. Acum, vă rog să-mi dictați adresa de livrare (regiune, oraș, stradă, număr de casă/clădire, număr de bloc/intrare, etaj, număr de apartament, cod poștal) (notăm datele după cum le dictează clientul).</p>
     <p>3. În plus, vă rugăm să indicați un punct de reper pentru curier (intersecția străzilor, cel mai apropiat magazin, școală, farmacie sau cafenea, numele cartierului sau al complexului rezidențial, stația, caracteristicile casei, poarta) (notăm datele în câmpul „Comentariu” pentru curier).
 (Dacă este locul de muncă al clientului, adăugați neapărat și numele companiei și funcția clientului) (notăm datele în câmpul de comentarii pentru curier)</p>
     `,
@@ -128,7 +114,7 @@ De obicei, cursul costă 240 lei, dar acum este în promoție — <b>doar 59 lei
     <ol>
     <li>numele și prenumele complet: [repetați numele complet, literă cu literă];</li>
     <li>dacă există un destinatar suplimentar: [repetați numărul de telefon] - totul este corect? (așteptăm confirmarea)</li>
-    <li>adresa de livrare: [regiune, oraș, stradă, număr de casă/clădire, număr de bloc/intrare, număr de apartament, cod poștal];</li>
+    <li>adresa de livrare: [regiune, oraș, stradă, număr de casă/clădire, număr de bloc/intrare, etaj, număr de apartament, cod poștal];</li>
     <li>numele pe interfon [spunem numele pe interfon].</li>
     </ol>
     <p>Vă rugăm să confirmați că datele sunt corecte, pentru a putea garanta livrarea la timp a comenzii dvs. Domnule/doamnă , am notat totul corect? (Așteptăm confirmarea)</p>
@@ -177,14 +163,14 @@ De obicei, cursul costă 240 lei, dar acum este în promoție — <b>doar 59 lei
         <td>3</td>
       </tr>
       <tr>
-        <td>Доставка (Livrare)</td>
+        <td>Livrare</td>
         <td>free</td>
         <td>free</td>
         <td>free</td>
         <td>30</td>
       </tr>
       <tr>
-        <td>Цена (Preț)</td>
+        <td>Preț</td>
         <td>544</td>
         <td>495</td>
         <td>396</td>
@@ -375,6 +361,110 @@ De obicei, cursul costă 240 lei, dar acum este în promoție — <b>doar 59 lei
   `,
     },
   ],
+crossSellProducts: [
+  {
+    label: "Cleorix",
+    html: `
+      <p>Domnule/ Doamna, ați făcut foarte bine că ați ales cursul pentru susținerea mobilității articulațiilor — el va ajuta la reducerea inflamației și la redarea confortului în mișcare.</p>
+ <p>Pentru ca efectul să apară mai repede și rezultatul să se mențină pe termen lung, recomandăm întotdeauna și o curățare a organismului.
+Sărurile, toxinele și reziduurile se acumulează adesea în țesuturile articulațiilor și împiedică refacerea lor.</p>
+ <p>În cazul dumneavoastră, <b>Cleorix</b> este soluția ideală — un complex natural de detoxifiere care ajută la eliminarea substanțelor nocive și la susținerea metabolismului.
+El reduce inflamațiile interne, îmbunătățește hrănirea articulațiilor și amplifică efectul cursului principal.</p>
+ <p>Compoziția conține trei ingrediente active:</p>
+<ul>
+  <li>Extract de semințe de dovleac – întărește țesuturile articulare și susține funcția ficatului;</li>
+  <li>Extract de frunze de nuc – curăță sângele, elimină inflamațiile și depunerile de săruri;</li>
+  <li>Zinc – contribuie la refacerea țesutului cartilaginos și întărește celulele.</li>
+</ul>
+<p>Administrarea este foarte simplă: 20 de picături dizolvate în 100 ml de apă, de 2 ori pe zi.
+Remediul este complet sigur, potrivit și pentru persoanele cu afecțiuni cronice, și se combină perfect cu cursul dumneavoastră pentru articulații.
+De obicei, cursul costă 240 lei, dar acum este în promoție — <b>doar 59 lei pentru 10 zile de utilizare</b>.</p>
+<p>Domnule/ Doamna, haideți să adăugăm și Nemanex la comandă, ca organismul să se curețe, articulațiile să se refacă mai repede și rezultatul să se mențină mai mult timp. (E bine așa.)</p>
+<p>— Excelent, Domnule/Doamnă , atunci vă confirm cursul principal Arthrolon și cursul (cursurile) suplimentar(e) din promoție. Valoarea totală a comenzii dvs., ținând cont de toate reducerile, <b>va fi de XX lei</b>.</p>
+
+    `,
+  },
+  {
+    label: "Hyperon",
+    html: `
+    <p>Domnule/ Doamna, ați făcut foarte bine că ați ales cursul pentru susținerea mobilității articulațiilor — el va ajuta la reducerea inflamației și la redarea confortului în mișcare.</p>
+
+<p>Pentru ca dvs ati spus ca aveti probleme cu tensiune, probleme cardiace, va recomand desigur si un produs pentru a rezolva problemele cardiace si de tensiune</p>
+
+<p>În cazul dumneavoastră, <b>Hyperon</b> este soluția ideală — poate aduce o stare de bine generală, ajutând organismul să facă față mai ușor factorilor stresori și să își mențină sănătatea sistemului cardiovascular.</p>
+
+<p>Datorită acestor acțiuni, HYPERON:</p>
+<ol>
+<li>Ajută la menținerea valorilor tensiunii arteriale în limite normale</li>
+<li>Contribuie la reducerea riscului de complicații cardiovasculare</li>
+<li>Îmbunătățește circulația sanguină și sănătatea vaselor</li>
+<li>Are un efect relaxant asupra sistemului nervos, diminuând stresul și nervozitatea</li>
+<li>Sprijină procesul natural de reglare a tensiunii, fără efecte adverse</li>
+</ol>
+
+<p>Ingrediente cheie pentru o inima sanatoasa:</p>
+<ul>
+<li>Clorhidrat de arginina – aminoacid esential care sprijina productia de oxid nitric, favorizand relaxarea vaselor de sange si imbunatatirea circulatiei.</li>
+<li>Extract de frunze de ginseng (Panax ginseng) – utilizat traditional pentru cresterea rezistentei, reducerea stresului si sustinerea functiei cardiace.</li>
+<li>Extract de radacina de maca (Lepidium meyenii) – bogat in compusi bioactivi care ajuta la reglarea tensiunii arteriale si cresterea energiei.</li>
+<li>Extract de fructe de ardei iute (Capsicum frutescens L.) – stimulant natural ce promoveaza un flux sanguin sanatos si functia cardiovasculara.</li>
+<li>Extract de seminte de guarana (Paullinia cupana) – ofera cafeina naturala si antioxidanti pentru sustinerea energiei si circulatiei.</li>
+<li>Extract de fructe citrice (Citrus aurantium) – sursa de bioflavonoide care intaresc vasele de sange si sustin sanatatea inimii.</li>
+<li>Extract de fructe Tribulus Terrestris – folosit de secole pentru imbunatatirea circulatiei si sanatatii vasculare.</li>
+<li>Extract de rizom de ghimbir (Zingiber officinale) – antiinflamator puternic care ajuta la mentinerea nivelurilor sanatoase de colesterol.</li>
+<li>Extract de radacina de urzica (Urtica dioica) – sustine reglarea tensiunii arteriale si functia rinichilor.</li>
+<li>Extract de scoarta de pin (Pinus sylvestris) – bogat in antioxidanti ce reduc stresul oxidativ si imbunatatesc functia inimii.</li>
+<li>Extract de fructe de piper negru (Piper nigrum L.) – creste absorbtia nutrientilor si promoveaza sanatatea cardiovasculara.</li>
+<li>Vitamina C (acid ascorbic) – antioxidant esential care protejeaza vasele sanguine de deteriorarea oxidativa.</li>
+<li>Niacina (vitamina B3) – sprijina mentinerea nivelurilor sanatoase de colesterol si circulatia sanguina.</li>
+<li>Vitamina B6 (clorhidrat de piridoxina) – contribuie la reducerea nivelului de homocisteina, un factor de risc pentru bolile cardiace.</li>
+<li>Zinc – sustine functia imunitara si contribuie la mentinerea sanatatii vaselor de sange.</li>
+</ul>
+<p>Administrarea este foarte simplă: 2 capsule pe zi(2 ori pe zi a cate 1 capsula).</p>
+
+<p>De obicei, cursul costă 240 lei, dar acum este în promoție — <b>doar 59 lei pentru 10 zile de utilizare</b>.</p>
+
+<p>Domnule/ Doamna, haideți să adăugăm și Hyperon la comandă, ca sa rezolvati si problemele legate de tensiune si probleme cardiace. Articulațiile să se refacă mai repede și rezultatul să se mențină mai mult timp. (E bine așa.)</p>
+
+<p>— Excelent, Domnule/Doamnă , atunci vă confirm cursul principal Artrolux și cursul (cursurile) suplimentar(e) din promoție. Valoarea totală a comenzii dvs., ținând cont de toate reducerile, <b>va fi de XX lei</b>.</p>
+
+    
+    `,
+  },
+  {
+    label: "Hyperon",
+    html: `
+    <p>Domnule/ Doamna, ați făcut foarte bine că ați ales cursul pentru susținerea mobilității articulațiilor — el va ajuta la reducerea inflamației și la redarea confortului în mișcare.</p>
+
+<p>Pentru ca dvs ati spus ca aveti chilograme in plus . sa stiti ca  chiar și o greutate excesivă mică crește presiunea asupra articulațiilor, în special asupra genunchilor și coloanei vertebrale. Acest lucru accelerează uzura cartilajului, provoacă inflamații și durere. Dacă nu se reduce presiunea, riscul de invaliditate și operații crește. Este important să mențineți o greutate sănătoasă și să aveți grijă de starea articulațiilor în mod complex, nu-i așa, domnule/doamnă ? <span class="txt-green">(Așteptăm răspunsul)</span></p>
+
+<p>Deaceea va recomand  <b>OzemLite</b>, pentru a scapa si de chilogramele in plus.</p>
+
+<p>și, de asemenea:</p>
+<ul>
+<li>eliminați surplusul de apă și să curățați corpul de toxine;</li>
+<li>reglați și accelerați metabolismul;</li>
+<li>eliminați celulita și grăsimea din zonele cu probleme, (astfel încât la sfârșitul tratamentului să aveți o pierdere în greutate uniformă);</li>
+<li>reduceți nivelul de colesterol din sânge, să îmbunătățiți digestia și să creșteți activitatea sucului gastric;</li>
+<li>eliminați poftele și senzația excesivă de foame;</li>
+<li>blocați absorbția glucozei și a carbohidraților în intestin, reducând astfel acumularea de grăsime;</li>
+<li>reglați funcția tiroidiană și echilibrul hormonal</li>
+</ul>
+
+
+<p>Administrarea este foarte simplă: 2 capsule pe zi(2 ori pe zi a cate 1 capsula).</p>
+
+<p>De obicei, cursul costă 240 lei, dar acum este în promoție —<b> doar 59 lei pentru 10 zile de utilizare</b>.</p>
+
+<p>Domnule/ Doamna, haideți să adăugăm și Ozem Lite la comandă, ca sa rezolvati si problemele legate de chilogramele in plus. Articulațiile să se refacă mai repede și rezultatul să se mențină mai mult timp. (E bine așa.)</p>
+
+<p>— Excelent, Domnule/Doamnă , atunci vă confirm cursul principal Artrolux și cursul (cursurile) suplimentar(e) din promoție. Valoarea totală a comenzii dvs., ținând cont de toate reducerile, <b>va fi de XX lei</b>.</p>
+
+    
+    `,
+  },
+],
+
 
 objectionsButtons: [
     {
