@@ -432,7 +432,7 @@ De obicei, cursul costă 240 lei, dar acum este în promoție — <b>doar 59 lei
     `,
   },
   {
-    label: "Hyperon",
+    label: "OzemLite  ",
     html: `
     <p>Domnule/ Doamna, ați făcut foarte bine că ați ales cursul pentru susținerea mobilității articulațiilor — el va ajuta la reducerea inflamației și la redarea confortului în mișcare.</p>
 
