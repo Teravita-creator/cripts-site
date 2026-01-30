@@ -121,7 +121,7 @@ registerScript("ro", "hot_1", {
     <p>Comanda se livreaza in decurs de o zi sau doua lucratoare de Luni-Vineri de la orele 08.00-18.00.Veți primi un SMS de la serviciul de livrare în dimineața livrării. Va exista un link pentru a vă urmări comanda. Plata catre curier numai cash la primire.</p>
 
     <p class="presentationTitle"><span class="txt-red">CONDIȚIILE OFERTEI:</span></p>
-    <Din>Conform regulamentului nostru, încheiem un acord verbal, în baza căruia compania se obligă să vă furnizeze un produs original, de cea mai înaltă calitate. Eu, nume / prenume, îmi asum responsabilitatea ca tratamentul dumneavoastră să fie eficient. Din partea dumneavoastră, vă asumați responsabilitatea de a primi produsul și de a începe tratamentul. Vă rog să-mi spuneți dacă aceste condiții vă sunt acceptabile în acest moment.</p>
+    <p>Conform regulamentului nostru, încheiem un acord verbal, în baza căruia compania se obligă să vă furnizeze un produs original, de cea mai înaltă calitate. Eu, nume / prenume, îmi asum responsabilitatea ca tratamentul dumneavoastră să fie eficient. Din partea dumneavoastră, vă asumați responsabilitatea de a primi produsul și de a începe tratamentul. Vă rog să-mi spuneți dacă aceste condiții vă sunt acceptabile în acest moment.</p>
     <p>Vă voi monitoriza rezultatele, așa că vă rugăm să răspundeți la următorul apel.</p>
     <p>Aveti întrebări?</p>
     <p>O zi plăcută!</p>

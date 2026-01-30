@@ -32,9 +32,7 @@
         </div>
       </div>
 
-      <!-- Лейаут: бокова панель + контент -->
       <div class="scriptLayout" style="display:grid; grid-template-columns: 240px 1fr; gap: 14px; margin-top: 14px;">
-        <!-- Sidebar -->
         <aside class="sidebar" style="position: sticky; top: 12px; align-self:start;">
 <div class="muted" style="margin-bottom: 8px;">
   <b data-i18n="script.stageTitle">Этапы</b>
@@ -54,7 +52,6 @@
           </nav>
         </aside>
 
-        <!-- Content -->
         <main class="content" style="min-width: 0;">
           <section id="greeting" class="stageSection" data-stage="greeting">
             <h2 data-i18n="stage.greeting">Приветствие</h2>
@@ -79,7 +76,6 @@
             <div id="textCourses"></div>
           </section>
 
-          <!-- ✅ НОВЫЕ -->
           <section id="cross" class="stageSection" data-stage="cross">
 <h2 data-i18n="stage.cross">Кросс</h2>
             <div id="textCross"></div>
@@ -113,12 +109,10 @@
     </div>
   </div>
 
-  <!-- порядок -->
   <script src="i18n.js"></script>
   <script src="theme.js"></script>
 
   <script src="scripts_registry.js"></script>
-  <!-- подключай здесь свои скрипты -->
   <script src="data/ro/hot_1.js"></script>
   <script src="data/ro/hot_2.js"></script>
   <script src="data/ro/hot_3.js"></script>
