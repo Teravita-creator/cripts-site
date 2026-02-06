@@ -26,12 +26,14 @@
 
     // рендер з ретраями (на випадок якщо дані ще не встигли зареєструватись)
     renderWithRetry(kc, scriptId);
+    
 
     // ✅ Перерендер динамічних блоків після зміни мови
     document.addEventListener("lang:changed", () => {
       const obj = window.SCRIPTS_DATA?.[kc]?.[scriptId] || null;
       if (!obj) return;
       renderDynamic(obj);
+      renderNeedsBranches(scriptObj);
     });
 
     // yes/no кнопки в акордеонах
@@ -131,6 +133,9 @@
   renderCrossSellProducts(scriptObj);
   renderProducts(scriptObj);
   renderObjectionsButtons(scriptObj);
+  renderPresentationFlow(scriptObj);
+  renderNeedsBranches(scriptObj);
+
 }
 
 
@@ -226,6 +231,59 @@
       tabs.appendChild(btn);
     });
   }
+
+function renderPresentationFlow(scriptObj) {
+  const host = document.getElementById("presentationFlow");
+  if (!host) return;
+
+  const blocks = scriptObj?.presentationFlow;
+  if (!Array.isArray(blocks) || blocks.length === 0) {
+    host.innerHTML = "";
+    return;
+  }
+
+  host.innerHTML = "";
+
+  blocks.forEach((block, bi) => {
+    // текст секції
+    const text = document.createElement("div");
+    text.className = "pFlowText";
+    text.innerHTML = block?.textHtml || "";
+    host.appendChild(text);
+
+    // ряд з 2 кнопками
+    const row = document.createElement("div");
+    row.className = "twoBtnRow";
+    host.appendChild(row);
+
+    // панель під цією парою кнопок
+    const panel = document.createElement("div");
+    panel.className = "pFlowPanel";
+    panel.style.display = "none";
+    host.appendChild(panel);
+
+    const btns = Array.isArray(block?.buttons) ? block.buttons : [];
+    btns.slice(0, 2).forEach((b, i) => {
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "twoBtn";
+      btn.textContent = b?.label || `Кнопка ${bi + 1}.${i + 1}`;
+
+      btn.addEventListener("click", () => {
+        // активність тільки в межах цієї секції
+        row.querySelectorAll(".twoBtn").forEach(x => x.classList.remove("active"));
+        btn.classList.add("active");
+
+        panel.innerHTML = b?.html || "";
+        panel.style.display = "block";
+      });
+
+      row.appendChild(btn);
+    });
+  });
+}
+
+
 
 
 
@@ -432,6 +490,50 @@ function buildProductCard(p) {
     </div>
   `;
 }
+
+  function renderNeedsBranches(scriptObj) {
+  const host = document.getElementById("needsBranches");
+  if (!host) return;
+
+  const branches = scriptObj?.needsBranches;
+  if (!Array.isArray(branches) || branches.length === 0) {
+    host.innerHTML = "";
+    return;
+  }
+
+  host.innerHTML = "";
+
+  const tabs = document.createElement("div");
+  tabs.className = "twoBtnRow"; // використовуємо той самий ряд
+  host.appendChild(tabs);
+
+  const list = document.createElement("div");
+  host.appendChild(list);
+
+  function showBranch(idx) {
+    tabs.querySelectorAll(".twoBtn").forEach(x => x.classList.remove("active"));
+    tabs.children[idx]?.classList.add("active");
+
+    list.innerHTML = "";
+    const qs = branches[idx]?.questions || [];
+    qs.forEach(item => {
+      // використовуємо твою makeAccordion (вона вже вміє innerHTML в summary)
+      list.appendChild(makeAccordion(item.q, item.a));
+    });
+  }
+
+  branches.slice(0, 2).forEach((b, idx) => {
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "twoBtn";
+    btn.textContent = b?.label || `Напрямок ${idx + 1}`;
+    btn.addEventListener("click", () => showBranch(idx));
+    tabs.appendChild(btn);
+  });
+
+  // відкриємо перший напрямок одразу
+  showBranch(0);
+} 
 
 
   // ================== SCROLL ==================

@@ -36,6 +36,11 @@ function normalizeHotScript(obj) {
     fixedStages[k] = typeof stages[k] === "string" ? stages[k] : "";
   });
 
+  const presentationFlow = Array.isArray(obj?.presentationFlow) ? obj.presentationFlow : [];
+
+ const needsBranches = Array.isArray(obj?.needsBranches) ? obj.needsBranches : [];
+
+
   // ✅ Раніше ці поля губилися під час normalize()
   // Тепер вони зберігаються і будуть доступні в script.js
 
@@ -67,6 +72,9 @@ function normalizeHotScript(obj) {
     objectionsButtons,
     products,
     crossSellProducts,
+    presentationFlow,
+    needsBranches,
+
 
 
 
