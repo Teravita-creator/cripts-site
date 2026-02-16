@@ -40,7 +40,7 @@ registerScript("pl", "hot_2", {
     `,
 
     cross: `
-    <p>Dziękujemy za zaufanie i wybór naszej kuracji. Mam dla Pana propozycję, która pomoże wzmocnić efekty kuracji – mogę zaoferować Panu <b>Stimulan gel</b> z indywidualną zniżką. Preparat ten, stosowany w połączeniu z kuracjej, intensyfikuje efekty i działa specyficznie. Jest przeznaczony do użytku zewnętrznego – stosujemy 2 razy dziennie. Dzięki temu utrwalenie efektów w 2 razy lepiej. Mogę zaoferować Panu promocyjne opakowanie: <b>1 opakowanie w cenie  - tylko 59 złotych, zamiast 274 zł.</b></p>
+    <p>Dziękujemy za zaufanie i wybór naszej kuracji. Mam dla Pana/Pani propozycję, która pomoże wzmocnić efekty kuracji – mogę zaoferować Panu/Pani <b>NanoFlex w postaci cremu</b> z indywidualną zniżką. Preparat ten, stosowany w połączeniu z kuracjej, intensyfikuje efekty i działa specyficznie. Jest przeznaczony do użytku zewnętrznego – stosujemy 2 razy dziennie. Dzięki temu utrwalenie efektów w 2 razy lepiej. Mogę zaoferować Panu/Pani promocyjne opakowanie: <b>1 opakowanie w cenie  - tylko 59 złotych, zamiast 274 zł.</b></p>
 
     
     `,
@@ -86,12 +86,11 @@ pricing: [
       label: "full 137",
       html: `
       <div style="margin-bottom:30px;">
-      <p>Panie _______(imię klienta), w zależności od Pana sytuacji (Objawy klienta) i biorąc pod uwagę, że ma Pan problem ______ (okres choroby), polecam dwie programy naprawcze:</p>
-      <p>1. <b>Kuracja Pełna</b> to najlepszy wybór, jeśli zależy Panu na trwałej poprawie zdrowia. Dzięki systematycznemu stosowaniu rozwiąże Pan problem u źródła. Po pełnej kuracji efekty utrzymają się przez 5 lat. W ramach tej kuracji otrzyma Pan 8 opakowań, 3 opakowania będą gratis, a koszt kuracji to 685 zł.</p>
-<p>2. <b>Kuracja Standardowa</b> obejmuje wszystkie etapy leczenia, z różnicą w czasie utrwalenia efektu – będzie to 3 lata. Obejmuje 6 opakowań, 2 opakowania będą gratis, a cena wynosi 548 zł.
-</p>
+      <p>Panie/Pani _______(imię klienta), w zależności od Pana/Pani sytuacji (Objawy klienta) i biorąc pod uwagę, że ma Pan/Pani problem ______ (okres choroby), polecam dwie programy naprawcze:</p>
+      <p>1. <b>Kuracja Pełna</b> o najlepszy wybór dla Pan/Pani, jeżeli Pan/Pani chce całkowicie odbudować stawy i zapomnieć o bólu na długo. Cztery miesiące to czas potrzebny, by preparat dotarł do źródła problemu i trwale poprawił kondycję chrząstki.  Po pełnej kuracji efekty utrzymają się przez 5 lat. W ramach tej kuracji otrzyma Pan/Pani <b>8 opakowań, 3 opakowania będą gratis, a koszt kuracji to 685 zł.</b></p>
+<p>2. <b>Kuracja Standardowa</b> obejmuje wszystkie etapy leczenia, z różnicą w czasie utrwalenia efektu – będzie to 3 lata. Obejmuje <b>6 opakowań, 2 opakowania będą gratis, a cena wynosi 548 zł.</b></p>
 <p>Dostawa będzie bezpłatna. Płatność przy odbiorze.</p>
-    <p>Którą kurację chciałby Pan wybrać: Pełną, która zapewnia długotrwałe efekty przez 5 lat, czy Standardową, z efektem utrwalonym na 3 lata?</p>
+    <p>Którą kurację chciałby(łaby) Pan/Pani wybrać: Pełną, która zapewnia długotrwałe efekty przez 5 lat, czy Standardową, z efektem utrwalonym na 3 lata?</p>
 
 <p>Jeśli nie:</p>
 <p>Proszę mi powiedzieć, Panie/Pani _______(imię klienta)  , czy kwota wydaje się Panu/Pani wysoka, czy też jest coś innego, co powstrzymuje Pana/Panią przed zakupem kompleksu?</p>
@@ -140,24 +139,24 @@ pricing: [
     </table>
     <div style="margin-bottom:30px;">
 <p span class="txt-red"? class="presentationTitle"> Przynajmniej 2 razy rozpatrzymy sprzeciw i dopiero wtedy zaproponujemy niższą kuracją  </p>
-<p>Panie ________ (Imię Klienta), rozumiem Pana sytuację, ale po prostu potrzebuje Pan powrotu do zdrowia, ponieważ sytuacja jest zaawansowana. W takim przypadku spójrzmy na inne opcje. </p>
-<p>Może Pan przejść <b>Kurację Podstawową</b>. Ten program jest przeznaczony na 2 miesiąca stosowania składają się 4 opakowań, tutaj otrzyma Pan 1 opakowanie za darmo , <b>cena wynosi 431 zł, razem z przesyłką 20 zł. Zabezpieczy Pan wynik na kolejne 2 lata</b>. Szczerze chcę Panu pomóc, ponieważ rozumiem, że pilnie potrzebuje Pan rozwiązać problem.</p>
-<p>Zapewniam Pana, że po zobaczeniu wyników będzie Pan chciał zamówić więcej. Specjalnie przydzielę Panu zniżkę, dzięki której, jeśli zajdzie taka potrzeba, będzie Pan mógł dokupić dodatkowe opakowania w promocji. Może więc zostaniemy przy minimalnej opcji? </p>
+<p>Panie/Pani ________ (Imię Klienta), rozumiem Pana/Pani sytuację, ale po prostu potrzebuje Pan/Pani powrotu do zdrowia, ponieważ sytuacja jest zaawansowana. W takim przypadku spójrzmy na inne opcje. </p>
+<p>Może Pan/Pani przejść <b>Kurację Podstawową</b>. Ten program jest przeznaczony na 2 miesiąca stosowania składają się 4 opakowań, tutaj otrzyma Pan/Pani 1 opakowanie za darmo , <b>cena wynosi 431 zł, razem z przesyłką 20 zł. Zabezpieczy Pan/Pani wynik na kolejne 2 lata</b>. Szczerze chcę Panu/Pani pomóc, ponieważ rozumiem, że pilnie potrzebuje Pan/Pani rozwiązać problem.</p>
+<p>Zapewniam Pana/Pani, że po zobaczeniu wyników będzie Pan/Pani chciał(a) zamówić więcej. Specjalnie przydzielę Panu/Pani zniżkę, dzięki której, jeśli zajdzie taka potrzeba, będzie Pan/Pani mógł(a) dokupić dodatkowe opakowania w promocji. Może więc zostaniemy przy minimalnej opcji?</p>
     </div>
   `,
     },
-{
+   {
 
 
       label: "midl 99",
       html: `
       <div style="margin-bottom:30px;">
-      <p>Panie _______(imię klienta), w zależności od Pana sytuacji (Objawy klienta) i biorąc pod uwagę, że ma Pan problem ______ (okres choroby), polecam dwie programy naprawcze:</p>
-      <p>1. <b>Kuracja Pełna</b> to najlepszy wybór, jeśli zależy Panu na trwałej poprawie zdrowia. Dzięki systematycznemu stosowaniu rozwiąże Pan problem u źródła. Po pełnej kuracji efekty utrzymają się przez 6 lat. W ramach tej kuracji otrzyma Pan 6 opakowań, + 1 opakowanie będzie gratis, a <b>koszt kuracji to 594 zł.</b></p>
-<p>2. <b>Kuracja Standardowa</b> obejmuje wszystkie etapy leczenia, z różnicą w czasie utrwalenia efektu – będzie to 4 lat. Obejmuje 5 opakowań, 1 opakowanie będzie gratis, a <b>cena wynosi 515 zł</b>.
+      <p>Panie/Pani _______(imię klienta), w zależności od Pana/Pani sytuacji (Objawy klienta) i biorąc pod uwagę, że ma Pan/Pani problem ______ (okres choroby), polecam dwie programy naprawcze:</p>
+      <p>1. <b>Kuracja Pełna</b> to najlepszy wybór dla Pana/Pani, jeżeli Pan/Pani chce całkowicie odbudować stawy i zapomnieć o bólu na długo. 3,5 miesiące to czas potrzebny, by preparat dotarł do źródła problemu i trwale poprawił kondycję chrząstki.  Po pełnej kuracji efekty utrzymają się przez 5 lat. W ramach tej kuracji otrzyma Pan/Pani 6 opakowań, + 1 opakowanie będzie gratis, a <b>koszt kuracji to 594 zł.</b></p>
+<p>2. <b>Kuracja Standardowa</b> obejmuje wszystkie etapy leczenia, z różnicą w czasie utrwalenia efektu – będzie to 3 lata. Obejmuje 5 opakowań, 1 opakowanie będzie gratis, a <b>cena wynosi 515 zł</b>.
 </p>
 <p>Dostawa będzie bezpłatna. Płatność przy odbiorze.</p>
-    <p>Którą kurację chciałby Pan wybrać: Pełną, która zapewnia długotrwałe efekty przez 6 lat, czy Standardową, z efektem utrwalonym na 4 lat?</p>
+    <p>Którą kurację chciałby(łaby) Pan/Pani wybrać: Pełną, która zapewnia długotrwałe efekty przez 5 lat, czy Standardową, z efektem utrwalonym na 3 lata?</p>
 
 
 <p>Jeśli nie:</p>
@@ -210,9 +209,9 @@ pricing: [
     </table>
     <div style="margin-bottom:30px;">
 <p span class="txt-red"? class="presentationTitle"> Przynajmniej 2 razy rozpatrzymy sprzeciw i dopiero wtedy zaproponujemy niższą kuracją  </p>
-<p>Panie ________ (Imię Klienta), rozumiem Pana sytuację, ale po prostu potrzebuje Pan powrotu do zdrowia, ponieważ sytuacja jest zaawansowana. W takim przypadku spójrzmy na inne opcje. </p>
-<p>Może Pan przejść <b>Kurację Podstawową</b>. Ten program jest przeznaczony na 2 miesiąca stosowania składają się 4 opakowań, <b>cena wynosi 416  zł, razem z przesyłką 20 zł. Zabezpieczy Pan wynik na kolejne 2 lata</b>. Szczerze chcę Panu pomóc, ponieważ rozumiem, że pilnie potrzebuje Pan rozwiązać problem.</p>
-<p>Zapewniam Pana, że po zobaczeniu wyników będzie Pan chciał zamówić więcej. Specjalnie przydzielę Panu zniżkę, dzięki której, jeśli zajdzie taka potrzeba, będzie Pan mógł dokupić dodatkowe opakowania w promocji. Może więc zostaniemy przy minimalnej opcji? </p>
+<p>Panie/Pani ________ (Imię Klienta), rozumiem Pana/Pani sytuację, ale po prostu potrzebuje Pan/Pani powrotu do zdrowia, ponieważ sytuacja jest zaawansowana. W takim przypadku spójrzmy na inne opcje. </p>
+<p>Może Pan/Pani przejść <b>Kurację Podstawową</b>. Ten program jest przeznaczony na 2 miesiąca stosowania składają się 4 opakowań, <b>cena wynosi 416  zł, razem z przesyłką 20 zł. Zabezpieczy Pan/Pani wynik na kolejne 2 lata</b>. Szczerze chcę Panu/Pani pomóc, ponieważ rozumiem, że pilnie potrzebuje Pan/Pani rozwiązać problem.</p>
+<p>Zapewniam Pana/Pani, że po zobaczeniu wyników będzie Pan/Pani chciał(a) zamówić więcej. Specjalnie przydzielę Panu/Pani zniżkę, dzięki której, jeśli zajdzie taka potrzeba, będzie Pan/Pani mógł(a) dokupić dodatkowe opakowania w promocji. Może więc zostaniemy przy minimalnej opcji? </p>
     </div>
   `,
     },
@@ -222,12 +221,12 @@ pricing: [
       label: "low 59",
       html: `
       <div style="margin-bottom:30px;">
-      <p>Panie _______(imię klienta), w zależności od Pana sytuacji (Objawy klienta) i biorąc pod uwagę, że ma Pan problem ______ (okres choroby), polecam dwie programy naprawcze:</p>
-      <p>1. <b>Kuracja Pełna</b> to najlepszy wybór, jeśli zależy Panu na trwałej poprawie zdrowia. Dzięki systematycznemu stosowaniu rozwiąże Pan problem u źródła. W ramach tej kuracji otrzymuje Pan/Pani  2 opakowania w cenie 59 zł i 3 kolejne z rabatem (50% - po 137 zł) od naszej firmy. Dzięki tej kuracji wyeliminuje Pan/Pani to, co dolega, i będzie w stanie utrwalić wynik nawet przez 5 lat.<b> Cena wynosi 529 zł.</b></p>
-<p>2. <b>Kuracja Standardowa</b>  obejmuje wszystkie etapy leczenia, z różnicą w czasie utrwalenia efektu – będzie to 3 lata. Tutaj otrzymuje Pan/Pani  1 opakowanie za 59 zł i 3 kolejne z rabatem (50% - po 137 zł), a <b>cena wynosi 470 zł</b>.
+      <p>Panie/Pani _______(imię klienta), w zależności od Pana/Pani sytuacji (Objawy klienta) i biorąc pod uwagę, że ma Pan/Pani problem ______ (okres choroby), polecam dwie programy naprawcze:</p>
+      <p>1. <b>Kuracja Pełna</b> to najlepszy wybór dla Pan/Pani, jeżeli Pan/Pani chcą całkowicie odbudować stawy i zapomnieć o bólu na długo. Cztery miesiące to czas potrzebny, by preparat dotarł do źródła problemu i trwale poprawia kondycję chrząstki.  W ramach tej kuracji otrzymuje Pan/Pani  2 opakowania w cenie 59 zł i 3 kolejne z rabatem 50% od naszej firmy. Dzięki tej kuracji wyeliminuje Pan/Pani to, co dolega, i będzie w stanie utrwalić wynik nawet przez 5 lat.<b> Cena wynosi 529 zł.</b></p>
+<p>2. <b>Kuracja Standardowa</b> obejmuje wszystkie etapy leczenia, z różnicą w czasie utrwalenia efektu – będzie to 3 lata. Tutaj otrzymuje Pan/Pani  1 opakowanie za 59 zł i 3 kolejne z rabatem 50% od naszej firmy, a <b>cena wynosi 470 zł</b>.
 </p>
 <p>Dostawa będzie bezpłatna. Płatność przy odbiorze.</p>
-    <p>Którą kurację chciałby Pan wybrać: Pełną, która zapewnia długotrwałe efekty przez 5 lat, czy Standardową, z efektem utrwalonym na 3 lata?</p>
+    <p>Którą kurację chciałby Pan/Pani wybrać: Pełną, która zapewnia długotrwałe efekty przez 5 lat, czy Standardową, z efektem utrwalonym na 3 lata?</p>
 
 
 <p>Jeśli nie:</p>
@@ -282,9 +281,9 @@ pricing: [
 <p span class="txt-red"? class="presentationTitle"> Przynajmniej 2 razy rozpatrzymy sprzeciw i dopiero wtedy zaproponujemy niższą kuracją  </p>
 
 
-<p>Panie ________ (Imię Klienta), rozumiem Pana sytuację, ale po prostu potrzebuje Pan powrotu do zdrowia, ponieważ sytuacja jest zaawansowana. W takim przypadku spójrzmy na inne opcje. </p>
-<p>Może Pan przejść <b>Kurację Podstawową</b>. Ten program jest przeznaczony na 1,5 miesiąca stosowania składają się z 3 opakowań, tutaj otrzyma Pan 1 opakowanie za 59 zł i 2 kolejnych z rabatem, <b>cena wynosi 353  zł</b>, razem z przesyłką 20 zł. Zabezpieczy Pan wynik na kolejne 2 lata</b>. Szczerze chcę Panu pomóc, ponieważ rozumiem, że pilnie potrzebuje Pan rozwiązać problem.</p>
-<p>Zapewniam Pana, że po zobaczeniu wyników będzie Pan chciał zamówić więcej. Specjalnie przydzielę Panu zniżkę, dzięki której, jeśli zajdzie taka potrzeba, będzie Pan mógł dokupić dodatkowe opakowania w promocji. Może więc zostaniemy przy minimalnej opcji? </p>
+<p>Panie/Pani ________ (Imię Klienta), rozumiem Pana/Pani sytuację, ale po prostu potrzebuje Pan/Pani powrotu do zdrowia, ponieważ sytuacja jest zaawansowana. W takim przypadku spójrzmy na inne opcje. </p>
+<p>Może Pan/Pani przejść <b>Kurację Podstawową</b>. Ten program jest przeznaczony na 1,5 miesiąca stosowania składają się z 3 opakowań, tutaj otrzyma Pan/Pani 1 opakowanie za 59 zł i 2 kolejnych z rabatem, <b>cena wynosi 353  zł</b>, razem z przesyłką 20 zł. Zabezpieczy Pan/Pani wynik na kolejne 2 lata</b>. Szczerze chcę Panu/Pani pomóc, ponieważ rozumiem, że pilnie potrzebuje Pan/Pani rozwiązać problem.</p>
+<p>Zapewniam Pana/Pni, że po zobaczeniu wyników będzie Pan/Pani chciał zamówić więcej. Specjalnie przydzielę Panu/Pani zniżkę, dzięki której, jeśli zajdzie taka potrzeba, będzie Pan/Pamo mógł(a) dokupić dodatkowe opakowania w promocji. Może więc zostaniemy przy minimalnej opcji? </p>
     </div>
   `,
     },
@@ -357,63 +356,83 @@ objectionsButtons: [
     {
       label: "Chcę 1 opakowanie",
       html: `
-        <p> - Doskonale Pana rozumiem, wielu nowych klientów miało podobne wątpliwości. Jednak musi Pan przyznać, że pełne leczenie wymaga czasu – z pewnością tydzień czy dwa to za mało, zwłaszcza przy obecnych objawach, które Pan odczuwa. To trochę jak z ćwiczeniami na siłowni – nikt nie oczekuje świetnej formy po dwóch czy trzech treningach, prawda? Aby uzyskać trwały efekt, trzeba przejść cały kurs. Mówię to na podstawie doświadczenia – wiem, jak działa ten preparat i mam wielu zadowolonych klientów w Niemczech, którzy mi za to dziękują. Preparat jest nowością na polskim rynku, ale już pomaga. Proszę zaufać i pozwolić sobie pomóc. Który kurs wybieramy?</p>
+        <p> - Doskonale Pana/Panią rozumiem, wielu nowych klientów miało podobne wątpliwości. Jednak musi Pan/Pani przyznać, że pełne leczenie wymaga czasu – z pewnością tydzień czy dwa to za mało, zwłaszcza przy obecnych objawach, które Pan/Pani odczuwa. To trochę jak z ćwiczeniami na siłowni – nikt nie oczekuje świetnej formy po dwóch czy trzech treningach, prawda? Aby uzyskać trwały efekt, trzeba przejść cały kurs. Mówię to na podstawie doświadczenia – wiem, jak działa ten preparat i mam wielu zadowolonych klientów w Niemczech, którzy mi za to dziękują. Preparat jest nowością na polskim rynku, ale już pomaga. Proszę zaufać i pozwolić sobie pomóc. Który kurs wybieramy?</p>
 <p> - Panie/Pani, nasz producent wyraźnie zaznacza, że pojedyncze opakowanie to za mało, by zobaczyć działanie. Minimalna ilość to 2 sztuki – tak jest bezpiecznie i skutecznie. Po prostu nie możemy sprzedawać mniejszych ilości, żeby nie wprowadzać klientów w błąd, że 1 opakowanie wystarczy.</p>
       `,
     },
     {
       label: "Pomyślę o tym jeszcze trochę",
       html: `
-        <p>Panie/Pani ______ (Imię klienta), o czym dokładnie chciałby Pan się jeszcze zastanowić? Moją rolą jest nie tylko przedstawienie wszystkich informacji, ale również pomoc w spokojnym przemyśleniu sprawy i podjęciu najlepszej decyzji.</p>
-  <p>Na podstawie badań klinicznych, opinii lekarzy oraz doświadczeń naszych klientów mogę z pełnym przekonaniem powiedzieć, że obecnie nie ma lepszego preparatu na wzmocnienie męskości. Im szybciej zacznie Pan stosować rewolucyjny preparat ________ (nazwa preparatu), tym szybciej odczuje Pan poprawę samopoczucia, złagodzenie stanów zapalnych i wzmocnienie potencji. Zdecydowanie poprawi się też jakość życia seksualnego, a dodatkowo zmniejszy Pan ryzyko poważniejszych problemów zdrowotnych. (Proszę pamiętać, że co roku u 400 000 mężczyzn na świecie diagnozuje się raka prostaty – to druga najczęstsza przyczyna zgonów z powodu nowotworu. To naprawdę niepokojące statystyki.)</p>
-  <p>Dlatego z pełnym przekonaniem rekomenduję Panu ten preparat i udział w kuracji. Oczywiście rozumiem, że decyzja musi być dobrze przemyślana. Proszę jednak szczerze powiedzieć – czy chodzi o cenę, czy może obawia się Pan, że efekty nie będą wystarczające?</p>
+        <p>Panie/Pani ______ (Imię klienta), o czym dokładnie chciałby Pan/Pani się jeszcze zastanowić? Moją rolą jest nie tylko przedstawienie wszystkich informacji, ale również pomoc w spokojnym przemyśleniu sprawy i podjęciu najlepszej decyzji.</p>
+  <p>Na podstawie badań klinicznych, opinii lekarzy oraz doświadczeń naszych klientów mogę z pełnym przekonaniem powiedzieć, że obecnie nie ma skuteczniejszego preparatu na stawy.
+Im szybciej zacznie Pan/Pani stosować rewolucyjny preparat (nazwa preparatu) , tym szybciej odczuje Pan/Pani poprawę – zmniejszenie stanów zapalnych, złagodzenie bólu i poprawę ruchomości stawów.
+Dodatkowo, wcześniejsze rozpoczęcie kuracji znacząco zmniejsza ryzyko kosztownej operacji wymiany stawu (endoprotezoplastyki), która nie zawsze daje oczekiwane efekty i może wiązać się z powikłaniami.
+</p>
+  <p>Dlatego z pełnym przekonaniem rekomenduję Panu/Pani ten preparat i udział w kuracji.
+Oczywiście rozumiem, że decyzja musi być dobrze przemyślana.
+Proszę jednak szczerze powiedzieć — czy chodzi o cenę, czy może obawia się Pan/Pani, że efekty nie będą wystarczające?
+</p>
       `,
     },
     {
       label: "Drogi",
       html: `
-        <p>Rozumiem, że na pierwszy rzut oka cena może wydawać się wysoka. Proszę jednak pomyśleć, ile kosztują naprawdę skuteczne leki czy długotrwałe leczenie. Warto też zauważyć, że większość preparatów działa tylko na objawy i nie usuwa przyczyny problemu.
+        <p>Rozumiem, że na pierwszy rzut oka koszt może wydawać się wysoki. Warto jednak pamiętać, ile naprawdę kosztują skuteczne preparaty i specjalistyczne leczenie.
+Większość dostępnych leków jedynie łagodzi ból, nie eliminując przyczyny problemów ze stawami.
+W Pana/Pani przypadku skupiamy się na efekcie długoterminowym. Dlatego też zapewniam Panu/Pani opiekę specjalisty — a to wciąż znacznie mniejszy koszt niż późniejsze leczenie w klinikach lub operacja wymiany stawu.
 </p>
-<p>W naszym przypadku celem jest właśnie trwały efekt. Dbamy o to, aby wynik był nie tylko szybki, ale też długofalowy, dlatego zapewnię Panu również bezpłatne wsparcie specjalisty. To naprawdę niewielki koszt w porównaniu z tym, co trzeba później płacić w klinikach za leczenie powikłań. Proszę szczerze powiedzieć – chce się Pan raz na zawsze pozbyć tego problemu i zapomnieć o chorobie? Zależy Panu na efekcie, który utrzyma się przez lata, a nie tylko kilka miesięcy? Nie zmarnujmy tej okazji – czy mogę potwierdzić zamówienie?</p>
+<p>Proszę pomyśleć — czy chce Pan/Pani żyć bez bólu i cieszyć się sprawnością przez kilka lat, a nie tylko przez kilka miesięcy?
+Nie warto odkładać decyzji na później. Czy mogę złożyć dla Pana/Pani zamówienie?
+</p>
       `,
     },
 {
       label: "Brak pieniędzy, drogie",
       html: `
-      <p>Tak, doskonale rozumiem, że teraz wszystko sprowadza się do kwestii finansowej. To zupełnie naturalne – aż 90% moich klientów jest w podobnej sytuacji. Niestety, często jesteśmy przyzwyczajeni do oszczędzania na zdrowiu, a przecież to właśnie na nim nie powinniśmy oszczędzać.</p>
-      <p>Jest Pan mężczyzną w pełni sił, który zasługuje na komfort życia i satysfakcjonujące życie seksualne. Proszę pomyśleć, że to nie jest wydatek – to inwestycja w zdrowie, która pozwala uniknąć o wiele większych kosztów leczenia powikłań w przyszłości.</p>
-<p>W rzeczywistości teraz to właśnie Pan oszczędza – eliminując problem w odpowiednim momencie i zyskując spokój na lata.</p>
+      <p>Tak, rozumiem, że teraz wszystko sprowadza się do kwestii finansowych — nie tylko w Pana/Pani przypadku. Aż 90% moich klientów znajduje się w podobnej sytuacji. Niestety, nie da się od tego uciec.
+Zgadzam się, że jesteśmy przyzwyczajeni do oszczędzania na zdrowiu, choć w rzeczywistości nie powinniśmy tego robić.</p>
+      <p>Proszę jednak pomyśleć — stawy to nasze naturalne „wsparcie” i podstawa sprawnego funkcjonowania. Bez ruchu życie staje się bardzo trudne, a koszty leczenia powikłań czy operacji wymiany stawu są naprawdę ogromne.</p>
+<p>Decydując się na kurację teraz, tak naprawdę oszczędza Pan/Pani pieniądze i jednocześnie eliminuje problem, zanim sytuacja się pogorszy.</p>
 <p>Proszę powiedzieć, którą kurację wybieramy?</p>
         `,
     },
 {
       label: "Skonsultuję się z lekarzem",
       html: `
-        <p>Oczywiście, ma Pan pełne prawo skonsultować się z lekarzem i zasięgnąć dodatkowej opinii. Proszę mi powiedzieć – czy wśród Pana bliskich jest lekarz, któremu naprawdę Pan ufa i który na pewno nie kieruje się zyskiem? Wiem z doświadczenia, że każdy profesjonalny lekarz, który troszczy się o zdrowie pacjenta, z pewnością pozytywnie oceni nasz preparat. To obecnie jedna z najnowszych i najbardziej innowacyjnych propozycji na rynku.
-</p>
-        <p>Proszę tylko pamiętać, że promocyjna cena kończy się już dziś, a czas szybko ucieka. Wielu naszych klientów potwierdziło, że opinia lekarza była dla nich dodatkowym potwierdzeniem, ale nie chcieli stracić okazji do zakupu w niższej cenie. Dlatego szczerze polecam, by skorzystał Pan z promocji i rozpoczął kurację. Jestem przekonany, że będzie Pan zadowolony z efektów.</p>
-        <p>Który pakiet mamy dla Pana przygotować?</p>
+        <p>Oczywiście, ma Pan/Pani pełne prawo skonsultować się z lekarzem i uzyskać dodatkową opinię oraz pomoc.
+Proszę tylko pamiętać, że nie każdy lekarz naprawdę skupia się na zdrowiu pacjenta — ważne, aby była to osoba, której Pan/Pani w pełni ufa i która szczerze doradzi, nie kierując się zyskiem.
+Z doświadczenia wiemy, że wielu odpowiedzialnych lekarzy poleca właśnie nasz preparat — to nowoczesne, innowacyjne rozwiązanie, które wyróżnia się na tle innych produktów.</p>
+        <p>Dodam tylko, że aktualna cena promocyjna obowiązuje jeszcze dziś — warto to rozważyć, zanim oferta się zakończy.
+Wielu naszych klientów potwierdziło skuteczność tego preparatu.
+Polecam skorzystać z tej okazji i rozpocząć kurację, aby jak najszybciej poczuć ulgę.</p>
+        <p>Który pakiet mamy dla Pana/Pani przygotować?</p>
       `,
     },
 {
       label: "Wątpliwości co do jakości",
       html: `
-        <p>Panie ______ (Imię klienta), doskonale rozumiem Pana obawy. Wielu naszych klientów miało już wcześniej doświadczenia z różnymi preparatami o wątpliwej skuteczności, które nie przyniosły oczekiwanych efektów. Niestety, wielu lekarzy wciąż pracuje według przestarzałych schematów leczenia i przepisuje leki, które często działają tylko doraźnie, a co gorsza – mogą negatywnie wpływać na potencję, jak choćby blokery receptorów alfa-1. Newagra wyróżnia się na tle innych – jego skuteczność i wysoką jakość potwierdzają nie tylko badania, ale również liczne opinie mężczyzn, którzy ukończyli pełną kurację i odzyskali zdrowie oraz satysfakcję z życia intymnego. Co najważniejsze, preparat ten działa na samą przyczynę problemu, dlatego efekty są trwałe i pełne.Proszę powiedzieć – na którą kurację się Pan decyduje?</p>
+        <p>Panie/Pani (imię klienta), doskonale rozumiem Pana/Pani obawy.
+Wielu naszych klientów wcześniej stosowało różne preparaty, które nie przyniosły oczekiwanych efektów. Niestety, zdarza się też, że lekarze wciąż kierują się starymi metodami i przepisują jedynie maści przeciwbólowe lub zastrzyki z kwasem hialuronowym, które działają tylko na objawy. Preparat ____ (nazwa preparatu) to obecnie jeden z najlepszych środków w swojej kategorii. Jego skuteczność potwierdzają nie tylko badania, ale też liczne opinie klientów, którzy przeszli pełną kurację i pozbyli się problemów ze stawami — nawet w zaawansowanych stadiach. Najważniejsze jest to, że preparat działa na przyczynę choroby, dlatego efekty są tak trwałe.
+Proszę powiedzieć, na którą kurację chciałby/chciałaby się Pan/Pani zapisać?</p>
       `,
     },
 {
       label: "Czy to naprawdę mi pomoże?",
       html: `
-        <p>Oczywiście, mamy wielu zadowolonych klientów z podobnym problemem jak Pana – nie jest Pan wyjątkiem, to dość częsta sytuacja. Jeśli zastosuje Pan preparat zgodnie z instrukcją i naszymi zaleceniami, mamy pewność, że uzyska Pan oczekiwany efekt.</p>
-        <p>Takie objawy wymagają po prostu większej uwagi. Dlatego polecam jedną z tych dwóch kuracji – obie są skuteczne, ale kluczowa jest regularność i prawidłowe stosowanie, bez przerw. Efekty zobaczy Pan już po kilku dniach.</p>
-        <p>Dodatkowo wypełnię dla Pana wniosek o bezpłatną konsultację i opiekę podczas kuracji – dbamy o naszych klientów. Proszę powiedzieć, którą kurację wybieramy?</p>
+        <p> Oczywiście, mamy wielu zadowolonych klientów, w tym osoby z zaawansowanymi stadami artrozy. Problemy ze stawami to dziś bardzo powszechny temat w całej Europie.
+Jeśli będzie Pan/Pani stosować preparat zgodnie z instrukcją i naszymi zaleceniami, mogę z pełnym przekonaniem powiedzieć, że osiągniemy efekt, na którym Panu/Pani zależy.</p>
+        <p>Proszę zrozumieć, że przy takich objawach, jakie Pan/Pani ma, konieczne jest większe zaangażowanie i konsekwencja.
+Z tego powodu polecam jedną z tych dwóch kuracji — są one skuteczne, pod warunkiem, że będą stosowane regularnie, bez przerw i zgodnie z instrukcją. Już po kilku dniach zauważy Pan/Pani pierwsze efekty.</p>
+        <p>Dodatkowo składam dla Pana/Pani wniosek o bezpłatną konsultację i opiekę w trakcie kuracji — to część naszej polityki i reputacji.
+Proszę powiedzieć — którą kurację wybieramy?</p>
       `,
     },
 {
       label: "Dlaczego nie ma go w aptekach?",
       html: `
-        <p>Aby uniknąć wysokich marż i ryzyka podróbek, producent zdecydował się sprzedawać preparat bezpośrednio klientom. Dzięki temu każdy, kto potrzebuje pomocy, może kupić skuteczny środek w rozsądnej cenie. Podobnie działało to już w Niemczech – z bardzo dobrym efektem.</p>
-        <p>Nie wykluczamy, że preparat trafi kiedyś do aptek, ale wtedy cena będzie znacznie wyższa. Teraz ma Pan naprawdę dobrą okazję.</p>
+        <p>Aby uniknąć wysokich marż i ryzyka zakupu podróbek, producent zdecydował się na bezpośrednią sprzedaż preparatu klientom. Dzięki temu każdy, kto potrzebuje pomocy, może zakupić skuteczny preparat w przystępnej cenie.
+Podobne rozwiązanie było już z powodzeniem stosowane w Niemczech — wielu klientów skorzystało z tej możliwości.</p>
+        <p>Nie wykluczamy, że w przyszłości preparat pojawi się także w aptekach, jednak trzeba się wtedy liczyć z dużo wyższą ceną. Obecnie ma Pan/Pani naprawdę dobrą okazję, aby skorzystać z kuracji w korzystnych warunkach.</p>
         <p>Proszę powiedzieć, którą kurację wybieramy?</p>
        
       `,
@@ -423,20 +442,26 @@ objectionsButtons: [
 products: [
   {
     name: "NEWAGRA Gold",
-    image: "assets/products/pl/product1.png", // або https://...
+    image: "assets/products/pl/product5.png", // або https://...
     origin: "Ryga, Łotwa",
     format: "30 szt./opak",
     usage: "2 razy./dzień",
     
     ingredients: [
-      { name: "proszek z korzenia czerwonej maki (Lepidium meyenii)", effect: "Promuj syntezę testosteronu i normalizuj funkcje erekcji, poprawiaj jakość nasienia. Zwiększa libido i przyspiesza regenerację po aktywności seksualnej. Stosowany w leczeniu niepłodności męskiej. Ma działanie przeciwzapalne i immunomodulujące." },
-      { name: "ekstrakt z eleuterokoka kolczastego (Eleutherococcus senticosus Maxim.)", effect: "Zwiększa potencję i aktywność seksualną, ekstrakt działa stymulująco na centralny układ nerwowy. Stymuluje funkcję naprawczą wątroby i przerost kompensacyjny nerek, normalizuje poziom cukru we krwi, korzystnie wpływa na układ sercowo-naczyniowy" },
-      { name: "ekstrakt z korzenia ashwagandhy (Withania somnifera L. Dunal.)", effect: " Poprawia funkcje rozrodcze u mężczyzn (zwiększa liczbę i ruchliwość plemników), stymuluje produkcję testosteronu. Zwiększa także popęd seksualny, a dzięki zawartemu żelaza pomaga przy anemii. Ashwagandha stymuluje pracę tarczycy. " },
-      { name: "ekstrakt z owoców palmy sabalowej (Serenoa repens)", effect: "Pomaga poprawić czynność układu moczowego u mężczyzn, pomaga złagodzić objawy ze strony dolnych dróg moczowych u mężczyzn z zapaleniem prostaty, ułatwia oddawanie moczu i zmniejsza częstotliwość nocnych wizyt w toalecie." },
-      { name: "ekstrakt z nasion kozieradki pospolitej (Trigonella foenum-graecum L.)", effect: "Pobudza funkcje seksualne, zwiększa libido, poprawia doznania, poprawia potencję. Korzystnie wpływa na stan prostaty i zmniejsza ryzyko zmian związanych z wiekiem." },
-      { name: "Ekstrakt z łodyg i liści kozy rogatej (Epimedium brevicornum), kozieradka, beta-sitosterol, substancja przeciwzbrylająca: stearynian magnezu, ekstrakt pieprzu czarnego (Piper Nigrum) [piperyna 95%], koenzym Q10" },
-       ],
+      { name: "Siarczan glukozaminy 2KCl ", effect: " Jest to związek pochodzący ze skorupiaków, który dostarcza kluczowych składników strukturalnych chrząstki amortyzującej, która amortyzuje stawy i zapewnia wygodę ruchu. Pomaga odbudować chrząstkę, zmniejszyć ból stawów i poprawić mobilność, szczególnie w chorobie zwyrodnieniowej stawów. Pomaga zmniejszyć bóle stawów i kręgosłupa w spoczynku i podczas chodzenia; ogólnie wzmacnia tkankę łączną (naczynia, skórę itp.)" },
+      { name: "Metylosulfonylometan (MSM)", effect: "MSM to organiczny związek siarki, który ma silne właściwości przeciwzapalne i przeciwutleniające. Utrzymuje elastyczność stawów, zmniejsza ból i obrzęk, wspomaga tworzenie kolagenu." },
+      { name: "Siarczan chondroityny ", effect: "Istotny składnik chrząstki, który pomaga zatrzymać wodę, zapewniając lepszą elastyczność i amortyzację. Odgrywa kluczową rolę w zmniejszaniu bólu, sztywności i stanów zapalnych stawów, szczególnie w chorobach takich jak choroba zwyrodnieniowa stawów.  Chondroityna stymuluje odbudowę tkanki chrzęstnej. " },
+      { name: "Witamina C (kwas L-askorbinowy) ", effect: "Silny przeciwutleniacz, który wspomaga produkcję kolagenu, niezbędnego do utrzymania zdrowych kości i chrząstek. Pomaga także chronić tkankę stawową przed stresem oksydacyjnym." },
+      { name: "Ekstrakt z Boswellia serrata ", effect: "Naturalny środek przeciwzapalny, który pomaga zmniejszyć obrzęk i sztywność stawów. pomaga chronić chrząstkę przed zniszczeniem oraz ogranicza procesy zwyrodnieniowe, co pomaga w utrzymaniu zdrowych stawów nawet podczas długotrwałego wysiłku fizycznego." },
+      { name: "Ekstrakt suchy z imbiru (Zingiber Officinale) ", effect: "zawiera związki bioaktywne o silnym działaniu przeciwzapalnym i przeciwbólowym. Utrzymuje komfort stawów i pomaga zmniejszyć sztywność mięśni." },
+      { name: "Kurkumina ", effect: "Aktywny składnik kurkumy ma silne właściwości przeciwzapalne i przeciwutleniające. Pomaga zmniejszyć ból, sztywność i obrzęk stawów poprzez blokowanie szlaków zapalnych." },
+      { name: "Siarczan manganu ", effect: "niezbędny pierwiastek śladowy, który wspomaga tworzenie tkanki łącznej, chrząstki i kości. Odgrywa również rolę w zmniejszaniu stresu oksydacyjnego i stanów zapalnych stawów." },
+      
+      ],
   }, 
+
+  
+
 ], 
 
 
