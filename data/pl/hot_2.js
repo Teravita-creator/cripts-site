@@ -441,7 +441,7 @@ Podobne rozwiązanie było już z powodzeniem stosowane w Niemczech — wielu kl
    
 products: [
   {
-    name: "NEWAGRA Gold",
+    name: "NanoFlex",
     image: "assets/products/pl/product5.png", // або https://...
     origin: "Ryga, Łotwa",
     format: "30 szt./opak",
