@@ -25,7 +25,7 @@ registerScript("pl", "hot_1", {
   <p>Proszę stosować <b>2 razy dziennie</b> i popić go szklanką wody. Rekomenduję wypijać 1,5 litra wody w ciągu dnia – ułatwi to lepsze wchłanianie przez organizm.</p>`,
     courses: `
 
-      <p><b>oferi</b></p>
+     
       <div id="pricingBlock"></div>
 
     `,
