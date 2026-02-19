@@ -4,6 +4,7 @@ registerScript("pl", "hot_3", {
     greeting: `
     <p>Dzień dobry, czy rozmawiam z Panem/Panią _________ <span class="txt-blue">(imię klienta)</span>? </p>
       <p>Nazywam się ________ <span class="txt-blue">(imię i nazwisko)</span>, jestem starszym specjalistą w Centrum Zdrowia. Zainteresował(a) się Pan/Pani preparatem Ozem Lite. </p>
+      <p>Na początku tylko krótka kwestia techniczna — w jakim mieście Pan/Pani mieszka, żebym mogła sprawdzić dostępność i termin dostawy?</p>
       <p>Dobrze, <b>Ozem Lite</b>  jest bardzo potężny produkt, który wymaga odpowiedniej dawki. Dlatego zadam Panu/Pani teraz kilka pytań, aby móc doradzić Panu/Pani jak najdokładniej. Dobrze?</p>`,
     
       needs:  `
