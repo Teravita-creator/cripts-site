@@ -67,7 +67,7 @@ registerScript("pl", "hot_2", {
    
     </ol>
    
-
+     <p>Gdyby pojawiły się jakiekolwiek pytania, może Pan/Pani zadzwonić pod numer, który teraz podam <b>+48 579 775 191</b></p>
     
     <p class="presentationTitle">Dostawa nastąpi w ciągu około 2-3 dni (data dostawy).<span class="txt-red"> Czy potwierdza Pan/Pani, że będzie w stanie odebrać zamówienie?</span></p>
     <p>Czy ma Pan/Pani jeszcze jakieś pytania?</p>
