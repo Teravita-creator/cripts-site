@@ -147,6 +147,90 @@ pricing: [
     </div>
   `,
     },
+    {
+
+
+
+
+      label: "low 16",
+      html: `
+      <div style="margin-bottom:30px;">
+      <p>Panie/Pani _______(imię klienta), w zależności od Pana/Pani sytuacji (Objawy klienta) i biorąc pod uwagę, że ma Pan/Pani problem ______ (okres choroby), polecam dwie programy naprawcze:</p>
+      <p>1. <b>Kuracja Pełna</b> to najlepszy wybór dla Pana/Pani, jeżeli Pan/Pani chce całkowicie odbudować stawy i zapomnieć o bólu na długo. 3 miesiące to czas potrzebny, by preparat dotarł do źródła problemu i trwale poprawił kondycję chrząstki.  Po pełnej kuracji efekty utrzymają się przez 5 lat. W ramach tej kuracji otrzyma Pan/Pani 6 opakowań, 1 op w cenie 16 zł + 1 op będzie gratis s 4 op ze zniżką (137 zł), a <b>koszt kuracji to 564 zł.</b>Dostawa będzie bezpłatna</p>
+<p>2. <b>Kuracja Standardowa</b> obejmuje wszystkie etapy leczenia, z różnicą w czasie utrwalenia efektu – będzie to 3 lata. Obejmuje 4 opakowań, 1 op w cenie 16 zł i 3 op ze zniżką (137 zł) + dostawa 20 zł, a <b>cena wynosi 433 zł</b>.
+</p>
+<p> Płatność przy odbiorze.</p>
+    <p>Którą kurację chciałby(łaby) Pan/Pani wybrać: Pełną, która zapewnia długotrwałe efekty przez 5 lat, czy Standardową, z efektem utrwalonym na 3 lata?</p>
+
+
+
+
+<p>Jeśli nie:</p>
+<p>Proszę mi powiedzieć, Panie/Pani _______(imię klienta)  , czy kwota wydaje się Panu/Pani wysoka, czy też jest coś innego, co powstrzymuje Pana/Panią przed zakupem kompleksu?</p>
+</div>
+
+
+
+
+    <table class="priceTable">
+     
+      <tr>
+        <td>Kuracji:</td>
+        <td>Pełna</td>
+        <td>Standardowa</td>
+  
+        <td>Próbna</td>
+      </tr>
+
+
+
+
+       <tr>
+        <td>Liczba opakowań:</td>
+        <td>6 (4 (137 zł) +1 (16 zł) + 1 (gratis))</td>
+        <td>4 ( 3 (137zł) + 1 (16 zł)</td>
+        
+        <td>2</td>
+      </tr>
+<tr>
+        <td>Okres leczenia:</td>
+        <td>3 miesiące</td>
+        <td>2 miesiące</td>
+
+
+        <td>1 miesiąc</td>
+      </tr>
+
+
+
+
+      <tr>
+        <td>Dostawa:</td>
+        <td>free</td>
+        <td>20 zł</td>
+
+
+        <td>20 zł</td>
+      </tr>
+      <tr>
+        <td>Cena:</td>
+        <td>564 </td>
+        <td>433 </td>
+
+
+        <td>294 </td>
+      </tr>
+     
+    </table>
+    <div style="margin-bottom:30px;">
+<p span class="txt-red"? class="presentationTitle"> Przynajmniej 2 razy rozpatrzymy sprzeciw i dopiero wtedy zaproponujemy niższą kuracją  </p>
+<p>Panie/Pani ________ (Imię Klienta), rozumiem Pana/Pani sytuację, ale po prostu potrzebuje Pan/Pani powrotu do zdrowia, ponieważ sytuacja jest zaawansowana. W takim przypadku spójrzmy na inne opcje. </p>
+<p>Może Pan/Pani przejść <b>Kurację Próbną</b>. Ten program jest przeznaczony na miesiąc stosowania składają się z 2 opakowań, <b>cena wynosi 294 zł, razem z przesyłką 20 zł. Zabezpieczy Pan/Pani wynik na kolejne 2 lata</b>. Szczerze chcę Panu/Pani pomóc, ponieważ rozumiem, że pilnie potrzebuje Pan/Pani rozwiązać problem.</p>
+<p>Zapewniam Pana/Pani, że po zobaczeniu wyników będzie Pan/Pani chciał(a) zamówić więcej. Specjalnie przydzielę Panu/Pani zniżkę, dzięki której, jeśli zajdzie taka potrzeba, będzie Pan/Pani mógł(a) dokupić dodatkowe opakowania w promocji. Może więc zostaniemy przy minimalnej opcji? </p>
+    </div>
+  `,
+    },
+
    {
 
 
