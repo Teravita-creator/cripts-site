@@ -30,11 +30,21 @@
 
     // ✅ Перерендер динамічних блоків після зміни мови
     document.addEventListener("lang:changed", () => {
-      const obj = window.SCRIPTS_DATA?.[kc]?.[scriptId] || null;
-      if (!obj) return;
-      renderDynamic(obj);
-      renderNeedsBranches(scriptObj);
-    });
+  const obj = window.SCRIPTS_DATA?.[kc]?.[scriptId] || null;
+  if (!obj) return;
+
+  // перемалювати навігацію (бо підписи можуть бути іншими)
+  const navStages = getNavStages(scriptId, obj);
+  renderStagesNav(navStages);
+
+  // перемалювати динамічні блоки
+  renderDynamic(obj);
+
+  // оновити scroll-поведінку під нові лінки
+  initScrollSpy();
+});
+
+
 
     // yes/no кнопки в акордеонах
     document.addEventListener("click", (e) => {
@@ -112,10 +122,15 @@
     };
 
     Object.keys(STAGE_TO_ELEMENT).forEach((stageKey) => {
-      const elId = STAGE_TO_ELEMENT[stageKey];
-      const html = scriptObj?.stages?.[stageKey] || "";
-      setHTML(elId, html);
-    });
+  const elId = STAGE_TO_ELEMENT[stageKey];
+  const html = scriptObj?.stages?.[stageKey] || "";
+  setHTML(elId, html);
+});
+
+const navStages = getNavStages(scriptId, scriptObj);
+renderStagesNav(navStages);
+initScrollSpy();
+
 
     // accordions
     fillAccordions("needsAccordions", scriptObj?.accordions?.needs || []);
@@ -137,6 +152,71 @@
   renderNeedsBranches(scriptObj);
 
 }
+  function getNavStages(scriptId, scriptObj) {
+    // 1) якщо в конкретному скрипті задано navStages — використовуємо його
+    if (Array.isArray(scriptObj?.navStages) && scriptObj.navStages.length > 0) {
+      return scriptObj.navStages;
+    }
+
+    // 2) дефолт для base_*
+    if (String(scriptId || "").startsWith("base_")) {
+      // ✅ приклад: 3 кнопки (менше), свої назви
+      return [
+        { key: "presentation", label: "Старт" },
+        { key: "objections", label: "Заперечення" },
+        { key: "closing", label: "Фінал" },
+      ];
+    }
+
+    // 3) дефолт для hot_* (як зараз)
+    return [
+  { key: "greeting", i18n: "stage.greeting", fallback: "Приветствие" },
+  { key: "needs", i18n: "stage.needs", fallback: "Выявление потребностей" },
+  { key: "presentation", i18n: "stage.presentation", fallback: "Презентация" },
+  { key: "courses", i18n: "stage.courses", fallback: "Курсы" },
+  { key: "cross", i18n: "stage.cross", fallback: "Кросс" },
+  { key: "survey", i18n: "stage.survey", fallback: "Анкетирование" },
+  { key: "closing", i18n: "stage.closing", fallback: "Завершение" },
+  { key: "objections", i18n: "stage.objections", fallback: "Отработка возражений" },
+  { key: "products", i18n: "stage.products", fallback: "Препараты" },
+];
+
+  }
+
+  function renderStagesNav(navStages) {
+    const nav = document.getElementById("stagesNav") || document.querySelector(".stagesNav");
+    if (!nav) return;
+
+    nav.innerHTML = "";
+
+    navStages.forEach((item) => {
+  const a = document.createElement("a");
+  a.className = "stageLink";
+  a.href = `#${item.key}`;
+  a.setAttribute("data-stage", item.key);
+
+  // HOT: переклад через data-i18n
+  if (item.i18n) {
+    a.setAttribute("data-i18n", item.i18n);
+    a.textContent = item.fallback || item.key; // тимчасово, поки applyTranslations не пройде
+  } else {
+    // BASE: кастомні назви (label)
+    a.textContent = item.label || item.key;
+  }
+
+  nav.appendChild(a);
+});
+
+if (typeof applyTranslations === "function") applyTranslations();
+
+
+    // показуємо тільки дозволені секції
+    const allowed = new Set(navStages.map((x) => x.key));
+    document.querySelectorAll(".stageSection").forEach((sec) => {
+      const key = sec.getAttribute("data-stage");
+      sec.style.display = allowed.has(key) ? "" : "none";
+    });
+  }
 
 
   // ================== HELPERS ==================

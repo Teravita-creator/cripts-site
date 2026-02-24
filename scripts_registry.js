@@ -57,6 +57,8 @@ function normalizeHotScript(obj) {
     const crossSellProducts = Array.isArray(obj?.crossSellProducts)
   ? obj.crossSellProducts
   : [];
+    const navStages = Array.isArray(obj?.navStages) ? obj.navStages : null;
+
 
 
 
@@ -65,7 +67,7 @@ function normalizeHotScript(obj) {
   return {
     title: typeof obj?.title === "string" ? obj.title : "",
     stages: fixedStages,
-    
+    navStages,
 
     // ✅ ДОДАЛИ: щоб рендерились ціни та кнопки
     pricing,
