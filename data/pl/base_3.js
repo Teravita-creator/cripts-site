@@ -16,7 +16,8 @@ registerScript("pl", "base_3", {
   // Контент кладеш у stages, як і раніше
   stages: {
     greeting: `
-     <p>Dzień dobry Panie/Pani (imię klienta).</p>
+     <p>Dzień dobry Panie/Pani <span class="txt-blue">(imię klienta)</span>.</p>
+     <p>Nazywam się _________  <span class="txt-blue">[Twoje imię]</span></p>
     <p>Widziałem, że jakiś czas temu zostawił Pan/Pani zgłoszenie w sprawie preparatu na potencję / prostatę, ale zamówienie nie zostało wtedy dokończone.</p>
     <p>Oddzwaniam tylko na chwilę, żeby sprawdzić — czy problem jest nadal aktualny, czy udało się już go rozwiązać?</p>
 
@@ -26,17 +27,17 @@ registerScript("pl", "base_3", {
 
     presentation: `
      <p>Na podstawie Pana odpowiedzi mogę zaproponować trzy warianty kuracji. Różnią się one długością stosowania i siłą efektu.</p>
-    <p>Najczęściej wybierana – kuracja standardowa. To wariant, który wybiera większość naszych klientów. Kuracja obejmuje 4 opakowania preparatu, co pozwala:</p>
+    <p><b>Najczęściej wybierana – kuracja standardowa.</b> To wariant, który wybiera większość naszych klientów. Kuracja obejmuje 4 opakowania preparatu, co pozwala:</p>
     <ul>
     <li>poprawić krążenie krwi</li>
     <li>wesprzeć pracę prostaty</li>
     <li>zwiększyć poziom energii i libido</li>
     <li>stopniowo przywrócić naturalną sprawność</li>
     </ul>
-    <p>Cena tej kuracji wynosi 350 zł.</p>
+    <p><b>Cena tej kuracji wynosi 350 zł.</b></p>
 
-    <p>lub</p>
-    <p>Najmocniejsza kuracja – dla utrwalenia efektu</p>
+    <p class="presentationTitle"><span class="txt-red">lub</span></p>
+    <p><b>Najmocniejsza kuracja</b> – dla utrwalenia efektu</p>
     <p>Jeżeli chce Pan nie tylko poprawić sytuację, ale również utrwalić efekt na dłużej, wtedy polecam pełną kurację.</p>
     <p>W zestawie znajduje się 6 opakowań preparatu.</p>
     <p>Taki program:</p>
@@ -46,9 +47,9 @@ registerScript("pl", "base_3", {
     <li>wzmacnia prostatę</li>
     <li>pozwala utrzymać efekty znacznie dłużej</li>
     </ul>
-    <p>Koszt takiej kuracji wynosi 400 zł.</p>
+    <p><b>Koszt takiej kuracji wynosi 400 zł.</b></p>
     <p>Wychodzi to najkorzystniej cenowo, ponieważ każde opakowanie jest wtedy dużo tańsze. Jaką kuracje mam dla Pana wysłać?</p>
-    <p>SILNY DOMYK</p>
+    <p class="presentationTitle"><span class="txt-red">SILNY DOMYK</span></p>
     <p>Panie (imię), powiem szczerze — większość mężczyzn odkłada rozwiązanie tego problemu, a z czasem on tylko się pogłębia. Dlatego proponuję zacząć kurację teraz, żeby organizm mógł się zregenerować i wrócić do normalnej sprawności.
     Przygotujemy wysyłkę jeszcze dziś. Dobrze?</p>
     
@@ -231,7 +232,7 @@ products: [
   // ✅ ВИЯВЛЕННЯ ПОТРЕБ — питання + 2 кнопки + 2 приховані відповіді
   needs: [
     {
-      q: "Czy zauważył Pan ostatnio, że erekcja jest słabsza niż wcześniej?",
+      q: "1. Czy zauważył Pan ostatnio, że erekcja jest słabsza niż wcześniej?",
       a: `
         <div style="display:flex; gap:10px; flex-wrap:wrap; margin:10px 0;">
           <button type="button" class="ynBtn" data-show="a">TAK</button>
@@ -248,7 +249,7 @@ products: [
       `,
     },
     {
-      q: "Czy zdarzają się częstsze wizyty w toalecie w nocy?",
+      q: "2. Czy zdarzają się częstsze wizyty w toalecie w nocy?",
       a: `
         <div style="display:flex; gap:10px; flex-wrap:wrap; margin:10px 0;">
           <button type="button" class="ynBtn" data-show="a">TAK</button>
@@ -265,7 +266,7 @@ products: [
       `,
     },
     {
-      q: "Czy stosował Pan wcześniej jakieś środki na potencję??",
+      q: "3. Czy stosował Pan wcześniej jakieś środki na potencję??",
       a: `
         <div style="display:flex; gap:10px; flex-wrap:wrap; margin:10px 0;">
           <button type="button" class="ynBtn" data-show="a">TAK</button>
@@ -292,7 +293,7 @@ products: [
   <li>zwiększenia energii i testosteronu</li>
   </ul>
 
-    <p>Dlatego polecam preparat (назва^ Newagra/Prostonix) — działa kompleksowo i pomaga stopniowo przywrócić naturalną sprawność.</p>
+    <p>Dlatego polecam preparat <b>(Newagra/Prostonix/Libidomatic)</b> — działa kompleksowo i pomaga stopniowo przywrócić naturalną sprawność.</p>
   `
 }
 

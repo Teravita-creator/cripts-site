@@ -16,27 +16,27 @@ registerScript("pl", "base_2", {
   // Контент кладеш у stages, як і раніше
   stages: {
     greeting: `
-    <p>Dzień dobry, czy rozmawiam z Panem/Panią _________ (imię klienta)?</p>
-    <p>Nazywam się _________  [Twoje imię], dzwonię z Centrum Przywracania Zdrowia.</p>
+    <p>Dzień dobry, czy rozmawiam z Panem/Panią _________ <span class="txt-blue">(imię klienta)</span>?</p>
+    <p>Nazywam się _________  <span class="txt-blue">[Twoje imię]</span>, dzwonię z Centrum Przywracania Zdrowia.</p>
     <p>Postanowiłem do Pana/Pani zadzwonić, ponieważ zauważyłem zamówienie na Nano Flex i widzę, że zakup nie został dokończony. Możliwe, że poprzedni konsultant nie zdążył przekazać wszystkich potrzebnych informacji — dlatego chciałbym osobiście zapytać, w jaki sposób możemy Panu/Pani pomóc.</p>
     <p>Skoro nie wszystkie szczegóły zostały wcześniej omówione, mogę zaproponować Panu/Pani bardziej korzystne warunki. Sprawdźmy razem wszystko jeszcze raz i znajdźmy dla Pana/Pani najlepsze rozwiązanie!</p>
     `,
     needs:`<p>Na początek chciałbym zadać Panu/Pani kilka krótkich pytań, żeby lepiej zrozumieć, w jakim stanie są stawy i dobrać odpowiednie rozwiązanie.</p>`,
 
     presentation: `<p>Właśnie chciałem/chciałam zaproponować Panu/Pani wariant, który najczęściej wybierają klienci z bólem i stanem zapalnym stawów.</p>
-     <p>Obecnie mamy promocję: do pełnej kuracji Nano Flex w kapsułkach dodajemy krem — całkowicie gratis.</p>
+     <p>Obecnie mamy promocję: do pełnej kuracji Nano Flex w kapsułkach dodajemy <b>krem — całkowicie gratis.</b></p>
     <p>Jak działa zestaw:</p>
     <ul>
-    <li> Kapsułki działają od środka — wspierają regenerację chrząstki, zmniejszają stan zapalny i pomagają poprawić ruchomość stawów.</li>
-    <li>Krem działa miejscowo — pomaga zmniejszyć ból, obrzęk oraz napięcie w okolicach stawów.</li>
+    <li> <b>Kapsułki działają od środka</b> — wspierają regenerację chrząstki, zmniejszają stan zapalny i pomagają poprawić ruchomość stawów.</li>
+    <li><b>Krem działa miejscowo</b> — pomaga zmniejszyć ból, obrzęk oraz napięcie w okolicach stawów.</li>
     </ul>
     <p>Dzięki temu zestaw działa kompleksowo: kapsułki wspierają stawy od środka, a krem przynosi szybką ulgę z zewnątrz.</p>
     <p>Taki zestaw w promocji oferujemy właśnie naszym stałym klientom.</p>
-    <p>Dzięki temu wychodzi to znacznie korzystniej niż przy zakupie osobno: pełna kuracja na 1,5 miesiąca kosztuje tylko 400 zł. W zestawie znajdują się 3 opakowania kapsułek oraz 3 opakowania kremu.</p>
+    <p>Dzięki temu wychodzi to znacznie korzystniej niż przy zakupie osobno: <b>pełna kuracja na 1,5 miesiąca kosztuje tylko 400 zł</b>. W zestawie znajdują się 3 opakowania kapsułek oraz 3 opakowania kremu.</p>
         <p class="presentationTitle"><span class="txt-red">Jeżeli nie:</span></p>
 
     <p>Nie mogę zostawić Pana/Pani bez rozwiązania. Przy takich objawach ważne jest dobranie kuracji, która naprawdę przyniesie efekt, a nie tylko na chwilę złagodzi ból.</p>
-    <p>Dlatego mogę zaproponować krótszy kurs na miesiąc — w zestawie będą 2 opakowania kapsułek oraz 2 opakowania kremu. Koszt takiego zestawu to 350 zł.</p>
+    <p>Dlatego mogę zaproponować krótszy kurs na miesiąc — w zestawie będą 2 opakowania kapsułek oraz 2 opakowania kremu. <b>Koszt takiego zestawu to 350 zł.</b></p>
     
     `,
  
@@ -159,7 +159,7 @@ products: [
   // ✅ ВИЯВЛЕННЯ ПОТРЕБ — питання + 2 кнопки + 2 приховані відповіді
   needs: [
     {
-      q: "Czy zdarzają się u Pana/Pani bóle albo chrupanie w stawach — na przykład w kolanach, łokciach lub plecach?",
+      q: "1. Czy zdarzają się u Pana/Pani bóle albo chrupanie w stawach — na przykład w kolanach, łokciach lub plecach?",
       a: `
         <div style="display:flex; gap:10px; flex-wrap:wrap; margin:10px 0;">
           <button type="button" class="ynBtn" data-show="a">TAK</button>
@@ -176,7 +176,7 @@ products: [
       `,
     },
     {
-      q: "Czy odczuwa Pan/Pani rano sztywność w stawach albo trudniej się rozprostować po wstaniu z łóżka?",
+      q: "2. Czy odczuwa Pan/Pani rano sztywność w stawach albo trudniej się rozprostować po wstaniu z łóżka?",
       a: `
         <div style="display:flex; gap:10px; flex-wrap:wrap; margin:10px 0;">
           <button type="button" class="ynBtn" data-show="a">TAK</button>
@@ -193,7 +193,7 @@ products: [
       `,
     },
     {
-      q: "Czy zauważył/a Pan/Pani czasem obrzęk stawów albo uczucie ciepła czy pieczenia w ich okolicy?",
+      q: "3. Czy zauważył/a Pan/Pani czasem obrzęk stawów albo uczucie ciepła czy pieczenia w ich okolicy?",
       a: `
         <div style="display:flex; gap:10px; flex-wrap:wrap; margin:10px 0;">
           <button type="button" class="ynBtn" data-show="a">TAK</button>
@@ -210,7 +210,7 @@ products: [
       `,
     },
     {
-      q: "Czy w pracy albo na co dzień musi Pan/Pani długo stać, siedzieć albo obciążać stawy?",
+      q: "4. Czy w pracy albo na co dzień musi Pan/Pani długo stać, siedzieć albo obciążać stawy?",
       a: `
         <div style="display:flex; gap:10px; flex-wrap:wrap; margin:10px 0;">
           <button type="button" class="ynBtn" data-show="a">TAK</button>
@@ -227,7 +227,7 @@ products: [
       `,
     },
     {
-      q: "Czy stosuje Pan/Pani już jakieś preparaty na stawy?",
+      q: "5. Czy stosuje Pan/Pani już jakieś preparaty na stawy?",
       a: `
         <div style="display:flex; gap:10px; flex-wrap:wrap; margin:10px 0;">
           <button type="button" class="ynBtn" data-show="a">TAK</button>
