@@ -1,11 +1,14 @@
 // data/pl/base_1.js
-registerScript("pl", "base_1", {
-  title: "LC",
+registerScript("pl", "base_2", {
+  title: "Nano Flex Base – Type 2",
 
   // ОЦЕ і є “інші швидкі кнопки” (менше і з іншими назвами)
   navStages: [
     { key: "greeting", label: "Приветствие" },
-    { key: "closing", label: "Завершение" },
+    { key: "needs", label: "Выявление потребностей" },
+    { key: "presentation", label: "Презентация" },
+    { key: "courses", label: "Цены" },
+     { key: "closing", label: "Завершение" },
     { key: "objections", label: "Отработка возражений" },
     { key: "products", label: "Препарат" },
   ],
@@ -13,19 +16,63 @@ registerScript("pl", "base_1", {
   // Контент кладеш у stages, як і раніше
   stages: {
     greeting: `
-    <p>Dzień dobry! Dzwonię z Centrum Kontroli Jakości.</p>
-    <p>Współpracujemy z ekspertami medycznymi, którzy przeanalizowali kilka przypadków i wybrali grupę osób – którym zalecono umożliwić kurację __________ w obniżonej cenie.</p>
-    <p>Widzę, że kilka dni temu (lub dziśiaj) odbyła się rozmowa z naszym konsultantem na temat tego preparatu, ale nie zostało złożone zamówienie. I właśnie dlatego się kontaktuję — obecnie trwa wewnętrzna analiza powodów rezygnacji, a firma przygotowała specjalną, ograniczoną ofertę cenową dla wybranych osób.</p>
-    <p>Na przykład:</p>
+    <p>Dzień dobry, czy rozmawiam z Panem/Panią _________ (imię klienta)?</p>
+    <p>Nazywam się _________  [Twoje imię], dzwonię z Centrum Przywracania Zdrowia.</p>
+    <p>Postanowiłem do Pana/Pani zadzwonić, ponieważ zauważyłem zamówienie na Nano Flex i widzę, że zakup nie został dokończony. Możliwe, że poprzedni konsultant nie zdążył przekazać wszystkich potrzebnych informacji — dlatego chciałbym osobiście zapytać, w jaki sposób możemy Panu/Pani pomóc.</p>
+    <p>Skoro nie wszystkie szczegóły zostały wcześniej omówione, mogę zaproponować Panu/Pani bardziej korzystne warunki. Sprawdźmy razem wszystko jeszcze raz i znajdźmy dla Pana/Pani najlepsze rozwiązanie!</p>
+    `,
+    needs:`<p>Na początek chciałbym zadać Panu/Pani kilka krótkich pytań, żeby lepiej zrozumieć, w jakim stanie są stawy i dobrać odpowiednie rozwiązanie.</p>`,
+
+    presentation: `<p>Właśnie chciałem/chciałam zaproponować Panu/Pani wariant, który najczęściej wybierają klienci z bólem i stanem zapalnym stawów.</p>
+     <p>Obecnie mamy promocję: do pełnej kuracji Nano Flex w kapsułkach dodajemy krem — całkowicie gratis.</p>
+    <p>Jak działa zestaw:</p>
     <ul>
-    <li>4 opakowania można teraz otrzymać za jedyne 350 zł,</li>
-    <li>lub pełną kurację – 6 opakowań – za 400 zł.</li>
-    <li>(najmniejsza kuracja na 3 op - 297 zł)</li>
+    <li> Kapsułki działają od środka — wspierają regenerację chrząstki, zmniejszają stan zapalny i pomagają poprawić ruchomość stawów.</li>
+    <li>Krem działa miejscowo — pomaga zmniejszyć ból, obrzęk oraz napięcie w okolicach stawów.</li>
     </ul>
-    <p>To wyjątkowa możliwość, dostępna wyłącznie dla osób, które wcześniej zrezygnowały z zakupu. Już mamy 3 potwierdzone zamówienia w ramach tej akcji, dlatego oferta jest ograniczona czasowo.</p>
-    <p>Jeśli wcześniej pojawiły się wątpliwości lub odkładali Państwo decyzję – teraz jest naprawdę dobry moment, żeby skorzystać. Czy mogę zarezerwować dla Państwa jeden z tych wariantów?</p>
+    <p>Dzięki temu zestaw działa kompleksowo: kapsułki wspierają stawy od środka, a krem przynosi szybką ulgę z zewnątrz.</p>
+    <p>Taki zestaw w promocji oferujemy właśnie naszym stałym klientom.</p>
+    <p>Dzięki temu wychodzi to znacznie korzystniej niż przy zakupie osobno: pełna kuracja na 1,5 miesiąca kosztuje tylko 400 zł. W zestawie znajdują się 3 opakowania kapsułek oraz 3 opakowania kremu.</p>
+        <p class="presentationTitle"><span class="txt-red">Jeżeli nie:</span></p>
+
+    <p>Nie mogę zostawić Pana/Pani bez rozwiązania. Przy takich objawach ważne jest dobranie kuracji, która naprawdę przyniesie efekt, a nie tylko na chwilę złagodzi ból.</p>
+    <p>Dlatego mogę zaproponować krótszy kurs na miesiąc — w zestawie będą 2 opakowania kapsułek oraz 2 opakowania kremu. Koszt takiego zestawu to 350 zł.</p>
     
     `,
+ 
+    courses: `<table class="priceTable">
+     
+      <tr>
+        <td>Kuracji:</td>
+        <td>Pełna</td>
+        <td>Standardowa</td>
+        <td>Próbna</td>
+      </tr>
+
+
+       <tr>
+        <td>Liczba opakowań:</td>
+        <td>6 (3 kapsułki + 3 krem)</td>
+        <td>4 (2 kapsułki + 2 krem)</td>
+        <td>3 (2 kapsułki + 1 krem</td>
+      </tr>
+<tr>
+    
+      <tr>
+        <td>Dostawa:</td>
+        <td>free</td>
+        <td>free</td>
+        <td>free</td>
+      </tr>
+      <tr>
+        <td>Cena:</td>
+        <td>400 </td>
+        <td>350 </td>
+        <td>297</td>
+      </tr>
+     
+    </table>
+`,
     
     closing: `<p>Dobrze, sprawdzimy jeszcze raz wszystkie dane, czy wszystko jest poprawnie wpisane:</p>
     <ol>
@@ -108,9 +155,112 @@ products: [
 ], 
 
   // якщо треба акордеони — можна (не обов’язково)
+  accordions: {
+  // ✅ ВИЯВЛЕННЯ ПОТРЕБ — питання + 2 кнопки + 2 приховані відповіді
+  needs: [
+    {
+      q: "Czy zdarzają się u Pana/Pani bóle albo chrupanie w stawach — na przykład w kolanach, łokciach lub plecach?",
+      a: `
+        <div style="display:flex; gap:10px; flex-wrap:wrap; margin:10px 0;">
+          <button type="button" class="ynBtn" data-show="a">TAK</button>
+          <button type="button" class="ynBtn" data-show="b">NIE</button>
+        </div>
+
+        <div class="ynPanel" data-panel="a">
+          <p>Rozumiem. To bardzo częsty sygnał, że chrząstka zaczyna się zużywać i pojawia się stan zapalny.</p>
+        </div>
+
+        <div class="ynPanel" data-panel="b">
+          <p>To dobrze. W takim razie można zadbać o stawy profilaktycznie, żeby uniknąć takich problemów w przyszłości.</p>
+        </div>
+      `,
+    },
+    {
+      q: "Czy odczuwa Pan/Pani rano sztywność w stawach albo trudniej się rozprostować po wstaniu z łóżka?",
+      a: `
+        <div style="display:flex; gap:10px; flex-wrap:wrap; margin:10px 0;">
+          <button type="button" class="ynBtn" data-show="a">TAK</button>
+          <button type="button" class="ynBtn" data-show="b">NIE</button>
+        </div>
+
+        <div class="ynPanel" data-panel="a">
+          <p>To jeden z pierwszych objawów przeciążenia stawów. W takiej sytuacji ważne jest ich odpowiednie odżywienie i regeneracja.</p>
+        </div>
+
+        <div class="ynPanel" data-panel="b">
+          <p>Świetnie. To oznacza, że możemy skupić się głównie na profilaktyce i utrzymaniu dobrej ruchomości.</p>
+        </div>
+      `,
+    },
+    {
+      q: "Czy zauważył/a Pan/Pani czasem obrzęk stawów albo uczucie ciepła czy pieczenia w ich okolicy?",
+      a: `
+        <div style="display:flex; gap:10px; flex-wrap:wrap; margin:10px 0;">
+          <button type="button" class="ynBtn" data-show="a">TAK</button>
+          <button type="button" class="ynBtn" data-show="b">NIE</button>
+        </div>
+
+        <div class="ynPanel" data-panel="a">
+          <p>To najczęściej oznaka stanu zapalnego. Jeśli się go nie wyciszy, z czasem może się nasilać.</p>
+        </div>
+
+        <div class="ynPanel" data-panel="b">
+          <p>To bardzo dobrze. W takim razie możemy działać wcześniej i zapobiec pojawieniu się stanu zapalnego.</p>
+        </div>
+      `,
+    },
+    {
+      q: "Czy w pracy albo na co dzień musi Pan/Pani długo stać, siedzieć albo obciążać stawy?",
+      a: `
+        <div style="display:flex; gap:10px; flex-wrap:wrap; margin:10px 0;">
+          <button type="button" class="ynBtn" data-show="a">TAK</button>
+          <button type="button" class="ynBtn" data-show="b">NIE</button>
+        </div>
+
+        <div class="ynPanel" data-panel="a">
+          <p>W takim przypadku stawy zużywają się szybciej, dlatego warto je wzmocnić i zabezpieczyć.</p>
+        </div>
+
+        <div class="ynPanel" data-panel="b">
+          <p>To oczywiście pomaga, ale chrząstka stawowa i tak z czasem się zużywa, dlatego potrzebuje wsparcia.</p>
+        </div>
+      `,
+    },
+    {
+      q: "Czy stosuje Pan/Pani już jakieś preparaty na stawy?",
+      a: `
+        <div style="display:flex; gap:10px; flex-wrap:wrap; margin:10px 0;">
+          <button type="button" class="ynBtn" data-show="a">TAK</button>
+          <button type="button" class="ynBtn" data-show="b">NIE</button>
+        </div>
+
+        <div class="ynPanel" data-panel="a">
+          <p>Rozumiem. To znaczy, że jest Pan/Pani świadomy/świadoma, jak ważna jest regeneracja stawów. Nano Flex można stosować razem z innymi preparatami, żeby wzmocnić efekt.</p>
+        </div>
+
+        <div class="ynPanel" data-panel="b">
+          <p>W takim razie zaczniemy od bezpiecznego i kompleksowego rozwiązania, które wspiera stawy od środka.</p>
+        </div>
+      `,
+    },
+    {
+  q: "Podsumowanie",
+  a: `
+    <p>Podsumowując Pana/Pani odpowiedzi — stawy potrzebują teraz wsparcia: zmniejszenia stanu zapalnego, odbudowy chrząstki i poprawy ruchomości. Dlatego właśnie polecam Nano Flex— działa kompleksowo, wspiera stawy od środka i pomaga stopniowo przywrócić ich prawidłową pracę.</p>
+  `
+}
+
+
+    // ✅ Можеш додавати ще питання так само:
+    // { q: "...", a: `...ynBtn/ynPanel...` },
+  ],
+
+  // ✅ ЗАПЕРЕЧЕННЯ — (старі акордеони “швидкі варіанти” можеш залишити)
+  
+},
   objectionsButtons: [
   { label: "Drogo", html: "<p>Rozumiem. Właśnie dlatego przygotowaliśmy zestaw promocyjny — żeby pełna kuracja była tańsza i jednocześnie skuteczna. W tym przypadku płaci Pan/Pani za rozwiązanie problemu, a nie tylko za chwilowe złagodzenie bólu. Jeśli podzielimy koszt kuracji na 45 dni, wychodzi mniej więcej kilka złotych dziennie — często mniej niż środki przeciwbólowe czy wizyta u specjalisty. Najważniejsze jest jednak to, że stawy mają szansę się zregenerować, a ból nie wraca. Czy w takim razie wybieramy pełny kurs, czy woli Pan/Pani zacząć od krótszego, profilaktycznego?”</p>" },
   { label: "Klient się waha", html: "<p>„Rozumiem Pana/Pani wątpliwości. Wiele osób z podobnymi objawami zauważa pierwszą poprawę już po 1–2 tygodniach stosowania. Na przykład jedna z naszych klientek mówiła, że nie mogła normalnie kucnąć — po około 10 dniach ból się zmniejszył, a staw stał się bardziej ruchomy. Pod koniec kuracji zniknęły także obrzęki i chrupanie w stawach. Jeśli tylko znosi się ból i nic z nim nie robi, problem zwykle się pogłębia. Ten zestaw działa kompleksowo — wspiera odbudowę tkanek i poprawia odżywienie stawów od środka, dlatego efekty są bardziej trwałe. Dlatego proponuję rozpocząć kurację, żeby już pod koniec miesiąca mógł/mogła Pan/Pani odczuć wyraźną ulgę.”</p>" },
 ],
-  
-});
+},
+)
