@@ -77,7 +77,7 @@ registerScript("pl", "hot_3", {
     <li>Nazwisko, Imię -Gdzie wysyłamy</li>
     <li>A więc zamówił/a Pan/Pani ___ (wymień co dokładnie i w jakiej ilości klient będzie miał w paczce). Kwota zamówienia wynosi ___ zł, podobnie jak dostawa _____ zł, razem ______ zł.</li>
      </ol>
-     <p>Gdyby pojawiły się jakiekolwiek pytania, może Pan/Pani zadzwonić pod numer, który teraz podam <b>+48 579 775 191</b></p>
+     <p>Gdyby pojawiły się jakiekolwiek pytania, może Pan/Pani zadzwonić pod numer, który teraz podam <b>+48 739 103 849</b></p>
 
     <p class="presentationTitle">Dostawa nastąpi w ciągu około 2-3 dni (data dostawy).<span class="txt-red"> Czy potwierdza Pan/Pani, że będzie w stanie odebrać zamówienie?</span></p>
     <p>Czy ma Pan/Pani jeszcze jakieś pytania?</p>
