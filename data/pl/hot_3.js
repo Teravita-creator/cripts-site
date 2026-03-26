@@ -96,7 +96,7 @@ registerScript("pl", "hot_3", {
 <p>Jak Pan/Pani widzi, nasz produkt ma szeroki zakres działania. Dla mnie, jako specjalisty, bardzo ważne jest, aby Panu/Pani pomóc i wspólnie rozwiązać problem z nadmiernymi kilogramami.</p>
 <p>Na początek chcę Panu/Pani powiedzieć, że dzisiaj mamy bardzo dobrą promocję.</p>
       <p>W związku z tym, dla Pana/Pani grupy wiekowej  <span class="txt-red">(podajemy wiek klienta)</span> oraz Pana/Pani sytuacji  <span class="txt-red">(wymieniamy, jakie efekty klient chce osiągnąć i jakie problemy chce rozwiązać)</span>, możemy dziś zaoferować:</p>
-      <p>1. <b>Kuracja Pełna</b> to najlepszy wybór dla Pana/Pani, jeżeli Pan/Pani chce przejść cały cykl i nie wrócić do dawnych problemów z wagą.  Po pełnej kuracji efekty utrzymają się przez 5 lat. W ramach tej kuracji otrzyma Pan/Pani 6 opakowań, 2 opakowania będą gratis, a <b>koszt kuracji to 562 zł.</b></p>
+      <p>1. <b>Kuracja Pełna</b> to najlepszy wybór dla Pana/Pani, jeżeli Pan/Pani chce przejść cały cykl i nie wrócić do dawnych problemów z wagą.  Po pełnej kuracji efekty utrzymają się przez 5 lat. W ramach tej kuracji otrzyma Pan/Pani 6 opakowań, 2 opakowania będą gratis, a <b>koszt kuracji to 548 zł.</b></p>
 <p>2. <b>Kuracja Standardowa</b> obejmuje wszystkie etapy leczenia, z różnicą w czasie utrwalenia efektu – będzie to 3 lata. Obejmuje 4 opakowań, 1 opakowanie będą gratis, a <b>cena wynosi 431 zł.</b></p>
 <p>Dostawa będzie bezpłatna. Płatność przy odbiorze.</p>
     <p>Którą kurację chciałby(łaby) Pan/Pani wybrać: Pełną, która zapewnia długotrwałe efekty przez 5 lat, czy Standardową, z efektem utrwalonym na 3 lata?</p>
@@ -135,7 +135,7 @@ registerScript("pl", "hot_3", {
       </tr>
       <tr>
         <td>Cena:</td>
-        <td>562 zł (bez promocji 1 644 zł)</td>
+        <td>548 zł (bez promocji 1 644 zł)</td>
         <td>431 zł (bez promocji 1 096 zł)</td>
         <td>294 zł (bez promocji 548 zł)</td>
       </tr>
