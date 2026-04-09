@@ -559,6 +559,12 @@ function buildProductCard(p) {
             ${p.origin ? `<div><b>Страна:</b> ${p.origin}</div>` : ""}
             ${p.format ? `<div><b>Формат:</b> ${p.format}</div>` : ""}
             ${p.usage ? `<div><b>Применение:</b> ${p.usage}</div>` : ""}
+            ${p.characteristics? `<div><b>характеристики:</b> ${p.characteristics}</div>` : ""}
+            ${p.benefits ? `<div><b>преимущества:</b> ${p.benefits}</div>` : ""}
+            ${p.contraindications ? `<div><b>противопоказания:</b> ${p.contraindications}</div>` : ""}
+            ${p.storage ? `<div><b>хранение:</b> ${p.storage}</div>` : ""}
+            ${p.manufacturer ? `<div><b>производитель:</b> ${p.manufacturer}</div>` : ""}
+           
           </div>
         </div>
       </div>
@@ -614,6 +620,7 @@ function buildProductCard(p) {
   // відкриємо перший напрямок одразу
   showBranch(0);
 } 
+
 
 
   // ================== SCROLL ==================
