@@ -724,4 +724,46 @@ html[data-theme="dark"] .crossPanel{
 html[data-theme="dark"] .pFlowPanel{
   background: rgba(255,255,255,0.04);
 }
-  
+  /* Розділення лініями в усіх таблицях */
+table {
+  width: 100%;
+  border-collapse: collapse; /* щоб лінії не подвоювались */
+  margin-top: 10px;
+}
+
+table th, table td {
+  border-bottom: 1px solid var(--border); /* лінія під кожним рядком */
+  padding: 8px 4px;
+  text-align: left;
+}
+
+table tr:last-child td {
+  border-bottom: none; /* прибираємо лінію в останньому рядку */
+}
+
+/* Якщо хочете вертикальні полоски (опціонально) */
+table td:not(:last-child) {
+  border-right: 1px solid var(--border);
+}
+
+/* Виправлення кнопок у темній темі */
+html[data-theme="dark"] .crossBtn {
+    background-color: #2a2a2a !important;
+    color: #eeeeee !important;
+    border: 1px solid #444 !important;
+}
+
+html[data-theme="dark"] .crossBtn.active {
+    background-color: #22c55e !important;
+    color: #000000 !important;
+}
+
+/* Таблиці з полосками */
+.prodTable td, .prodTable th {
+    border-bottom: 1px solid rgba(0,0,0,0.1) !important;
+}
+
+html[data-theme="dark"] .prodTable td, 
+html[data-theme="dark"] .prodTable th {
+    border-bottom: 1px solid rgba(255,255,255,0.1) !important;
+}

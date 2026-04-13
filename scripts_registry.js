@@ -68,6 +68,7 @@ function normalizeHotScript(obj) {
     title: typeof obj?.title === "string" ? obj.title : "",
     stages: fixedStages,
     navStages,
+description: typeof obj?.description === "string" ? obj.description : "",
 
     // ✅ ДОДАЛИ: щоб рендерились ціни та кнопки
     pricing,
