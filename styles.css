@@ -767,3 +767,95 @@ html[data-theme="dark"] .prodTable td,
 html[data-theme="dark"] .prodTable th {
     border-bottom: 1px solid rgba(255,255,255,0.1) !important;
 }
+/* Контейнер для кнопок всередині картки */
+.prod-tabs-wrapper {
+    margin: 15px 0;
+}
+
+.prod-internal-tabs {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+/* Самі кнопки */
+.inner-tab-btn {
+    background: #eee;
+    border: 1px solid rgba(0,0,0,0.1);
+    padding: 6px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: all 0.2s;
+}
+
+/* Колір кнопки, коли вона натиснута */
+.inner-tab-btn.active {
+    background: var(--accent);
+    color: white;
+    border-color: var(--accent);
+    font-weight: bold;
+}
+
+/* Блок з текстом, який з'являється */
+.inner-tab-content {
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Для темної теми */
+html[data-theme="dark"] .inner-tab-btn { background: #333; color: #ccc; }
+html[data-theme="dark"] .inner-tab-content { background: rgba(255,255,255,0.05); }
+
+/* 1. Глобальні налаштування тексту для всієї картки */
+.prodCard, .prodDesc, .inner-tab-content {
+    font-family: system-ui, -apple-system, sans-serif; /* Однаковий шрифт */
+    font-size: 16px;       /* Оптимальний розмір для читання */
+    line-height: 1.5;      /* Міжрядковий інтервал */
+    color: var(--text);    /* Колір з нашої теми */
+}
+
+/* 2. Стилі для основного опису препарату */
+.prodDesc {
+    margin-bottom: 15px;
+}
+
+/* 3. Стилі для контенту всередині вкладок (tabs) */
+.inner-tab-content {
+    display: none; 
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.4);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    margin-top: 10px;
+    /* ✅ Тут ми прибираємо зменшений шрифт, щоб він був як основний */
+    font-size: 16px !important; 
+}
+
+/* 4. Стилі для кнопок вкладок (щоб вони теж були в одному стилі) */
+.inner-tab-btn {
+    font-family: inherit;  /* Наслідує шрифт картки */
+    font-size: 14px;       /* Кнопки можуть бути трохи меншими за текст */
+    padding: 8px 16px;
+    background: #eee;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.inner-tab-btn.active {
+    background: var(--accent);
+    color: white;
+    font-weight: bold;
+}
+
+/* Для темної теми */
+html[data-theme="dark"] .inner-tab-content {
+    background: rgba(255, 255, 255, 0.05);
+}

@@ -523,30 +523,36 @@ function buildProductCard(p) {
     ? `<img class="prodImg" src="${p.image}" alt="${p.name || "Product"}">`
     : "";
 
+  // ✅ ОСЬ ЦЕЙ БЛОК МАЛЮЄ КНОПКИ
+  let tabsHtml = "";
+  if (Array.isArray(p.tabs) && p.tabs.length > 0) {
+    const buttons = p.tabs.map((tab, idx) => `
+      <button class="inner-tab-btn" onclick="switchInnerTab(this, ${idx})">
+        ${tab.label}
+      </button>
+    `).join("");
+
+    const contents = p.tabs.map((tab, idx) => `
+      <div class="inner-tab-content" id="tab-content-${idx}" style="display:none; margin-top:10px;">
+        ${tab.text}
+      </div>
+    `).join("");
+
+    tabsHtml = `
+      <div class="prod-tabs-wrapper">
+        <div class="prod-internal-tabs">${buttons}</div>
+        <div class="prod-tabs-container">${contents}</div>
+      </div>
+    `;
+  }
+
+  // (тут залишається старий код про таблицю складу...)
   const ingredientsRows = Array.isArray(p.ingredients)
-    ? p.ingredients
-        .map(
-          (ing) => `
-          <tr>
-            <td>${ing.name || ""}</td>
-            <td>${ing.effect || ""}</td>
-          </tr>`
-        )
-        .join("")
+    ? p.ingredients.map(ing => `<tr><td>${ing.name || ""}</td><td>${ing.effect || ""}</td></tr>`).join("")
     : "";
 
-  const tableHtml = ingredientsRows
-    ? `
-      <table class="prodTable">
-        <thead>
-          <tr>
-            <th>Состав</th>
-            <th>Эффект</th>
-          </tr>
-        </thead>
-        <tbody>${ingredientsRows}</tbody>
-      </table>
-    `
+  const tableHtml = ingredientsRows 
+    ? `<table class="prodTable"><thead><tr><th>Состав</th><th>Эффект</th></tr></thead><tbody>${ingredientsRows}</tbody></table>` 
     : `<p class="muted">Нет состава</p>`;
 
   return `
@@ -557,25 +563,37 @@ function buildProductCard(p) {
           <div class="prodTitle">${p.name || "Препарат"}</div>
           <div class="prodMeta">
             ${p.origin ? `<div><b>Страна:</b> ${p.origin}</div>` : ""}
-            ${p.format ? `<div><b>Формат:</b> ${p.format}</div>` : ""}
             ${p.usage ? `<div><b>Применение:</b> ${p.usage}</div>` : ""}
-            ${p.characteristics? `<div><b>характеристики:</b> ${p.characteristics}</div>` : ""}
-            ${p.benefits ? `<div><b>преимущества:</b> ${p.benefits}</div>` : ""}
-            ${p.contraindications ? `<div><b>противопоказания:</b> ${p.contraindications}</div>` : ""}
-            ${p.storage ? `<div><b>хранение:</b> ${p.storage}</div>` : ""}
-            ${p.manufacturer ? `<div><b>производитель:</b> ${p.manufacturer}</div>` : ""}
-           
           </div>
         </div>
       </div>
 
       ${p.description ? `<div class="prodDesc">${p.description}</div>` : ""}
 
+      ${tabsHtml}
+
       <div class="prodBlockTitle"><b>Состав</b></div>
       ${tableHtml}
     </div>
   `;
 }
+
+// ✅ ТАКОЖ ДОДАЙ ЦЮ ФУНКЦІЮ В САМИЙ КІНЕЦЬ script.js
+window.switchInnerTab = function(btn, idx) {
+  const wrapper = btn.closest('.prod-tabs-wrapper');
+  const allBtns = wrapper.querySelectorAll('.inner-tab-btn');
+  const allContents = wrapper.querySelectorAll('.inner-tab-content');
+  
+  const wasActive = btn.classList.contains('active');
+  
+  allBtns.forEach(b => b.classList.remove('active'));
+  allContents.forEach(c => c.style.display = 'none');
+
+  if (!wasActive) {
+    btn.classList.add('active');
+    allContents[idx].style.display = 'block';
+  }
+};
 
   function renderNeedsBranches(scriptObj) {
   const host = document.getElementById("needsBranches");

@@ -53,6 +53,10 @@ function normalizeHotScript(obj) {
     : [];
 
     const products = Array.isArray(obj?.products) ? obj.products : [];
+    const fixedProducts = products.map(p => ({
+    ...p,
+    tabs: Array.isArray(p.tabs) ? p.tabs : []
+  }));
 
     const crossSellProducts = Array.isArray(obj?.crossSellProducts)
   ? obj.crossSellProducts
@@ -73,7 +77,7 @@ description: typeof obj?.description === "string" ? obj.description : "",
     // ✅ ДОДАЛИ: щоб рендерились ціни та кнопки
     pricing,
     objectionsButtons,
-    products,
+    products: fixedProducts,
     crossSellProducts,
     presentationFlow,
     needsBranches,
