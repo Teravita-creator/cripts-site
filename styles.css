@@ -842,7 +842,7 @@ html[data-theme="dark"] .inner-tab-content { background: rgba(255,255,255,0.05);
     font-family: inherit;  /* Наслідує шрифт картки */
     font-size: 14px;       /* Кнопки можуть бути трохи меншими за текст */
     padding: 8px 16px;
-    background: #eee;
+    background: #f3c051;
     border: 1px solid var(--border);
     border-radius: 8px;
     cursor: pointer;
@@ -858,4 +858,65 @@ html[data-theme="dark"] .inner-tab-content { background: rgba(255,255,255,0.05);
 /* Для темної теми */
 html[data-theme="dark"] .inner-tab-content {
     background: rgba(255, 255, 255, 0.05);
+}
+/* Стиль самої "кнопки" (заголовка) — РОБИМО МЕНШ ЯСКРАВОЮ */
+.details-title {
+    padding: 12px 15px;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.05); /* Легкий сірий фон замість яскравого акценту */
+    color: var(--text);             /* Темний текст замість білого */
+    border-bottom: 1px solid var(--border);
+    font-weight: bold;
+    list-style: none;
+    outline: none;
+    transition: background 0.2s;
+}
+
+/* Ефект при наведенні — стає трохи темнішою */
+.details-title:hover {
+    background: rgba(0, 0, 0, 0.1);
+    filter: none; /* Прибираємо яскравість */
+}
+
+/* Додамо стрілочку, щоб було зрозуміло, що це список, що розгортається */
+.details-title::before {
+    content: "▶ ";
+    font-size: 12px;
+    margin-right: 5px;
+    color: var(--accent); /* Тільки стрілочка буде акцентною */
+}
+
+/* Коли кнопка відкрита, стрілочка повертається */
+.custom-details[open] .details-title::before {
+    content: "▼ ";
+}
+
+/* Стиль для посилання-кнопки */
+.link-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    margin: 10px 0;
+    background-color: rgba(0, 0, 0, 0.05); /* Світло-сірий, як у details */
+    color: var(--text);
+    text-decoration: none; /* Прибираємо підкреслення */
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+/* Ефект при наведенні */
+.link-button:hover {
+    background-color: var(--accent); /* При наведенні стає акцентною */
+    color: white;
+    border-color: var(--accent);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transform: translateY(-1px);
+}
+
+/* Іконка або емодзі всередині кнопки */
+.link-button::before {
+    margin-right: 8px;
 }

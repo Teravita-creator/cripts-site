@@ -563,7 +563,11 @@ function buildProductCard(p) {
           <div class="prodTitle">${p.name || "Препарат"}</div>
           <div class="prodMeta">
             ${p.origin ? `<div><b>Страна:</b> ${p.origin}</div>` : ""}
+            ${p.format ? `<div><b>Формат:</b> ${p.format}</div>` : ""}
             ${p.usage ? `<div><b>Применение:</b> ${p.usage}</div>` : ""}
+            ${p.characteristics ? `<div><b>Характеристики:</b> ${p.characteristics}</div>` : ""}
+            ${p.manufacturer ? `<div><b>Производитель:</b> ${p.manufacturer}</div>` : ""}
+            ${p.storage ? `<div><b>Хранение:</b> ${p.storage}</div>` : ""}
           </div>
         </div>
       </div>

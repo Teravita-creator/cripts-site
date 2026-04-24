@@ -1,7 +1,7 @@
 registerScript("ro", "hot_4", {
   title: "ProstaLumina",
   stages: {
-    greeting: ` <p>Bună ziua (introduceți numele clientului), numele meu este (introduceți numele dvs.). Sunt fiziolog și specialist al centrului de sănătate online HelpProtect</p>
+    greeting: ` <p>Bună ziua (introduceți numele clientului), numele meu este (introduceți numele dvs.). Sunt fiziolog și specialist al centrului de sănătate online TeraVita</p>
     <p>Vă sun în legătură cu solicitarea pe care ați lăsat-o pe site cu privire la medicamentul <b>ProstaLumina</b>. produs pentru prostată.</p>
     <p>Poți vorbi acum?</p>
     <ul>
@@ -33,7 +33,7 @@ registerScript("ro", "hot_4", {
     <li>Vitamina E: Sustine sistemul imunitar si ofera protectie antioxidanta.</li>
     </ol>
     <p>Această combinație sinergică de ingrediente oferă un sprijin optim pentru sănătatea prostatei, făcând din Prosta Lumina un supliment eficient și valoros.</p>
-    <p class="presentationTitle">Prostalis funcționează în 3 etape:</p>
+    <p class="presentationTitle">Prosta Lumina funcționează în 3 etape:</p>
     <ul>
     <li>În prima etapă, vei scăpa de disconfort, durere și arsuri la nivelul sistemului genito-urinar.</li>
     <li>In stadiul 2, focarele de inflamatie vor fi distruse si se va restabili functionarea prostatei.</li>
@@ -60,7 +60,7 @@ registerScript("ro", "hot_4", {
     <p><span class="txt-blue">(Ne oprim și așteptăm ca clientul să spună ceva)</span></p>
     <p>- Ce zici dacă plasăm o comandă?</p>
 
- <p span class="txt-red"? class="presentationTitle">Prelucrarea de baza se ofera dupa lucrul cu clientul procesand minim 2 obiecte!!!!</p>
+ <p span class="txt-red"? class="presentationTitle">Prelucrarea de baza se ofera dupa lucrul cu clientul procesand minim 2 obectii!!!!</p>
 
     <p>2) <b>Cursul de tratament „de bază”</b>, care durează 1,5 luni (40 de zile), este format din 4 cutii și costă doar ……..lei + transport gratuit</p>
     <p>Luarea medicamentului timp de 40 de zile (1 comprimat pe zi) ajută la:</p>
@@ -84,7 +84,7 @@ registerScript("ro", "hot_4", {
     <p>Promovează sănătatea generală și sănătatea vasculară, ceea ce este important pentru menținerea funcției erectile.</p>
     <p>Joacă un rol cheie în producerea de colagen, o proteină esențială pentru sănătatea și elasticitatea vaselor de sânge.</p>
     <p>Acest lucru ajută la menținerea unui flux sanguin bun, care este fundamental pentru obținerea și menținerea unei erecții.</p>
-    <p><a href="https://docs.google.com/spreadsheets/d/1NbY3JjEsE4bpYOCNxyF1G4SuxB2jlILoSSqZA2f6TYo/edit?gid=0#gid=0" target="_blank">Cross-produs</a></p>
+    <p><a href="https://docs.google.com/spreadsheets/d/1NbY3JjEsE4bpYOCNxyF1G4SuxB2jlILoSSqZA2f6TYo/edit?gid=0#gid=0" target="_blank" >Cross-produs</a></p>
 
 `,
     survey: `<p>Domnule/doamnă , să completăm imediat livrarea, pentru a face acest lucru:</p>
@@ -102,7 +102,7 @@ registerScript("ro", "hot_4", {
     <li>numele pe interfon [spunem numele pe interfon].</li>
     </ol>
     <p>Vă rugăm să confirmați că datele sunt corecte, pentru a putea garanta livrarea la timp a comenzii dvs. Domnule/doamnă , am notat totul corect? <span class="txt-green">(Așteptăm confirmarea)</span></p>
-    <p>Comanda se livreaza in decurs de o zi sau doua lucratoare de Luni-Vineri de la orele <b>08.00-18.00</b>. Veți primi un SMS de la serviciul de livrare în dimineața livrării. Va exista un link pentru a vă urmări comanda. Plata catre curier numai cash la primire.</p>
+    <p>Comanda se livreaza in decurs dedoua sau trei zile lucratoare Luni-Vineri de la orele <b>08.00-18.00</b>. Veți primi un SMS de la serviciul de livrare în dimineața livrării. Va exista un link pentru a vă urmări comanda. Plata catre curier numai cash la primire.</p>
 
     <p class="presentationTitle"><span class="txt-red">CONDIȚIILE OFERTEI:</span></p>
     <p>Conform regulamentului nostru, încheiem un acord verbal, în baza căruia compania se obligă să vă furnizeze un produs original, de cea mai înaltă calitate. Eu, nume / prenume, îmi asum responsabilitatea ca tratamentul dumneavoastră să fie eficient. Din partea dumneavoastră, vă asumați responsabilitatea de a primi produsul și de a începe tratamentul. Vă rog să-mi spuneți dacă aceste condiții vă sunt acceptabile în acest moment.</p>
@@ -110,9 +110,7 @@ registerScript("ro", "hot_4", {
     <p>Aveti întrebări?</p>
     <p>O zi plăcută!</p>
 
-    <p span class="txt-red"? class="presentationTitle">Kl spune "Nu"</p>
-<p>„Bine, vă rugăm să scrieți numărul liniei noastre de asistență telefonică – dacă aveți întrebări – vă vom ajuta cu plăcere: <b>40373760656</b>”. Vă voi monitoriza rezultatele, așa că vă rugăm să răspundeți la următorul apel.</p>
-<p class="presentationTitle">Obligatoriu!!!</p>
+    <p class="presentationTitle">Obligatoriu!!!</p>
 <p>Cand confirmati comanda spuneti clientului ca curierul nu stie ce este in comanda si clientul nu poate deschide comanda fara sa achite, ca sa verifice ce este acolo. Mai inai achita , dupa care deschide. Spuneti asta clientilor!!!!!</p>
 
 `,
@@ -121,8 +119,9 @@ registerScript("ro", "hot_4", {
     products: `<div id="productsList"></div>`,
   },
   pricing: [
-    {label: "free 16",
-  html: `
+    {
+      label: "free 16",
+      html: `
     <p><b>Вариант: free 16</b></p>
 
     <table class="priceTable">
@@ -164,7 +163,7 @@ registerScript("ro", "hot_4", {
      
     </table>
   `,
-},
+    },
     {
       label: "low 99",
       html: `
@@ -193,14 +192,14 @@ registerScript("ro", "hot_4", {
         <td>3</td>
       </tr>
       <tr>
-        <td>Доставка (Livrare)</td>
+        <td>Livrare</td>
         <td>free</td>
         <td>free</td>
         <td>30</td>
         <td>30</td>
       </tr>
       <tr>
-        <td>Цена (Preț)</td>
+        <td>Preț</td>
         <td>594</td>
         <td>495</td>
         <td>426</td>
@@ -238,14 +237,14 @@ registerScript("ro", "hot_4", {
         <td>3</td>
       </tr>
       <tr>
-        <td>Доставка (Livrare)</td>
+        <td>Livrare</td>
         <td>free</td>
         <td>free</td>
         <td>free</td>
         <td>23</td>
       </tr>
       <tr>
-        <td>Цена (Preț)</td>
+        <td>Preț</td>
         <td>595</td>
         <td>525</td>
         <td>476</td>
@@ -283,14 +282,14 @@ registerScript("ro", "hot_4", {
         <td>2</td>
       </tr>
       <tr>
-        <td>Доставка (Livrare)</td>
+        <td>Livrare</td>
         <td>free</td>
         <td>free</td>
         <td>free</td>
         <td>free</td>
       </tr>
       <tr>
-        <td>Цена (Preț)</td>
+        <td>Preț</td>
         <td>745</td>
         <td>596</td>
         <td>447</td>
@@ -328,14 +327,14 @@ registerScript("ro", "hot_4", {
        
       </tr>
       <tr>
-        <td>Доставка (Livrare)</td>
+        <td>Livrare</td>
         <td>free</td>
         <td>free</td>
         <td>30</td>
         
       </tr>
       <tr>
-        <td>Цена (Preț)</td>
+        <td>Preț</td>
         <td>695</td>
         <td>477</td>
         <td>348</td>
@@ -348,39 +347,77 @@ registerScript("ro", "hot_4", {
   ],
   products: [
     {
-    name: "ProstaLumina",
-    image: "assets/products/ro/product4.jpg",
-    origin: "Letonia",
-    format: "10 capsul",
-    usage: "1 ori / zi",
-    ingredients: [
-      { name: "Saw Palmetto:", effect: "Ajută la reducerea simptomelor hiperplaziei benigne de prostată și sprijină funcția urinară." },
-      { name: "Extract de semințe de dovleac:", effect: "Bogat în zinc și antioxidanți, contribuie la menținerea sănătății prostatei și a funcției urinare normale." },
-      { name: "Licopen:", effect: "Un antioxidant puternic care protejează celulele împotriva stresului oxidativ și poate reduce riscul problemelor prostatice." },
-      { name: "Urzică:", effect: "Cunoscută pentru proprietățile sale antiinflamatorii, ajută la ameliorarea disconfortului asociat cu afecțiunile prostatei." },
-      { name: "Vitamina E:", effect: "Susține sistemul imunitar și oferă protecție antioxidantă." },
-     
-    ],
-  },
-  {
-    name: "OzemLite",
-    image: "assets/products/ro/product5.jpg",
-    origin: "Producatorul-Letonia",
-    format: "20 capsul",
-    usage: "2 ori / zi",
-    description: "OzemLite este un supliment alimentar pentru controlul greutății și susținerea metabolismului. Conține extract de ceai verde, Garcinia Cambogia, guarana, carnitină și fibre solubile, care acționează împreună pentru a reduce pofta de mâncare, a accelera arderea grăsimilor și a oferi senzație de sațietate. OzemLite ajută la transformarea grăsimilor în energie și susține menținerea rezultatelor pe termen lung, ca parte a unui stil de viață echilibrat.",
-    ingredients: [
-      { name: "Extract de ceai verde", effect: "Ajută la accelerarea metabolismului și la arderea grăsimilor. Este bogat în antioxidanți care susțin detoxifierea organismului, reduc retenția de lichide și contribuie la transformarea grăsimilor în energie. De asemenea, sprijină controlul apetitului." },
-      { name: "Extract de Garcinia Cambogia", effect: "Conține acid hidroxicitric (HCA), care reduce pofta de mâncare și blochează transformarea excesului de carbohidrați în grăsimi. Ajută la controlul apetitului emoțional și susține scăderea în greutate într-un mod natural." },
-      { name: "Guarana", effect: "Este o sursă naturală de energie, care stimulează arderea caloriilor și crește nivelul de activitate fizică. Reduce oboseala, îmbunătățește concentrarea și ajută organismul să consume mai eficient rezervele de grăsime." },
-      { name: "Carnitină", effect: "Joacă un rol esențial în transportul grăsimilor către celule, unde acestea sunt transformate în energie. Susține scăderea țesutului adipos, crește rezistența fizică și ajută la menținerea masei musculare în timpul procesului de slăbire." },
-      { name: "Fibre alimentare solubile", effect: "Creează senzația de sațietate, reduc pofta de mâncare și ajută la controlul porțiilor alimentare. Îmbunătățesc digestia, stabilizează nivelul zahărului din sânge și contribuie la eliminarea toxinelor din organism." },
-     
-    ],
-  },
-],
+      name: "ProstaLumina",
+      image: "assets/products/ro/product4.jpg",
+      origin: "Letonia",
+      format: "10 capsul",
+      usage: "1 ori / zi",
+      ingredients: [
+        {
+          name: "Saw Palmetto:",
+          effect:
+            "Ajută la reducerea simptomelor hiperplaziei benigne de prostată și sprijină funcția urinară.",
+        },
+        {
+          name: "Extract de semințe de dovleac:",
+          effect:
+            "Bogat în zinc și antioxidanți, contribuie la menținerea sănătății prostatei și a funcției urinare normale.",
+        },
+        {
+          name: "Licopen:",
+          effect:
+            "Un antioxidant puternic care protejează celulele împotriva stresului oxidativ și poate reduce riscul problemelor prostatice.",
+        },
+        {
+          name: "Urzică:",
+          effect:
+            "Cunoscută pentru proprietățile sale antiinflamatorii, ajută la ameliorarea disconfortului asociat cu afecțiunile prostatei.",
+        },
+        {
+          name: "Vitamina E:",
+          effect: "Susține sistemul imunitar și oferă protecție antioxidantă.",
+        },
+      ],
+    },
+    {
+      name: "OzemLite",
+      image: "assets/products/ro/product5.jpg",
+      origin: "Producatorul-Letonia",
+      format: "20 capsul",
+      usage: "2 ori / zi",
+      description:
+        "OzemLite este un supliment alimentar pentru controlul greutății și susținerea metabolismului. Conține extract de ceai verde, Garcinia Cambogia, guarana, carnitină și fibre solubile, care acționează împreună pentru a reduce pofta de mâncare, a accelera arderea grăsimilor și a oferi senzație de sațietate. OzemLite ajută la transformarea grăsimilor în energie și susține menținerea rezultatelor pe termen lung, ca parte a unui stil de viață echilibrat.",
+      ingredients: [
+        {
+          name: "Extract de ceai verde",
+          effect:
+            "Ajută la accelerarea metabolismului și la arderea grăsimilor. Este bogat în antioxidanți care susțin detoxifierea organismului, reduc retenția de lichide și contribuie la transformarea grăsimilor în energie. De asemenea, sprijină controlul apetitului.",
+        },
+        {
+          name: "Extract de Garcinia Cambogia",
+          effect:
+            "Conține acid hidroxicitric (HCA), care reduce pofta de mâncare și blochează transformarea excesului de carbohidrați în grăsimi. Ajută la controlul apetitului emoțional și susține scăderea în greutate într-un mod natural.",
+        },
+        {
+          name: "Guarana",
+          effect:
+            "Este o sursă naturală de energie, care stimulează arderea caloriilor și crește nivelul de activitate fizică. Reduce oboseala, îmbunătățește concentrarea și ajută organismul să consume mai eficient rezervele de grăsime.",
+        },
+        {
+          name: "Carnitină",
+          effect:
+            "Joacă un rol esențial în transportul grăsimilor către celule, unde acestea sunt transformate în energie. Susține scăderea țesutului adipos, crește rezistența fizică și ajută la menținerea masei musculare în timpul procesului de slăbire.",
+        },
+        {
+          name: "Fibre alimentare solubile",
+          effect:
+            "Creează senzația de sațietate, reduc pofta de mâncare și ajută la controlul porțiilor alimentare. Îmbunătățesc digestia, stabilizează nivelul zahărului din sânge și contribuie la eliminarea toxinelor din organism.",
+        },
+      ],
+    },
+  ],
 
-objectionsButtons: [
+  objectionsButtons: [
     {
       label: "De ce trebuie să cumpăr 4 sau 6 cutii, dar nu 1 cutie.",
       html: `
@@ -468,7 +505,8 @@ Pur și simplu, la ce credeți că duce economisirea banilor când vine vorba de
       `,
     },
     {
-      label: "Trebuie să mă sfătuiesc cu (soția mea, soțul meu, prietenii mei, fratele meu, sora mea, vecina mea etc.):",
+      label:
+        "Trebuie să mă sfătuiesc cu (soția mea, soțul meu, prietenii mei, fratele meu, sora mea, vecina mea etc.):",
       html: `
 <p>Vă înțeleg, dar sunt sigur(a) că (indicați persoana pe care doriți să o consultați) va fi de acord să vă rezolve situația,</p>
 <p>Pe lângă situația pe care o aveti în prezent, va recomand ca să o trati direct acum,</p>
@@ -505,7 +543,7 @@ Pur și simplu, la ce credeți că duce economisirea banilor când vine vorba de
 
       `,
     },
-     {
+    {
       label: "Am dubii",
       html: `
 <p>-Eu sunt de acord cu dvs., din păcate acum există o mulțime de escroci pe internet, și în farmacii, spre regret, situația este similară,</p>
@@ -522,7 +560,7 @@ Pur și simplu, la ce credeți că duce economisirea banilor când vine vorba de
 <p>Dar sunt sigur că a lua produsul de … ori pe zi nu este o sarcină dificilă, nu-i așa?</p>
       `,
     },
-     {
+    {
       label: "Sfatul medicului ",
       html: `
 <p>Desigur, înțeleg perfect dorința dvs de a vă consulta cu medicul, pentru că, totuși, îl cunoașteți personal, da?</p>
@@ -533,26 +571,22 @@ Pur și simplu, la ce credeți că duce economisirea banilor când vine vorba de
 
       `,
     },
-     
- ],
+  ],
 
-  accordions: { needs: [
-    
+  accordions: {
+    needs: [
       {
         q: `1. Cumperi acest produs pentru tine sau pentru cineva drag?`,
-       
       },
       {
         q: `2. Câți ani ai?`,
-       
       },
       {
         q: `3. Ce anume te deranjează? Există simptome evidente? (disfuncție erectilă, ejaculare precoce, scăderea libidoului, oboseală rapidă în timpul actului sexual)`,
-       
       },
       {
         q: `4. De cât timp ai aceste simptome?`,
-       a: `
+        a: `
           <div class="yn">
             <button class="ynBtn" type="button" data-show="yes">Comentariu expert</button>
           </div>
@@ -562,7 +596,7 @@ Pur și simplu, la ce credeți că duce economisirea banilor când vine vorba de
           </div>
 `,
       },
-       {
+      {
         q: `5. Vă rog să-mi spuneți, observați simptome precum: urinare frecventă și dureroasă, senzație de vezică plină, sânge în urină, durere în zona inghinală? `,
         a: `
           <div class="yn">
@@ -583,7 +617,7 @@ Pur și simplu, la ce credeți că duce economisirea banilor când vine vorba de
       },
       {
         q: `6. Spune-mi, te rog, ai probleme cu tensiunea arterială? `,
-       a: `
+        a: `
           <div class="yn">
             <button class="ynBtn" type="button" data-show="yes">Daca da:</button>
           </div>
@@ -614,14 +648,16 @@ Pur și simplu, la ce credeți că duce economisirea banilor când vine vorba de
       },
       {
         q: `8. Ați mai luat vreun medicament pentru prostatită?  `,
-       a: `
+        a: `
           <p class="p-accent-green">(Așteptăm un răspuns)</p>
           <p><span class="txt-green">Indiferent de răspuns, să continuăm:</span> Din păcate, medicamentele farmaceutice de multe ori doar maschează simptomele. Ele pot întări temporar o erecție, dar în viitor duc adesea la o agravare a situației: disfuncție erectilă și chiar adenom de prostată.</p>`,
       },
       {
         q: `Rezumatul identificării nevoilor: `,
-       a: `
+        a: `
           <p>Vă mulțumesc pentru răspunsuri! Ai spus că ești îngrijorat de simptome precum (principalele simptome ale clientului) și că vrei să scapi de ele cât mai repede și definitiv, nu?</p>`,
       },
-  ], objections: [] },
+    ],
+    objections: [],
+  },
 });

@@ -41,7 +41,10 @@ registerScript("ro", "hot_2", {
   <li>Are un efect calmant asupra sistemului nervos, reducând riscul de hipertensiune cauzată de stres</li>
 </ul>
 <p>Produsul este destinat persoanelor care se confruntă cu probleme legate de tensiunea arterială, precum și celor care doresc să mențină o tensiune arterială în limite normale.</p>
- <p class="presentationTitle"><span class="txt-red">Indicațiile de utilizare includ, dar nu se limitează la:</span></p>
+
+<details class="custom-details">
+ <summary class="details-title">Indicațiile de utilizare includ, dar nu se limitează la:</summary>
+ <div class="details-content"> 
 <ul>
   <li>Tensiune arterială crescută (hipertensiune)</li>
   <li>Tensiunea arteriala scazuta (hipotensiune)</li>
@@ -51,7 +54,13 @@ registerScript("ro", "hot_2", {
 </ul>
 <p>Capsulele HYPERON acționează printr-un mecanism delicat și natural, conceput pentru a ajuta organismul să își regleze tensiunea arterială în mod eficient și sigur. Formula sa complexă, bazată pe ingrediente naturale, lucrează în armonie cu sistemul cardiovascular, având un efect calmant și fortalecitor.</p>
 <p>Principiul de funcționare al produsului se bazează pe susținerea proceselor de relaxare a vaselor de sânge, ceea ce contribuie la scăderea tensiunii arteriale ridicate. În același timp, ingredientele active sprijină sănătatea inimii și a sistemului nervos, reducând stresul și tensiunea acumulată în organism.</p>
- <p class="presentationTitle"><span class="txt-red">Datorită acestor acțiuni, HYPERON:</span></p>
+ 
+
+ </div> 
+</details>
+ 
+
+<p class="presentationTitle"><span class="txt-red">Datorită acestor acțiuni, HYPERON:</span></p>
  <ul>
   <li>Ajută la menținerea valorilor tensiunii arteriale în limite normale</li>
   <li>Contribuie la reducerea riscului de complicații cardiovasculare</li>
@@ -70,9 +79,16 @@ registerScript("ro", "hot_2", {
 
   <p>Mod de administrare pentru rezultate optime: Luati o capsula de doua ori pe zi cu apa.</p>
 
-    <p class="presentationTitle">Exemplu din viață și Concluzii</p>
-    <p>EXEMPLU DIN VIAȚĂ: Chiar vreau să vă spun un caz: mătușa mea, persoană foarte apropiată a tot amânat să înceapă un tratament. Își spunea mereu: „Mai am timp, nu e atât de grav.” Până într-o zi, când, dintr-o dată, a simțit o durere puternică în piept și amețeli. A ajuns la spital în grabă — și atunci și-a dat seama cât de mult ar fi putut evita totul dacă ar fi început mai devreme. După ce a urmat programul nostru complet, mi-a spus cu lacrimi în ochi că singurul ei regret e că nu m-a ascultat mai devreme. Cursul de 3 luni nu înseamnă doar să aveți tensiunea normală, ci scade și riscul de accident vascular sau infarct cu 40-50%. Vă dați seama, nu l-aș fi recomandat mătușii mele tratamentul, dacă nu eram sigur de eficiența lui, de aia cu încredere vă recomand și dvs. Asta înseamnă șansa de a trăi liniștit, fără frică pentru inimă, și cheltuieli pe viitor la medicamente și tratamente. Situația ei e foarte asemănătoare cu a dumneavoastră și chiar nu vreau să pierdeți această șansă să vă protejați din timp. Credeți-mă că merită să facem comanda și să faceți primul pas chiar acum! Cu care tratament începem, cel de 3 luni sau 2?</p>
-    `,
+  <details class="custom-details">
+ <summary class="details-title">Exemplu din viață și Concluzii</summary>
+ <div class="details-content"> 
+<p>EXEMPLU DIN VIAȚĂ: Chiar vreau să vă spun un caz: mătușa mea, persoană foarte apropiată a tot amânat să înceapă un tratament. Își spunea mereu: „Mai am timp, nu e atât de grav.” Până într-o zi, când, dintr-o dată, a simțit o durere puternică în piept și amețeli. A ajuns la spital în grabă — și atunci și-a dat seama cât de mult ar fi putut evita totul dacă ar fi început mai devreme. După ce a urmat programul nostru complet, mi-a spus cu lacrimi în ochi că singurul ei regret e că nu m-a ascultat mai devreme. Cursul de 3 luni nu înseamnă doar să aveți tensiunea normală, ci scade și riscul de accident vascular sau infarct cu 40-50%. Vă dați seama, nu l-aș fi recomandat mătușii mele tratamentul, dacă nu eram sigur de eficiența lui, de aia cu încredere vă recomand și dvs. Asta înseamnă șansa de a trăi liniștit, fără frică pentru inimă, și cheltuieli pe viitor la medicamente și tratamente. Situația ei e foarte asemănătoare cu a dumneavoastră și chiar nu vreau să pierdeți această șansă să vă protejați din timp. Credeți-mă că merită să facem comanda și să faceți primul pas chiar acum! Cu care tratament începem, cel de 3 luni sau 2?</p> 
+ </div> 
+</details>
+
+
+
+     `,
 
     courses: `
     <p>Eu ca specialist superior în domeniul medical cu o experiență de mai mult de 10 ani vă recomand 2 cele mai eficiente, cele mai puternice variante de tratament! <span class="txt-green">(oferim mai întâi primele 2 opțiuni)</span></p>
@@ -103,7 +119,7 @@ registerScript("ro", "hot_2", {
     <li>numele pe interfon [spunem numele pe interfon].</li>
     </ol>
     <p>Vă rugăm să confirmați că datele sunt corecte, pentru a putea garanta livrarea la timp a comenzii dvs. Domnule/doamnă , am notat totul corect? <span class="txt-green">(Așteptăm confirmarea)</span></p>
-    <p>Comanda se livreaza in decurs de o zi sau doua lucratoare de Luni-Vineri de la orele <b>08.00-18.00</b>. Veți primi un SMS de la serviciul de livrare în dimineața livrării. Va exista un link pentru a vă urmări comanda. Plata catre curier numai cash la primire.</p>
+    <p>Comanda se livreaza in decurs dedoua sau trei zile lucratoare Luni-Vineri de la orele <b>08.00-18.00</b>. Veți primi un SMS de la serviciul de livrare în dimineața livrării. Va exista un link pentru a vă urmări comanda. Plata catre curier numai cash la primire.</p>
 
     <p class="presentationTitle"><span class="txt-red">CONDIȚIILE OFERTEI:</span></p>
     <p>Conform regulamentului nostru, încheiem un acord verbal, în baza căruia compania se obligă să vă furnizeze un produs original, de cea mai înaltă calitate. Eu, nume / prenume, îmi asum responsabilitatea ca tratamentul dumneavoastră să fie eficient. Din partea dumneavoastră, vă asumați responsabilitatea de a primi produsul și de a începe tratamentul. Vă rog să-mi spuneți dacă aceste condiții vă sunt acceptabile în acest moment.</p>
@@ -118,14 +134,11 @@ registerScript("ro", "hot_2", {
     <div id="productsList"></div>
     `,
   },
-  
-
-
-  
 
   pricing: [
-    {label: "free 16",
-  html: `
+    {
+      label: "free 16",
+      html: `
     <p><b>Вариант: free 16</b></p>
 
     <table class="priceTable">
@@ -167,7 +180,7 @@ registerScript("ro", "hot_2", {
      
     </table>
   `,
-},
+    },
     {
       label: "low 99",
       html: `
@@ -196,14 +209,14 @@ registerScript("ro", "hot_2", {
         <td>3</td>
       </tr>
       <tr>
-        <td>Доставка (Livrare)</td>
+        <td>Livrare</td>
         <td>free</td>
         <td>free</td>
         <td>30</td>
         <td>30</td>
       </tr>
       <tr>
-        <td>Цена (Preț)</td>
+        <td>Preț</td>
         <td>594</td>
         <td>495</td>
         <td>426</td>
@@ -241,14 +254,14 @@ registerScript("ro", "hot_2", {
         <td>3</td>
       </tr>
       <tr>
-        <td>Доставка (Livrare)</td>
+        <td>Livrare</td>
         <td>free</td>
         <td>free</td>
         <td>free</td>
         <td>23</td>
       </tr>
       <tr>
-        <td>Цена (Preț)</td>
+        <td>Preț</td>
         <td>595</td>
         <td>525</td>
         <td>476</td>
@@ -286,14 +299,14 @@ registerScript("ro", "hot_2", {
         <td>2</td>
       </tr>
       <tr>
-        <td>Доставка (Livrare)</td>
+        <td>Livrare</td>
         <td>free</td>
         <td>free</td>
         <td>free</td>
         <td>free</td>
       </tr>
       <tr>
-        <td>Цена (Preț)</td>
+        <td>Preț</td>
         <td>745</td>
         <td>596</td>
         <td>447</td>
@@ -331,14 +344,14 @@ registerScript("ro", "hot_2", {
        
       </tr>
       <tr>
-        <td>Доставка (Livrare)</td>
+        <td>Livrare</td>
         <td>free</td>
         <td>free</td>
         <td>30</td>
         
       </tr>
       <tr>
-        <td>Цена (Preț)</td>
+        <td>Preț</td>
         <td>695</td>
         <td>477</td>
         <td>348</td>
@@ -350,11 +363,10 @@ registerScript("ro", "hot_2", {
     },
   ],
 
-  
-crossSellProducts: [
-  {
-    label: "Cleorix",
-    html: `
+  crossSellProducts: [
+    {
+      label: "Cleorix",
+      html: `
       <p>Domnule/ Doamna, ați făcut foarte bine că ați ales cursul pentru susținerea mobilității articulațiilor — el va ajuta la reducerea inflamației și la redarea confortului în mișcare.</p>
  <p>Pentru ca efectul să apară mai repede și rezultatul să se mențină pe termen lung, recomandăm întotdeauna și o curățare a organismului.
 Sărurile, toxinele și reziduurile se acumulează adesea în țesuturile articulațiilor și împiedică refacerea lor.</p>
@@ -373,10 +385,10 @@ De obicei, cursul costă 240 lei, dar acum este în promoție — <b>doar 59 lei
 <p>— Excelent, Domnule/Doamnă , atunci vă confirm cursul principal Arthrolux și cursul (cursurile) suplimentar(e) din promoție. Valoarea totală a comenzii dvs., ținând cont de toate reducerile, <b>va fi de XX lei</b>.</p>
 
     `,
-  },
-  {
-    label: "Hyperon",
-    html: `
+    },
+    {
+      label: "Hyperon",
+      html: `
     <p>Domnule/ Doamna, ați făcut foarte bine că ați ales cursul pentru susținerea mobilității articulațiilor — el va ajuta la reducerea inflamației și la redarea confortului în mișcare.</p>
 
 <p>Pentru ca dvs ati spus ca aveti probleme cu tensiune, probleme cardiace, va recomand desigur si un produs pentru a rezolva problemele cardiace si de tensiune</p>
@@ -420,10 +432,10 @@ De obicei, cursul costă 240 lei, dar acum este în promoție — <b>doar 59 lei
 
     
     `,
-  },
-  {
-    label: "OzemLite  ",
-    html: `
+    },
+    {
+      label: "OzemLite  ",
+      html: `
     <p>Domnule/ Doamna, ați făcut foarte bine că ați ales cursul pentru susținerea mobilității articulațiilor — el va ajuta la reducerea inflamației și la redarea confortului în mișcare.</p>
 
 <p>Pentru ca dvs ati spus ca aveti chilograme in plus . sa stiti ca  chiar și o greutate excesivă mică crește presiunea asupra articulațiilor, în special asupra genunchilor și coloanei vertebrale. Acest lucru accelerează uzura cartilajului, provoacă inflamații și durere. Dacă nu se reduce presiunea, riscul de invaliditate și operații crește. Este important să mențineți o greutate sănătoasă și să aveți grijă de starea articulațiilor în mod complex, nu-i așa, domnule/doamnă ? <span class="txt-green">(Așteptăm răspunsul)</span></p>
@@ -452,12 +464,12 @@ De obicei, cursul costă 240 lei, dar acum este în promoție — <b>doar 59 lei
 
     
     `,
-  },
-],
+    },
+  ],
 
-// objectionsButtons: [ будет //
+  // objectionsButtons: [ будет //
 
-objectionsButtons: [
+  objectionsButtons: [
     {
       label: "E scump",
       html: `
@@ -532,120 +544,265 @@ objectionsButtons: [
         <p><b>operator:</b>Vorbim anume de sănătate, aceasta nu doare până nu o pierdem complet. Și e păcat să trăiți anii frumoși care urmează cu aceste probleme, când noi avem șansa acum să le rezolvăm la timp, natural și fără riscuri. Vă reamintesc, nu încerc să vă oblig, dar vă rog să vă gândiți un pic logic la ce s-ar putea întâmpla în viitor, dacă problema se agravează. Iar acum imaginați-vă toate beneficiile și plăcerile care vă așteaptă după tratament! Haideți să începem cu un tratament ca să vă bucurați cât mai repede de rezultate.</p> 
       `,
     },
-
-   
   ],
 
+  products: [
+    {
+      name: "Artrolux Pro",
+      image: "assets/products/ro/product1.jpg", // або https://...
+      origin: "Producatorul-Letonia",
+      format: "30 capsul",
+      usage: "3 ori / zi",
+      description:
+        "ARTROLUX PRO CAPS N30 este un supliment alimentar conceput pentru a susține sănătatea articulațiilor și a cartilajului. Combinația de glucozamină, condroitină, boswellia, ghimbir, MSM și curcumin ajută la întărirea structurii articulare, reducerea inflamațiilor și îmbunătățirea flexibilității. Vitamina C și manganul susțin sinteza colagenului și elasticitatea țesuturilor. Recomandat persoanelor active fizic sau cu rigiditate articulară legată de vârstă.",
+      ingredients: [
+        {
+          name: "Glucozamină sulfat (Glucosamine sulphate 2KCl)",
+          effect:
+            "ajută la refacerea și protejarea cartilajului, îmbunătățește mobilitatea articulațiilor și reduce rigiditatea.",
+        },
+        {
+          name: "Condroitină sulfat (Chondroitin sulfate)",
+          effect:
+            "menține elasticitatea cartilajului, reduce inflamațiile și sprijină lubrifierea articulațiilor.",
+        },
+        {
+          name: "Extract de Boswellia serrata",
+          effect:
+            "component natural antiinflamator, ajută la reducerea umflăturilor și disconfortului articular.   ",
+        },
+        {
+          name: "Extract de ghimbir (Ginger extract)",
+          effect:
+            "îmbunătățește circulația în țesuturile articulare, oferă un efect de încălzire și relaxare.",
+        },
+        {
+          name: "MSM (Metil sulfonil metan)",
+          effect:
+            "sursă de sulf organic implicată în sinteza colagenului, susținând elasticitatea țesutului conjunctiv.",
+        },
+        {
+          name: "Curcumin C3 Complex",
+          effect:
+            "antioxidant care protejează articulațiile de stresul oxidativ și sprijină refacerea lor.",
+        },
+        {
+          name: "Vitamina C (Ascorbic acid)",
+          effect:
+            "contribuie la formarea normală a colagenului, necesar pentru oase și cartilaje sănătoase.",
+        },
+        {
+          name: "Sulfat de mangan (Manganese sulfate)",
+          effect:
+            "sprijină formarea normală a țesutului conjunctiv și întărește articulațiile.",
+        },
+      ],
+    },
 
+    {
+      name: "Cleorix",
+      image: "assets/products/ro/product2.jpg",
+      origin: "Producatorul-Letonia",
+      format: "20 capsul",
+      usage: "2 ori / zi",
+      description:
+        "Capsulele antiparazitare sunt o soluție inovatoare pentru combaterea paraziților și susținerea procesului natural de detoxifiere a organismului. Cu ajutorul lor, se obține nu numai eliminarea eficientă a paraziților, ci și o îmbunătățire semnificativă a stării generale de sănătate datorită unui complex unic de ingrediente active. Aceste capsule ajută la întărirea sistemului imunitar, stimulează îmbunătățirea digestiei și activează eliminarea toxinelor din organism. Utilizarea regulată duce la o stare generală de bine și la creșterea vitalității, ceea ce le face un instrument indispensabil pentru menținerea sănătății și a bunăstării.",
+      ingredients: [
+        {
+          name: "Vitamina C (acid ascorbic) - 200 mg (222% din valoarea zilnică)",
+          effect:
+            "Un antioxidant puternic care susține sistemul imunitar.Ajută la eliminarea toxinelor și la îmbunătățirea stării generale a organismului.",
+        },
+        {
+          name: "Badian (Illicium verum Hook f.) - 80 mg",
+          effect:
+            "Posedă proprietăți antiinflamatorii și antimicrobiene.Susține sistemul digestiv și ajută la eliminarea paraziților.",
+        },
+        {
+          name: "Curcumină (Curcuma Longa) - 60 mg",
+          effect:
+            "Principalul ingredient activ din turmeric, are proprietăți antiinflamatorii și antioxidante puternice.Susține detoxifierea ficatului și procesul general de curățare a organismului.",
+        },
+        {
+          name: "Extract de usturoi deshidratat (Amaryllidaceae Allium sativum L.) - 60 mg",
+          effect:
+            "Are puternice proprietăți antiparazitare și antibacteriene.Ajută la întărirea sistemului imunitar și la îmbunătățirea digestiei.",
+        },
+        {
+          name: "Extract din rădăcină de păpădie (Taraxacum officinale) - 60 mg",
+          effect:
+            "Susține sănătatea ficatului și a rinichilor, ajutând la eliminarea toxinelor.Are proprietăți diuretice și antiinflamatoare.",
+        },
+        {
+          name: "Extract uscat de mentă (Lamiaceae Mentha x piperita L.) - 50 mg",
+          effect:
+            "Posedă proprietăți calmante și antiinflamatoare.Ajută la îmbunătățirea digestiei și la reducerea disconfortului stomacal.",
+        },
+        {
+          name: "Extract din rădăcină de lemn dulce - 40 mg",
+          effect:
+            "Are proprietăți antiinflamatorii și antibacteriene.Susține sănătatea gastrointestinală și sistemul imunitar.",
+        },
+        {
+          name: "Extract din semințe de in (Linum usitatissimum L.) - 40 mg",
+          effect:
+            "Bogat în fibre și acizi grași omega-3, susține sănătatea digestivă.Ajută la eliminarea toxinelor și paraziților din organism.",
+        },
+        {
+          name: "Extract uscat de pelin (Compositae Artemisia absinthium L.) - 20 mg",
+          effect:
+            "Cunoscut pentru proprietățile sale antiparazitare și antifungice.Ajută la eliminarea paraziților și la îmbunătățirea digestiei.",
+        },
+      ],
+    },
+    {
+      name: "Hyperon",
+      image: "assets/products/ro/product3.jpg",
+      origin: "Producatorul-Letonia",
+      format: "20 capsul",
+      usage: "2 ori / zi",
+      description:
+        "HYPERON active este un supliment alimentar conceput pentru a susține funcția cardiovasculară normală, sănătatea inimii și tensiunea arterială. Conține 20 de capsule care conțin ingrediente active precum L-taurină, acid ascorbic, oxid de magneziu, bicarbonat de potasiu, pulbere de spirulină, extracte de păducel, sunătoare și frunze de măslin, rutin, coenzima Q10 și extract de piper negru. Aceste ingrediente acționează în sinergie pentru a ajuta la îmbunătățirea circulației, normalizarea tensiunii arteriale și susținerea sănătății mușchilor inimii. Se recomandă utilizarea HYPERON active ca parte a unui stil de viață sănătos pentru rezultate optime.",
+      ingredients: [
+        {
+          name: "L-taurină (L-taurine)",
+          effect:
+            "taurina este un aminoacid care susține sănătatea cardiovasculară. Aceasta ajută la reglarea nivelului de electroliți, îmbunătățește funcția cardiacă și circulația și are efecte antioxidante.",
+        },
+        {
+          name: "Acid ascorbic",
+          effect:
+            "vitamina C este un antioxidant puternic care protejează celulele de stresul oxidativ. De asemenea, susține sănătatea vasculară și promovează sinteza colagenului, importantă pentru artere și capilare sănătoase.",
+        },
+        {
+          name: "Oxid de magneziu",
+          effect:
+            "Magneziul este important pentru menținerea ritmului cardiac normal și a tensiunii arteriale. De asemenea, este implicat în metabolismul și producerea de energie în celule.",
+        },
+        {
+          name: "Bicarbonat de potasiu (Potassium bicarbonate)",
+          effect:
+            "Potasiul ajută la reglarea tensiunii arteriale prin menținerea echilibrului lichidelor și electroliților din organism. De asemenea, este esențial pentru funcționarea normală a mușchiului cardiac.",
+        },
+        {
+          name: "Spirulină pulbere",
+          effect:
+            "Spirulina este o sursă bogată de proteine, vitamine și minerale. Aceasta susține sănătatea inimii datorită proprietăților sale antioxidante și antiinflamatorii.",
+        },
+        {
+          name: "Extract de păducel [3% flavonoide]",
+          effect:
+            "Extractul de păducel susține sănătatea cardiovasculară, îmbunătățește circulația și ajută la normalizarea tensiunii arteriale datorită conținutului său de flavonoide.",
+        },
+        {
+          name: "Extract de sunătoare",
+          effect:
+            "sunătoarea este utilizată pentru a calma sistemul nervos și a reduce stresul, ceea ce poate avea un efect pozitiv asupra tensiunii arteriale și a ritmului cardiac.",
+        },
+        {
+          name: "Extract din frunze de măslin (Olea leaf extract)",
+          effect:
+            "extractul din frunze de măslin are proprietăți antioxidante și ajută la scăderea tensiunii arteriale. De asemenea, îmbunătățește sănătatea cardiovasculară generală.",
+        },
+        {
+          name: "Rutin (Rutin pulbere)",
+          effect:
+            "Rutinul este un bioflavonoid care întărește capilarele și îmbunătățește circulația sângelui. De asemenea, are proprietăți antioxidante și susține sănătatea vasculară.",
+        },
+        {
+          name: "Coenzima Q10",
+          effect:
+            "Coenzima Q10 este implicată în producerea de energie în celule și are proprietăți antioxidante. Susține sănătatea inimii și poate ajuta la îmbunătățirea funcției vaselor de sânge.",
+        },
+        {
+          name: "Extract de piper negru [95% piperină]",
+          effect:
+            "piperina îmbunătățește biodisponibilitatea altor ingrediente și are proprietăți antioxidante și antiinflamatorii, care pot susține sănătatea cardiovasculară generală.",
+        },
+      ],
+    },
 
-products: [
-  {
-    name: "Artrolux Pro",
-    image: "assets/products/ro/product1.jpg", // або https://...
-    origin: "Producatorul-Letonia",
-    format: "30 capsul",
-    usage: "3 ori / zi",
-    description: "ARTROLUX PRO CAPS N30 este un supliment alimentar conceput pentru a susține sănătatea articulațiilor și a cartilajului. Combinația de glucozamină, condroitină, boswellia, ghimbir, MSM și curcumin ajută la întărirea structurii articulare, reducerea inflamațiilor și îmbunătățirea flexibilității. Vitamina C și manganul susțin sinteza colagenului și elasticitatea țesuturilor. Recomandat persoanelor active fizic sau cu rigiditate articulară legată de vârstă.",
-    ingredients: [
-      { name: "Glucozamină sulfat (Glucosamine sulphate 2KCl)", effect: "ajută la refacerea și protejarea cartilajului, îmbunătățește mobilitatea articulațiilor și reduce rigiditatea." },
-      { name: "Condroitină sulfat (Chondroitin sulfate)", effect: "menține elasticitatea cartilajului, reduce inflamațiile și sprijină lubrifierea articulațiilor." },
-      { name: "Extract de Boswellia serrata", effect: "component natural antiinflamator, ajută la reducerea umflăturilor și disconfortului articular.   " },
-      { name: "Extract de ghimbir (Ginger extract)", effect: "îmbunătățește circulația în țesuturile articulare, oferă un efect de încălzire și relaxare." },
-      { name: "MSM (Metil sulfonil metan)", effect: "sursă de sulf organic implicată în sinteza colagenului, susținând elasticitatea țesutului conjunctiv." },
-      { name: "Curcumin C3 Complex", effect: "antioxidant care protejează articulațiile de stresul oxidativ și sprijină refacerea lor." },
-      { name: "Vitamina C (Ascorbic acid)", effect: "contribuie la formarea normală a colagenului, necesar pentru oase și cartilaje sănătoase." },
-      { name: "Sulfat de mangan (Manganese sulfate)", effect: "sprijină formarea normală a țesutului conjunctiv și întărește articulațiile." },
-    ],
-  },
+    {
+      name: "OzemLite",
+      image: "assets/products/ro/product5.jpg",
+      origin: "Producatorul-Letonia",
+      format: "20 capsul",
+      usage: "2 ori / zi",
+      description:
+        "OzemLite este un supliment alimentar pentru controlul greutății și susținerea metabolismului. Conține extract de ceai verde, Garcinia Cambogia, guarana, carnitină și fibre solubile, care acționează împreună pentru a reduce pofta de mâncare, a accelera arderea grăsimilor și a oferi senzație de sațietate. OzemLite ajută la transformarea grăsimilor în energie și susține menținerea rezultatelor pe termen lung, ca parte a unui stil de viață echilibrat.",
+      ingredients: [
+        {
+          name: "Extract de ceai verde",
+          effect:
+            "Ajută la accelerarea metabolismului și la arderea grăsimilor. Este bogat în antioxidanți care susțin detoxifierea organismului, reduc retenția de lichide și contribuie la transformarea grăsimilor în energie. De asemenea, sprijină controlul apetitului.",
+        },
+        {
+          name: "Extract de Garcinia Cambogia",
+          effect:
+            "Conține acid hidroxicitric (HCA), care reduce pofta de mâncare și blochează transformarea excesului de carbohidrați în grăsimi. Ajută la controlul apetitului emoțional și susține scăderea în greutate într-un mod natural.",
+        },
+        {
+          name: "Guarana",
+          effect:
+            "Este o sursă naturală de energie, care stimulează arderea caloriilor și crește nivelul de activitate fizică. Reduce oboseala, îmbunătățește concentrarea și ajută organismul să consume mai eficient rezervele de grăsime.",
+        },
+        {
+          name: "Carnitină",
+          effect:
+            "Joacă un rol esențial în transportul grăsimilor către celule, unde acestea sunt transformate în energie. Susține scăderea țesutului adipos, crește rezistența fizică și ajută la menținerea masei musculare în timpul procesului de slăbire.",
+        },
+        {
+          name: "Fibre alimentare solubile",
+          effect:
+            "Creează senzația de sațietate, reduc pofta de mâncare și ajută la controlul porțiilor alimentare. Îmbunătățesc digestia, stabilizează nivelul zahărului din sânge și contribuie la eliminarea toxinelor din organism.",
+        },
+      ],
+    },
 
-  {
-    name: "Cleorix",
-    image: "assets/products/ro/product2.jpg",
-    origin: "Producatorul-Letonia",
-    format: "20 capsul",
-    usage: "2 ori / zi",
-    description: "Capsulele antiparazitare sunt o soluție inovatoare pentru combaterea paraziților și susținerea procesului natural de detoxifiere a organismului. Cu ajutorul lor, se obține nu numai eliminarea eficientă a paraziților, ci și o îmbunătățire semnificativă a stării generale de sănătate datorită unui complex unic de ingrediente active. Aceste capsule ajută la întărirea sistemului imunitar, stimulează îmbunătățirea digestiei și activează eliminarea toxinelor din organism. Utilizarea regulată duce la o stare generală de bine și la creșterea vitalității, ceea ce le face un instrument indispensabil pentru menținerea sănătății și a bunăstării.",
-    ingredients: [
-      { name: "Vitamina C (acid ascorbic) - 200 mg (222% din valoarea zilnică)", effect: "Un antioxidant puternic care susține sistemul imunitar.Ajută la eliminarea toxinelor și la îmbunătățirea stării generale a organismului." },
-      { name: "Badian (Illicium verum Hook f.) - 80 mg", effect: "Posedă proprietăți antiinflamatorii și antimicrobiene.Susține sistemul digestiv și ajută la eliminarea paraziților." },
-      { name: "Curcumină (Curcuma Longa) - 60 mg", effect: "Principalul ingredient activ din turmeric, are proprietăți antiinflamatorii și antioxidante puternice.Susține detoxifierea ficatului și procesul general de curățare a organismului." },
-      { name: "Extract de usturoi deshidratat (Amaryllidaceae Allium sativum L.) - 60 mg", effect: "Are puternice proprietăți antiparazitare și antibacteriene.Ajută la întărirea sistemului imunitar și la îmbunătățirea digestiei." },
-      { name: "Extract din rădăcină de păpădie (Taraxacum officinale) - 60 mg", effect: "Susține sănătatea ficatului și a rinichilor, ajutând la eliminarea toxinelor.Are proprietăți diuretice și antiinflamatoare." },
-      { name: "Extract uscat de mentă (Lamiaceae Mentha x piperita L.) - 50 mg", effect: "Posedă proprietăți calmante și antiinflamatoare.Ajută la îmbunătățirea digestiei și la reducerea disconfortului stomacal." },
-      { name: "Extract din rădăcină de lemn dulce - 40 mg", effect: "Are proprietăți antiinflamatorii și antibacteriene.Susține sănătatea gastrointestinală și sistemul imunitar." },
-      { name: "Extract din semințe de in (Linum usitatissimum L.) - 40 mg", effect: "Bogat în fibre și acizi grași omega-3, susține sănătatea digestivă.Ajută la eliminarea toxinelor și paraziților din organism." },
-      { name: "Extract uscat de pelin (Compositae Artemisia absinthium L.) - 20 mg", effect: "Cunoscut pentru proprietățile sale antiparazitare și antifungice.Ajută la eliminarea paraziților și la îmbunătățirea digestiei." },
-    ],
-  },
-  {
-    name: "Hyperon",
-    image: "assets/products/ro/product3.jpg",
-    origin: "Producatorul-Letonia",
-    format: "20 capsul",
-    usage: "2 ori / zi",
-    description: "HYPERON active este un supliment alimentar conceput pentru a susține funcția cardiovasculară normală, sănătatea inimii și tensiunea arterială. Conține 20 de capsule care conțin ingrediente active precum L-taurină, acid ascorbic, oxid de magneziu, bicarbonat de potasiu, pulbere de spirulină, extracte de păducel, sunătoare și frunze de măslin, rutin, coenzima Q10 și extract de piper negru. Aceste ingrediente acționează în sinergie pentru a ajuta la îmbunătățirea circulației, normalizarea tensiunii arteriale și susținerea sănătății mușchilor inimii. Se recomandă utilizarea HYPERON active ca parte a unui stil de viață sănătos pentru rezultate optime.",
-    ingredients: [
-      { name: "L-taurină (L-taurine)", effect: "taurina este un aminoacid care susține sănătatea cardiovasculară. Aceasta ajută la reglarea nivelului de electroliți, îmbunătățește funcția cardiacă și circulația și are efecte antioxidante." },
-      { name: "Acid ascorbic", effect: "vitamina C este un antioxidant puternic care protejează celulele de stresul oxidativ. De asemenea, susține sănătatea vasculară și promovează sinteza colagenului, importantă pentru artere și capilare sănătoase." },
-      { name: "Oxid de magneziu", effect: "Magneziul este important pentru menținerea ritmului cardiac normal și a tensiunii arteriale. De asemenea, este implicat în metabolismul și producerea de energie în celule." },
-      { name: "Bicarbonat de potasiu (Potassium bicarbonate)", effect: "Potasiul ajută la reglarea tensiunii arteriale prin menținerea echilibrului lichidelor și electroliților din organism. De asemenea, este esențial pentru funcționarea normală a mușchiului cardiac." },
-      { name: "Spirulină pulbere", effect: "Spirulina este o sursă bogată de proteine, vitamine și minerale. Aceasta susține sănătatea inimii datorită proprietăților sale antioxidante și antiinflamatorii." },
-      { name: "Extract de păducel [3% flavonoide]", effect: "Extractul de păducel susține sănătatea cardiovasculară, îmbunătățește circulația și ajută la normalizarea tensiunii arteriale datorită conținutului său de flavonoide." },
-      { name: "Extract de sunătoare", effect: "sunătoarea este utilizată pentru a calma sistemul nervos și a reduce stresul, ceea ce poate avea un efect pozitiv asupra tensiunii arteriale și a ritmului cardiac." },
-      { name: "Extract din frunze de măslin (Olea leaf extract)", effect: "extractul din frunze de măslin are proprietăți antioxidante și ajută la scăderea tensiunii arteriale. De asemenea, îmbunătățește sănătatea cardiovasculară generală." },
-      { name: "Rutin (Rutin pulbere)", effect: "Rutinul este un bioflavonoid care întărește capilarele și îmbunătățește circulația sângelui. De asemenea, are proprietăți antioxidante și susține sănătatea vasculară." },
-      { name: "Coenzima Q10", effect: "Coenzima Q10 este implicată în producerea de energie în celule și are proprietăți antioxidante. Susține sănătatea inimii și poate ajuta la îmbunătățirea funcției vaselor de sânge." },
-      { name: "Extract de piper negru [95% piperină]", effect: "piperina îmbunătățește biodisponibilitatea altor ingrediente și are proprietăți antioxidante și antiinflamatorii, care pot susține sănătatea cardiovasculară generală." },
-    ],
-  },
-
-  {
-    name: "OzemLite",
-    image: "assets/products/ro/product5.jpg",
-    origin: "Producatorul-Letonia",
-    format: "20 capsul",
-    usage: "2 ori / zi",
-    description: "OzemLite este un supliment alimentar pentru controlul greutății și susținerea metabolismului. Conține extract de ceai verde, Garcinia Cambogia, guarana, carnitină și fibre solubile, care acționează împreună pentru a reduce pofta de mâncare, a accelera arderea grăsimilor și a oferi senzație de sațietate. OzemLite ajută la transformarea grăsimilor în energie și susține menținerea rezultatelor pe termen lung, ca parte a unui stil de viață echilibrat.",
-    ingredients: [
-      { name: "Extract de ceai verde", effect: "Ajută la accelerarea metabolismului și la arderea grăsimilor. Este bogat în antioxidanți care susțin detoxifierea organismului, reduc retenția de lichide și contribuie la transformarea grăsimilor în energie. De asemenea, sprijină controlul apetitului." },
-      { name: "Extract de Garcinia Cambogia", effect: "Conține acid hidroxicitric (HCA), care reduce pofta de mâncare și blochează transformarea excesului de carbohidrați în grăsimi. Ajută la controlul apetitului emoțional și susține scăderea în greutate într-un mod natural." },
-      { name: "Guarana", effect: "Este o sursă naturală de energie, care stimulează arderea caloriilor și crește nivelul de activitate fizică. Reduce oboseala, îmbunătățește concentrarea și ajută organismul să consume mai eficient rezervele de grăsime." },
-      { name: "Carnitină", effect: "Joacă un rol esențial în transportul grăsimilor către celule, unde acestea sunt transformate în energie. Susține scăderea țesutului adipos, crește rezistența fizică și ajută la menținerea masei musculare în timpul procesului de slăbire." },
-      { name: "Fibre alimentare solubile", effect: "Creează senzația de sațietate, reduc pofta de mâncare și ajută la controlul porțiilor alimentare. Îmbunătățesc digestia, stabilizează nivelul zahărului din sânge și contribuie la eliminarea toxinelor din organism." },
-      
-    ],
-  },
-
-  {
-    name: "Arthrolon",
-    image: "assets/products/ro/product6.jpg",
-    origin: "Producatorul-Letonia",
-    format: "30 mg",
-    usage: "Se aplică de 2 ori pe zi.",
-    ingredients: [
-      { name: "Gaultheria fragrantissima (3 mg)", effect: "Are un efect antiinflamator și analgezic puternic, contribuind la reducerea durerii articulare și musculare. Ajută la ameliorarea rigidității și la îmbunătățirea mobilității." },
-      { name: "Mentha spicata (2,1 mg)", effect: "Oferă un efect răcoritor și calmant, reduce disconfortul local și tensiunea musculară, contribuind la relaxarea articulațiilor." },
-      { name: "Pinus roxburghii (1,5 mg)", effect: "Susține circulația sanguină locală, ajută la reducerea inflamației și accelerează procesele naturale de regenerare a țesuturilor." },
-      { name: "Cinnamomum camphora (0,9 mg)", effect: "Are efect de încălzire și stimulare a circulației, reduce durerea și îmbunătățește flexibilitatea articulațiilor." },
-      { name: "Capsicum annuum (0,15 mg)", effect: "Stimulează circulația și oferă un efect de încălzire intens, ajutând la diminuarea durerii și a rigidității articulare." },
-      { name: "Zingiber officinale (0,05 mg)", effect: "Contribuie la reducerea inflamației, susține mobilitatea articulațiilor și ajută la calmarea durerii cronice." },
-    
-    ],
-  },
-
-],
-
-
-
-
-
-
-
+    {
+      name: "Arthrolon",
+      image: "assets/products/ro/product6.jpg",
+      origin: "Producatorul-Letonia",
+      format: "30 mg",
+      usage: "Se aplică de 2 ori pe zi.",
+      ingredients: [
+        {
+          name: "Gaultheria fragrantissima (3 mg)",
+          effect:
+            "Are un efect antiinflamator și analgezic puternic, contribuind la reducerea durerii articulare și musculare. Ajută la ameliorarea rigidității și la îmbunătățirea mobilității.",
+        },
+        {
+          name: "Mentha spicata (2,1 mg)",
+          effect:
+            "Oferă un efect răcoritor și calmant, reduce disconfortul local și tensiunea musculară, contribuind la relaxarea articulațiilor.",
+        },
+        {
+          name: "Pinus roxburghii (1,5 mg)",
+          effect:
+            "Susține circulația sanguină locală, ajută la reducerea inflamației și accelerează procesele naturale de regenerare a țesuturilor.",
+        },
+        {
+          name: "Cinnamomum camphora (0,9 mg)",
+          effect:
+            "Are efect de încălzire și stimulare a circulației, reduce durerea și îmbunătățește flexibilitatea articulațiilor.",
+        },
+        {
+          name: "Capsicum annuum (0,15 mg)",
+          effect:
+            "Stimulează circulația și oferă un efect de încălzire intens, ajutând la diminuarea durerii și a rigidității articulare.",
+        },
+        {
+          name: "Zingiber officinale (0,05 mg)",
+          effect:
+            "Contribuie la reducerea inflamației, susține mobilitatea articulațiilor și ajută la calmarea durerii cronice.",
+        },
+      ],
+    },
+  ],
 
   accordions: {
     needs: [
-      
-{
+      {
         q: `1. Comanda este pentru dumneavoastră sau pentru cineva din apropiați? <span class="txt-green">(Așteptăm răspunsul)</span>`,
       },
 
@@ -692,7 +849,7 @@ products: [
           </div>
         `,
       },
-{
+      {
         q: `5. Domnule/doamnă, vă rog să-mi spuneți: cât de des aveți dureri de cap, amețeli, zgomote în urechi, oboseală? Ați observat probleme cu vederea, de exemplu, vedere încețoșată, „musculițe” în fața ochilor sau ceață dimineața?<span class="txt-green">(Așteptăm răspunsul)  (notăm în formular ce îl deranjează pe client)</span>`,
         a: `
           <div class="yn">
@@ -712,14 +869,14 @@ products: [
         `,
       },
 
-{
+      {
         q: `6. Ați avut episoade de creștere sau scădere bruscă a tensiunii arteriale?`,
         a: `
     <p><b>Notiță operator:</b>Variațiile bruște sunt extrem de periculoase — pot afecta creierul, inima și rinichii. Pot duce la pierderea cunoștinței, amețeli severe sau accident vascular.</p>
   `,
       },
 
-{
+      {
         q: `7. Domnule/doamnă, spuneți-mi, vreunul dintre rudele dumneavoastră apropiate – părinți, bunici – a avut tensiune arterială crescută?<span class="txt-green">(Așteptăm răspunsul) (notăm cine suferă de această boală/fie „Da”/„Nu”)</span>`,
         a: `
           <div class="yn">
@@ -739,13 +896,12 @@ products: [
         `,
       },
 
-{
+      {
         q: `8. Domnule/doamnă, spuneți-mi, ați observat simptome precum dureri în piept, dificultăți de respirație, bătăi rapide ale inimii?<span class="txt-green">(Așteptăm răspunsul)</span>`,
         a: `
     <p><b>Notiță operator:</b>Am înțeles, astfel de simptome indică adesea tulburări de circulație sanguină în inimă — când vasele de sânge nu mai fac față, dar nu vă faceți griji, Hyperon este aici exact pentru a elimina aceste simptome.</p>
   `,
       },
-
 
       {
         q: `9. Domnule/doamnă, vi se întâmplă să vă treziți brusc în mijlocul nopții — cam la ora 3-4, ca și cum ar fi sunat ceasul, și apoi să nu mai puteți adormi?<span class="txt-green">(Așteptăm răspunsul)</span>`,
@@ -754,7 +910,7 @@ products: [
   `,
       },
 
-     {
+      {
         q: `AGRAVARE: Domnule/Doamnă, atunci când inima nu este susținută, apar probleme foarte clare: tensiunea începe să urce sau să varieze brusc, pot apărea bătăi neregulate ale inimii, senzație de presiune în piept, oboseală accentuată chiar și la efort mic, amețeli sau lipsă de aer. Circulația se înrăutățește, iar inima este nevoită să lucreze constant în suprasarcină. În timp, aceste lucruri duc la complicații serioase, cum ar fi crize cardiace sau accidente vasculare. De aceea este important să acționăm acum, cât problema încă poate fi ținută sub control.`,
       },
 
@@ -762,13 +918,13 @@ products: [
         q: `10. Domnule/doamnă, vă rog să-mi spuneți dacă aveți boli concomitente, de exemplu, diabet zaharat sau probleme cu rinichii? <span class="txt-green">(Așteptăm răspunsul)</span>`,
       },
 
-{
+      {
         a: `
     <p class="groupSubtitle">Simptome și Prevenție</p>
   `,
       },
 
-     {
+      {
         q: `11. Domnule/doamnă, vă rog să-mi spuneți: cât de des aveți dureri de cap, amețeli, zgomote în urechi, oboseală? Ați observat probleme cu vederea, de exemplu, vedere încețoșată, „musculițe” în fața ochilor sau ceață dimineața?<span class="txt-green">(Așteptăm răspunsul) (notăm în formular ce îl deranjează pe client)</span>`,
         a: `
           <div class="yn">
@@ -787,13 +943,13 @@ products: [
           </div>
         `,
       },
-{
+      {
         q: `12. Ați avut episoade de creștere sau scădere bruscă a tensiunii arteriale?`,
         a: `
     <p><b>Notiță operator:</b>Variațiile bruște sunt extrem de periculoase — pot afecta creierul, inima și rinichii. Pot duce la pierderea cunoștinței, amețeli severe sau accident vascular.</p>
   `,
       },
-{
+      {
         q: `13. Domnule/doamnă, spuneți-mi, vreunul dintre rudele dumneavoastră apropiate – părinți, bunici – a avut tensiune arterială crescută?<span class="txt-green">(Așteptăm răspunsul) (notăm cine suferă de această boală/fie „Da”/„Nu”)</span>`,
         a: `
           <div class="yn">
@@ -813,50 +969,33 @@ products: [
         `,
       },
 
-  {
+      {
         a: `
     <p class="groupSubtitle">Impactul asupra Inimii și Somnului</p>
   `,
       },
 
-{
+      {
         q: `14. Domnule/doamnă, spuneți-mi, ați observat simptome precum dureri în piept, dificultăți de respirație, bătăi rapide ale inimii? <span class="txt-green">(Așteptăm răspunsul)</span>`,
         a: `
     <p><b>Notiță operator:</b> Am înțeles, astfel de simptome indică adesea tulburări de circulație sanguină în inimă — când vasele de sânge nu mai fac față, dar nu vă faceți griji, Hyperon este aici exact pentru a elimina aceste simptome.</p>
   `,
       },
-{
+      {
         q: `15. Domnule/doamnă, vi se întâmplă să vă treziți brusc în mijlocul nopții — cam la ora 3-4, ca și cum ar fi sunat ceasul, și apoi să nu mai puteți adormi? <span class="txt-green">(Așteptăm răspunsul)</span>`,
         a: `
     <p><b>Notiță operator:</b> acesta este un semnal de alarmă: organismul suferă de stres din cauza circulației sanguine perturbate. Tocmai în acest moment vasele de sânge sunt supraîncărcate, iar somnul este întrerupt. Odată ce facem curățarea vaselor și mai relaxează, vă asigurați că și somnul se îmbunătățește.</p>
   `,
       },
-{
+      {
         q: `AGRAVARE: Domnule/Doamnă, atunci când inima nu este susținută, apar probleme foarte clare: tensiunea începe să urce sau să varieze brusc, pot apărea bătăi neregulate ale inimii, senzație de presiune în piept, oboseală accentuată chiar și la efort mic, amețeli sau lipsă de aer. Circulația se înrăutățește, iar inima este nevoită să lucreze constant în suprasarcină. În timp, aceste lucruri duc la complicații serioase, cum ar fi crize cardiace sau accidente vasculare. De aceea este important să acționăm acum, cât problema încă poate fi ținută sub control.`,
       },
 
-{
+      {
         q: `16. Domnule/doamnă, vă rog să-mi spuneți dacă aveți boli concomitente, de exemplu, diabet zaharat sau probleme cu rinichii? <span class="txt-green">(Așteptăm răspunsul)</span>`,
       },
-
-
-
-
-
-     
-     
-      
-     
     ],
 
-    objections: [
-
-
-
-    ],
-
-
-
+    objections: [],
   },
 });
-

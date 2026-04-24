@@ -55,7 +55,13 @@ function normalizeHotScript(obj) {
     const products = Array.isArray(obj?.products) ? obj.products : [];
     const fixedProducts = products.map(p => ({
     ...p,
-    tabs: Array.isArray(p.tabs) ? p.tabs : []
+    tabs: Array.isArray(p.tabs) ? p.tabs : [],
+    format: p.format || "",         // ✅ Додали формат
+      manufacturer: p.manufacturer || "", // ✅ Додали виробника
+      storage: p.storage || "",       // ✅ Додали зберігання
+      characteristics: p.characteristics || "",
+      benefits: p.benefits || "",
+      contraindications: p.contraindications || ""
   }));
 
     const crossSellProducts = Array.isArray(obj?.crossSellProducts)
