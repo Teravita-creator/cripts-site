@@ -89,21 +89,21 @@ registerScript("ro", "hot_2", {
     <div id="crossSellBlock"></div>
 `,
     survey: `<p>Domnule/doamnă , să completăm imediat livrarea, pentru a face acest lucru:</p>
-    <p>1. Vă rog să-mi spuneți numele și prenumele complet, pentru a putea înregistra corect comanda (notăm numele complet după cum îl pronunță clientul).</p>
-    <p>Vă rog să-mi spuneți, veți fi dvs. destinatarul coletului? Sau altcineva va putea primi coletul, dacă dvs. nu veți putea? Sunt gata să notez numele și numărul de telefon. (Notăm în CRM în câmpul „Comentariu”.)</p>
-    <p>2. Acum, vă rog să-mi dictați adresa de livrare (regiune, oraș, stradă, număr de casă/clădire, număr de bloc/intrare, etaj, număr de apartament, cod poștal) (notăm datele după cum le dictează clientul).</p>
-    <p>3. În plus, vă rugăm să indicați un punct de reper pentru curier (intersecția străzilor, cel mai apropiat magazin, școală, farmacie sau cafenea, numele cartierului sau al complexului rezidențial, stația, caracteristicile casei, poarta) (notăm datele în câmpul „Comentariu” pentru curier).
-(Dacă este locul de muncă al clientului, adăugați neapărat și numele companiei și funcția clientului) (notăm datele în câmpul de comentarii pentru curier)</p>
+    <p>1. Vă rog să-mi spuneți numele și prenumele complet, pentru a putea înregistra corect comanda <span class="txt-blue">(notăm numele complet după cum îl pronunță clientul)</span>.</p>
+    <p>Vă rog să-mi spuneți, veți fi dvs. destinatarul coletului? Sau altcineva va putea primi coletul, dacă dvs. nu veți putea? Sunt gata să notez numele și numărul de telefon. <span class="txt-blue">(Notăm în CRM în câmpul „Comentariu”.)</span></p>
+    <p>2. Acum, vă rog să-mi dictați adresa de livrare (regiune, oraș, stradă, număr de casă/clădire, număr de bloc/intrare, etaj, număr de apartament, cod poștal)<span class="txt-blue"> (notăm datele după cum le dictează clientul)</span>.</p>
+    <p>3. În plus, vă rugăm să indicați un punct de reper pentru curier (intersecția străzilor, cel mai apropiat magazin, școală, farmacie sau cafenea, numele cartierului sau al complexului rezidențial, stația, caracteristicile casei, poarta) <span class="txt-blue">(notăm datele în câmpul „Comentariu” pentru curier)</span>.
+(Dacă este locul de muncă al clientului, adăugați neapărat și numele companiei și funcția clientului) <span class="txt-blue">(notăm datele în câmpul de comentarii pentru curier)</span></p>
 `,
     closing: `<p>Domnule/doamnă , vă rugăm să verificați încă o dată toate datele dvs. pentru a evita erorile la livrare:</p>
     <ol>
     <li>numele și prenumele complet: [repetați numele complet, literă cu literă];</li>
-    <li>dacă există un destinatar suplimentar: [repetați numărul de telefon] - totul este corect? (așteptăm confirmarea)</li>
+    <li>dacă există un destinatar suplimentar: [repetați numărul de telefon] - totul este corect? <span class="txt-green">(așteptăm confirmarea)</span></li>
     <li>adresa de livrare: [regiune, oraș, stradă, număr de casă/clădire, număr de bloc/intrare, etaj, număr de apartament, cod poștal];</li>
     <li>numele pe interfon [spunem numele pe interfon].</li>
     </ol>
-    <p>Vă rugăm să confirmați că datele sunt corecte, pentru a putea garanta livrarea la timp a comenzii dvs. Domnule/doamnă , am notat totul corect? (Așteptăm confirmarea)</p>
-    <p>Comanda se livreaza in decurs de o zi sau doua lucratoare de Luni-Vineri de la orele 08.00-18.00.Veți primi un SMS de la serviciul de livrare în dimineața livrării. Va exista un link pentru a vă urmări comanda. Plata catre curier numai cash la primire.</p>
+    <p>Vă rugăm să confirmați că datele sunt corecte, pentru a putea garanta livrarea la timp a comenzii dvs. Domnule/doamnă , am notat totul corect? <span class="txt-green">(Așteptăm confirmarea)</span></p>
+    <p>Comanda se livreaza in decurs de o zi sau doua lucratoare de Luni-Vineri de la orele <b>08.00-18.00</b>. Veți primi un SMS de la serviciul de livrare în dimineața livrării. Va exista un link pentru a vă urmări comanda. Plata catre curier numai cash la primire.</p>
 
     <p class="presentationTitle"><span class="txt-red">CONDIȚIILE OFERTEI:</span></p>
     <p>Conform regulamentului nostru, încheiem un acord verbal, în baza căruia compania se obligă să vă furnizeze un produs original, de cea mai înaltă calitate. Eu, nume / prenume, îmi asum responsabilitatea ca tratamentul dumneavoastră să fie eficient. Din partea dumneavoastră, vă asumați responsabilitatea de a primi produsul și de a începe tratamentul. Vă rog să-mi spuneți dacă aceste condiții vă sunt acceptabile în acest moment.</p>
