@@ -920,3 +920,9 @@ html[data-theme="dark"] .inner-tab-content {
 .link-button::before {
     margin-right: 8px;
 }
+/* Яскравий червоний акцент для тексту */
+.p-accent-red {
+    color: #8d0c0c !important; /* Чистий яскраво-червоний колір */
+    font-weight: bold;         /* Робимо текст жирним, щоб він виділявся */
+    text-shadow: 0 0 2px rgba(255, 0, 0, 0.1); /* Легке свічення для об'єму */
+}
