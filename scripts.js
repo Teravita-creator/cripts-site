@@ -38,13 +38,40 @@ if (backBtn) {
 /* ============================
    СПИСКИ СКРИПТІВ
 ============================ */
+
 const hotList = document.getElementById("hotList");
 const baseList = document.getElementById("baseList");
 
 // ID скриптів (10 + 10)
-const hotIds = Array.from({ length: 10 }, (_, i) => `hot_${i + 1}`);
-const baseIds = Array.from({ length: 10 }, (_, i) => `base_${i + 1}`);
+const listsByKC = {
+  ge_ru: {
+    hot: ["hot_1", "hot_2", "hot_3", "hot_4"],
+    base: ["base_1", "base_2"]
+  },
+  pl: {
+    hot: ["hot_1", "hot_2", "hot_3", "hot_4"],
+    base: ["base_1", "base_2", "base_3"]
+  },
+  ge: {
+    hot: ["hot_1", "hot_2", "hot_3", "hot_4", "hot_5", "hot_6", "hot_7", "hot_8", "hot_9", "hot_10", "hot_11", "hot_12", "hot_13", "hot_14"],
+    base: ["base_1", "base_2"]
+  },
+  ro: {
+    hot: ["hot_1", "hot_2", "hot_3", "hot_4", "hot_5", "hot_6"],
+    base: ["base_1", "base_2"]
+  }
+  
 
+ 
+};
+
+const currentLists = listsByKC[selectedKC] || {
+  hot: Array.from({ length: 10 }, (_, i) => `hot_${i + 1}`),
+  base: Array.from({ length: 10 }, (_, i) => `base_${i + 1}`)
+};
+
+const hotIds = currentLists.hot;
+const baseIds = currentLists.base;
 /* ============================
    ХЕЛПЕРИ
 ============================ */

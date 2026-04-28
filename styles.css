@@ -346,7 +346,7 @@ h1{ margin: 0 0 8px; font-size: 26px; }
 .presentationTitle{
   margin: 26px 0 14px;        /* повітря зверху і знизу */
   text-align: center;         /* по центру */
-  font-size: 20px;            /* більший за звичайний текст */
+  font-size: 18px;            /* більший за звичайний текст */
   font-weight: 800;
   letter-spacing: 0.3px;
   color: var(--text);
@@ -523,7 +523,8 @@ h1{ margin: 0 0 8px; font-size: 26px; }
 }
 
 .p-accent-blue{
-  color: #3a5f7a;
+  color: #2f5f8f;          /* глибокий синій */
+  font-weight: 700;
 }
 .txt-red,
 .txt-green,
