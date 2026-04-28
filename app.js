@@ -1,26 +1,22 @@
-const PASSWORD = "1234";
+// Код для роботи з Netlify Identity
+if (window.netlifyIdentity) {
+  window.netlifyIdentity.on("init", user => {
+    if (!user) {
+      window.netlifyIdentity.open(); // Відкриває вікно входу, якщо користувач не залогінений
+    } else {
+      // Якщо користувач вже увійшов, перенаправляємо на сторінку зі скриптами
+      if (window.location.pathname.endsWith("index.html") || window.location.pathname === "/") {
+        window.location.href = "kc.html";
+      }
+    }
+  });
 
-const loginForm = document.getElementById("loginForm");
-const passwordInput = document.getElementById("password");
-const loginError = document.getElementById("loginError");
+  window.netlifyIdentity.on("login", user => {
+    window.netlifyIdentity.close();
+    window.location.href = "kc.html"; // Куди йдемо після успішного входу
+  });
 
-// Якщо вже логінились — одразу на вибір КЦ
-if (localStorage.getItem("isLoggedIn") === "true") {
-  window.location.href = "kc.html";
+  window.netlifyIdentity.on("logout", () => {
+    window.location.href = "index.html"; // Куди йдемо після виходу
+  });
 }
-
-loginForm.addEventListener("submit", (e) => {
-  e.preventDefault();
-
-  const entered = passwordInput.value.trim();
-
-  if (entered === PASSWORD) {
-    loginError.textContent = "";
-    localStorage.setItem("isLoggedIn", "true");
-    window.location.href = "kc.html";
-    return;
-  }
-
-  // перекладена помилка
-  loginError.textContent = t("login.error");
-});
