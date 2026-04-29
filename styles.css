@@ -927,3 +927,30 @@ html[data-theme="dark"] .inner-tab-content {
     font-weight: bold;         /* Робимо текст жирним, щоб він виділявся */
     text-shadow: 0 0 2px rgba(255, 0, 0, 0.1); /* Легке свічення для об'єму */
 }
+
+.inline-button {
+  display: inline-block;
+  padding: 4px 12px;
+  margin-left: 5px;
+  background-color: #fff9e6; /* Світло-жовтий фон */
+  color: #333 !important;    /* Темний текст */
+  text-decoration: none !important;
+  border: 1px solid #e2b007;  /* Золотистий бортик */
+  border-radius: 6px;         /* Закруглення як у всього сайту */
+  font-weight: 600;
+  transition: all 0.2s ease;
+  vertical-align: middle;
+}
+
+.inline-button:hover {
+  background-color: #e2b007; /* Стає золотистою при наведенні */
+  color: white !important;   /* Текст стає білим */
+  box-shadow: 0 2px 5px rgba(226, 176, 7, 0.3);
+}
+
+/* Для темної теми */
+body.dark-theme .inline-button {
+  background-color: #333;
+  border-color: #e2b007;
+  color: #eee !important;
+}
