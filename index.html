@@ -4,22 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Login</title>
-  <link rel="stylesheet" href="styles.css" />
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-  <style>
-  /* Ховаємо весь контент спочатку */
-  .container { opacity: 0; transition: opacity 0.3s; }
-  /* Показуємо тільки за цією умовою */
-  body.ready .container { opacity: 1; }
-</style>
+  <link rel="stylesheet" href="stylesheet.css" />
 </head>
 <body>
   <div class="container">
     <div class="card">
-
       <div style="display:flex; justify-content:flex-end; gap:8px; align-items:center; margin-bottom:8px;">
-        <button type="button" class="btn btn-secondary" data-theme-toggle aria-label="Theme">🌙</button>
-        <span class="muted" data-i18n="lang.label">Язык</span>
+        <button type="button" class="btn btn-secondary" data-theme-toggle>🌙</button>
         <select id="langSelect">
           <option value="ru">RU</option>
           <option value="pl">PL</option>
@@ -28,35 +19,20 @@
         </select>
       </div>
 
-      </div>
+      <h1 data-i18n="login.title">Вход</h1>
+      <p class="muted" data-i18n="login.subtitle">Введите пароль, чтобы перейти к скриптам.</p>
 
-    <footer class="footer">
-      <span class="muted" data-i18n="app.version">Скрипты продаж • v0.1</span>
-    </footer>
+      <form id="loginForm" class="form">
+        <label class="label" for="password" data-i18n="login.passwordLabel">Пароль</label>
+        <input id="password" class="input" type="password" placeholder="Введите пароль" required />
+        <button class="btn" type="submit" data-i18n="login.button">Войти</button>
+        <p id="loginError" class="error"></p>
+      </form>
+    </div>
   </div>
 
   <script src="i18n.js"></script>
   <script src="theme.js"></script>
-  <script src="app.js"></script> 
-
-  <script>
-  if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", user => {
-      if (!user) {
-        window.netlifyIdentity.open(); // Відкриваємо вхід
-      } else {
-        // Якщо користувач ок — показуємо сайт і йдемо на kc.html
-        document.body.classList.add('ready');
-        if (window.location.pathname === "/" || window.location.pathname.endsWith("index.html")) {
-          window.location.href = "kc.html";
-        }
-      }
-    });
-
-    window.netlifyIdentity.on("login", user => {
-      window.location.reload();
-    });
-  }
-</script>
+  <script src="app.js"></script>
 </body>
 </html>
