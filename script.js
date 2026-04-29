@@ -1,9 +1,6 @@
 // ================== ЗАХИСТ ==================
 (function () {
-  if (localStorage.getItem("isLoggedIn") !== "true") {
-    window.location.href = "index.html";
-    return;
-  }
+ 
 
   const kc = localStorage.getItem("selectedKC");
   if (!kc) {

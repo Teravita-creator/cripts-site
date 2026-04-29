@@ -1,6 +1,4 @@
-if (localStorage.getItem("isLoggedIn") !== "true") {
-  window.location.href = "index.html";
-}
+
 
 document.getElementById("backBtn").addEventListener("click", () => {
   window.location.href = "index.html";

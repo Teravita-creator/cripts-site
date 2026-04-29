@@ -1,9 +1,7 @@
 /* ============================
    ЗАХИСТ СТОРІНКИ
 ============================ */
-if (localStorage.getItem("isLoggedIn") !== "true") {
-  window.location.href = "index.html";
-}
+
 
 const selectedKC = localStorage.getItem("selectedKC");
 if (!selectedKC) {
